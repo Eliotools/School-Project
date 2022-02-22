@@ -1,0 +1,17 @@
+[requires]
+sfml/2.5.1
+asio/1.20.0
+
+[generators]
+cmake
+
+[options]
+
+sfml:audio=True
+sfml:network=True
+sfml:graphics=True
+sfml:window=True
+sfml:shared=True
+sfml:fPIC=True
+
+[imports]
