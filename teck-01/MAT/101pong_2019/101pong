@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+import sys
+from math import *
+
+def error():
+    if (len(sys.argv) != 8) : 
+        if (len(sys.argv) == 2) : 
+            if (sys.argv[1] == "-h") :
+                print("USAGE\n    ./101pong x0 y0 z0 x1 y1 z1 \n\nDESCRIPTION\n\
+    x0 ball abscissa at time t - 1\n    y0 ball ordinate at time t - 1\n\
+    z0 ball altitude at time t - 1\n    x1 ball abscissa at time t\n\
+    y1 ball ordiante at time t\n    z1 ball altitude at time t\n\
+    n time shift (greater than or equal to zero, integrer)")
+                exit (0)
+        else :
+            exit (84) 
+    i = 1
+    j = 0  
+             
+    while (i < 8) :
+        try :
+            float(sys.argv[i])
+        except :
+            exit (84)
+        i += 1         
+    try:
+        int (sys.argv[7])
+    except :
+        exit (84)            
+    if (int(sys.argv[7]) < 0) :
+        exit (84)
+  
+error()  
+x0 = float(sys.argv[1])
+y0 = float(sys.argv[2])
+z0 = float(sys.argv[3])
+x1 = float(sys.argv[4])
+y1 = float(sys.argv[5])
+z1 = float(sys.argv[6])
+velo_x = x1 - x0
+velo_y = y1 - y0
+velo_z = z1 - z0
+pos_x = velo_x * float(sys.argv[7]) + float(sys.argv[4])
+pos_y = velo_y * float(sys.argv[7]) + float(sys.argv[5])
+pos_z = velo_z * float(sys.argv[7]) + float(sys.argv[6])
+t = (sys.argv[7])
+
+print("The velocity vector of the ball is:")
+print("(%.2f," %velo_x,'%.2f,' % velo_y,"%.2f)"% velo_z)
+print("At time t + "+ t +", ball coordinates will be:")
+print("(%.2f," %pos_x,'%.2f,' % pos_y,"%.2f)"% pos_z)
+hyp = 0
+
+if (z1 > 0 and pos_z < 0) :
+    print("The incidence angle is:")
+    hyp = sqrt((velo_x**2) + (velo_y**2) + (velo_z**2))
+    cos = degrees(asin((sqrt((velo_y**2))/2) / (hyp)))
+    print("%.2f" %cos + " degrees")
+else :
+    print("The ball won't reach the paddle.")

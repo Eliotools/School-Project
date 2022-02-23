@@ -1,0 +1,188 @@
+#!/usr/bin/env python3
+
+import sys
+from math import *
+ord
+
+def main():
+    if (len(sys.argv) != 4 or len(sys.argv[2]) < 6):
+        try :
+            a = int(sys.argv[3][0])
+        except :
+            exit(84) 
+        if (sys.argv[1] == "-h"):
+            hache()
+        else :
+            exit(84)
+    else:
+        next()
+
+def next():
+    flag = int(sys.argv[3])
+
+    if (flag == 0):
+        flag_Z()
+    if (flag == 1):
+        flag_U()
+    else :
+        exit(84)
+
+def flag_U():
+    ky = sys.argv[2]
+    size_key = ceil((len(ky))/3)
+    key = initialized_matrice(size_key, ky)
+    matrice = take_matrice()
+    key = invers_matrix(key)
+    affichage(key)
+    print("Decrypted message:")
+    calculs (matrice, key)
+
+def take_matrice():
+    i = 0
+
+    for loop in range (len(sys.argv[1])):
+        if (ord(sys.argv[1][loop]) == 32):
+            i+=1
+    size = int(ceil(i+1)/3)
+    liste = list((sys.argv[1]).split(' '))
+    matrice = initialized_matrices(size, liste)
+    return(matrice)
+    
+
+def invers_matrix(matrice):
+    a = matrice[0][0]
+    b = matrice[0][1]
+    c = matrice[0][2]
+    d = matrice[1][0]
+    e = matrice[1][1]
+    f = matrice[1][2]
+    g = matrice[2][0]
+    h = matrice[2][1]
+    i = matrice[2][2]
+
+    det =  (a*e*i) + (b*f*g) + (c*d*h) - (c*e*g) - (f*h*a) - (i*b*d)
+    det = 1/det
+    matrice[0][0] = det*(e*i - f*h)
+    matrice[0][1] = det*(c*h - b*i)
+    matrice[0][2] = det*(b*f - c*e)
+    matrice[1][0] = det*(f*g - d*i)
+    matrice[1][1] = det*(a*i - c*g)
+    matrice[1][2] = det*(c*d - a*f)
+    matrice[2][0] = det*(d*h - e*g)
+    matrice[2][1] = det*(b*g - a*h)
+    matrice[2][2] = det*(a*e - b*d)
+    return matrice
+
+
+def affichage (matrice):
+    print("Key matrix:")
+    print(matrice[0][0],"\t",matrice[0][1],"\t",matrice[0][2])
+    print(matrice[1][0],"\t",matrice[1][1],"\t",matrice[1][2])
+    print(matrice[2][0],"\t",matrice[2][1],"\t",matrice[2][2],"\n")
+
+def affichage (matrice):
+    print("Key matrix:")
+    print(round(matrice[0][0],3),"\t",round(matrice[0][1],3),"\t",round(matrice[0][2],3))
+    print(round(matrice[1][0],3),"\t",round(matrice[1][1],3),"\t",round(matrice[1][2],3))
+    print(round(matrice[2][0],3),"\t",round(matrice[2][1],3),"\t",round(matrice[2][2],3),"\n")
+
+def flag_Z ():
+    msg = sys.argv[1]
+    ky = sys.argv[2]
+    size = ceil((len(msg))/3)
+    size_key = ceil((len(ky))/3)
+    message = initialized_matrice(size, msg)
+    key = initialized_matrice(size_key, ky)
+    affichage(key)
+    print("message = ",key)
+    print("Encrypted message:")
+    calcul(message, key)
+
+def calcul (message, key):
+    compte = 0
+    a = 0
+    p = 0
+    d = 0
+    for i in  range (len(message)):
+        for loop in range (3):
+            for j in range (3):
+                #print("j =", j)
+                compte += (int(message[a][d])) * (key[d][p])
+                d += 1
+            d = 0
+            print ((compte), end='')
+            if (i != (len(message)-1)) or (loop != 2) :
+                print (" ", end='')
+            compte = 0
+            p += 1
+        d = 0
+        p = 0
+        compte = 0
+        a += 1
+
+def calculs (message, key):
+    compte = 0
+    a = 0
+    p = 0
+    d = 0
+    for i in range (len(message)):
+        for loop in range (3):
+            for j in range (3):
+                compte += (float(message[a][d]) * float((key[d][p])))
+                d += 1
+            d = 0
+            print(chr(int(round(compte))), end='')
+            compte = 0
+            p += 1
+        d = 0
+        p = 0
+        compte = 0
+        a += 1
+
+def initialized_matrice(size, message):
+    matrice = [0] * size
+    for i in range(size):
+        matrice[i] = [0] * 3
+    matrice = fill_matrice(matrice, message)
+    return matrice
+
+def fill_matrice(matrice, message):
+    b = 0
+    a = 0
+    c = 0
+    while c < len(message):
+        matrice[a][b] = ord((message[c]))
+        b+=1
+        c+=1
+        if b == 3:
+            a += 1
+            b = 0
+    return matrice
+
+def initialized_matrices(size, message):
+    matrice = [0] * size
+    for i in range(size):
+        matrice[i] = [0] * 3
+    matrice = fill_matrices(matrice, message)
+    return matrice
+
+def fill_matrices(matrice, message):
+    b = 0
+    a = 0
+    c = 0
+    while c < len(message):
+        matrice[a][b] = ((message[c]))
+        b+=1
+        c+=1
+        if b == 3:
+            a += 1
+            b = 0
+    return matrice
+
+def hache():
+    print("USAGE\n    ./103ciper message key flag \n \nDESCRIPTION\n \
+    message     a message, made of 1SCII characters \n \
+    key         the encryption key, made of ASCII characters\n \
+    flag        0 for the message to be encrypted, 1 to be decrypted");
+
+main()

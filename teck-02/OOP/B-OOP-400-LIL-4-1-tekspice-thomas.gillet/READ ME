@@ -1,0 +1,37 @@
+DO : 
+    - Creating "struc" with :
+                            - State
+                            - int 'pin_in'
+                            - int 'pin_out'
+    - Creating map with "std::string" & "struc" for chipset
+    - Dump of 4081 finish and beautiful
+    - Link in is now a list
+    - Put name instead of default 
+    - implement fonction that change tristat
+    - set loop for SIMULATE
+    - make variable for know if it's input or output
+    - PRINT only VAR we NEED
+    - find right NAME != gateName
+    - wait SIMULATE for change value
+    - makeItWork great again (Link between parent and child)
+    - name should be number (4081) + pars
+    - CTRL + D
+
+TODO : 
+    - set 'out' as LINK for other GATE
+    - MAKE other gate
+    - Good placing of name (in_01:1 gate:7 go to 7th pin)
+    - Error handling
+
+NOTE :
+    - Si jamais tu fait un truc du TODO met le dans DO
+
+ERROR :
+    - Main.c -- createComponent -- wrong name
+    - Main.c -- inputToValues -- in == nullptr
+    - Main.c -- main -- invalide nb args
+    - Main.c -- nowhere for the moment -- the file existe
+    - Main.c -- nowhere for the moment -- there is .link and .chipsets:
+    - Main.c -- nowhere for the moment -- there is in/output'on space'pinName
+    - Main.c -- nowhere for the moment -- there is nb'space'gateName
+    - Main.c -- loop -- wrong commande

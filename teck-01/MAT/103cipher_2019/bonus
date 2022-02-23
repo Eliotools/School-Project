@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+
+import sys
+from math import *
+
+if (sys.argv[1] == "-h"):
+        print("USAGE\n    ./103ciper message key flag \n \nDESCRIPTION\n \
+    message     a message, made of 1SCII characters \n \
+    key         the encryption key, made of ASCII characters\n \
+    flag        0 for the message to be encrypted, 1 to be decrypted");
+
+list = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","x","z"]
+
+array = sys.argv[1]
+x = int(sys.argv[2])
+y = int(sys.argv[3])
+comte = 0
+bis = 0
+new = array
+print (array,"by fonction msg*%d"%x,"+ %d"%y)
+for char in array:
+    new = array[comte]
+    B = ((list.index(new)*x)+y)
+    while B > 26:
+        B-=26
+    while B < 0:
+        B+=26
+    comte+=1
+    bis+=1
+    B = list[B]
+    print(B, end='', )
+print ("\0")
+
+
+
+
+

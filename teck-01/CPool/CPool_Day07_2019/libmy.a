@@ -1,0 +1,376 @@
+!<arch>
+//                                              188       `
+my_compute_power_rec.c/
+my_compute_square_root.c/
+my_find_prime_sup.c/
+my_sort_int_array.c/
+my_strcapitalize.c/
+my_str_isalpha.c/
+my_str_islower.c/
+my_str_isprintable.c/
+my_str_isupper.c/
+isnum.c/        1570522809  1000  1000  100664  0         `
+/0              1570521202  1000  1000  100664  111       `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+int my_compute_power_rec(int nb, int power);
+{
+
+}
+
+/24             1570522485  1000  1000  100664  100       `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+int my_compute_square_root (int nb);
+{
+}
+/50             1570521436  1000  1000  100664  95        `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+int my_find_prime_sup(int nb)
+{
+}
+
+my_getnbr.c/    1570521108  1000  1000  100664  97        `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+int my_getnbr (char const *str)
+{
+}
+
+my_isneg.c/     1570520984  1000  1000  100664  87        `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+int my_isneg (int nb)
+{
+}
+
+my_is_prime.c/  1570522623  1000  1000  100664  89        `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+int my_is_prime (int nb);
+{
+}
+
+my_putchar.c/   1570520974  1000  1000  100664  90        `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+void my_putchar(char c)
+{
+
+}
+my_put_nbr.c/   1570522673  1000  1000  100664  86        `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+int my_put_nbr(int nb)
+{
+}
+my_putstr.c/    1570522640  1000  1000  100664  95        `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+int my_putstr (char const *str)
+{
+}
+
+my_revstr.c/    1570521677  1000  1000  100664  93        `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+char *my_revstr (char *str)
+{
+}
+
+my_showmem.c/   1570522781  1000  1000  100664  111       `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+int my_showmem (char const *str, int size)
+{
+}
+    
+
+my_showstr.c/   1570522250  1000  1000  100664  98        `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+int my_showstr (char const *str)
+{
+}
+/71             1570521152  1000  1000  100664  109       `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+void my_sort_int_array (int *tab, int size)
+{
+}
+
+/92             1570522024  1000  1000  100664  99        `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+char *my_strcapitalize(char *str)
+{
+}
+
+my_strcat.c/    1570522516  1000  1000  100664  108       `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+char *my_strcat(char *dest, char const *src)
+{
+}
+my_strcmp.c/    1570522568  1000  1000  100664  110       `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+int my_strcmp (char const *s1, char const *s2)
+{
+}
+my_strcpy.c/    1570522596  1000  1000  100664  109       `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+char *my_strcpy (char *dest, char const *src)
+{
+}
+
+/112            1570522871  1000  1000  100664  100       `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+int my_str_isalpha (char const *str)
+{
+}
+/130            1570522540  1000  1000  100664  100       `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+int my_str_islower (char const *str)
+{
+}
+my_str_isnum.c/ 1570522821  1000  1000  100664  108       `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+int my_isnum (char const *str)
+{
+}              
+/148            1570522859  1000  1000  100664  104       `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+int my_str_isprintable (char const *str)
+{
+}
+/170            1570522838  1000  1000  100664  100       `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+int my_str_isupper (char const *str)
+{
+}
+my_strlowcase.c/1570521967  1000  1000  100664  97        `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+char *my_strlowcase (char *str)
+{
+}
+
+my_strncat.c/   1570522372  1000  1000  100664  120       `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+char *my_strncat (char *dest, char const *src, int nb)
+{
+}
+my_strncmp.c/   1570521880  1000  1000  100664  120       `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+int my_strncmp (char const *s1, char const *s2, int n)
+{
+}
+my_strncpy.c/   1570521643  1000  1000  100664  345       `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+#include <stdio.h>
+
+char *my_strncpy (char *dest, char const *src, int n)
+{
+    int i = 0;
+    int j;
+
+    while (i != n)
+    {
+        dest[i] = src[i];
+        i++;
+    }
+    for (j = 0; dest[j] != '\0'; ++j);
+    if (dest[i+1] != '\0')
+        dest[j] = '\0';
+    return (dest);
+}
+
+my_strstr.c/    1570521766  1000  1000  100664  114       `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+char *my_strstr( char *str, char const *to_find)
+{
+}
+my_stupcase.c/  1570522796  1000  1000  100664  93        `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+char *my_stupcase (char *str)
+{
+}
+
+my_swap.c/      1570521034  1000  1000  100664  94        `
+/*
+** EPITECH PROJECT, 2019
+** 
+** File description:
+** 
+*/
+
+void my_swap(int *a, int *b)
+{
+}
+my_strlen.c/    1570527272  1000  1000  100664  97        `
+/*
+** EPITECH PROJECT, 2019
+**
+** File description:
+**
+*/
+
+int my_strlen (char const *str)
+{
+
+}
+
+

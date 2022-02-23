@@ -1,0 +1,146 @@
+#!/usr/bin/env python3
+from sys import *
+from time import sleep
+def main():
+    if (len(argv) < 2):
+        exit(84)
+    if (argv[1] == "-h"):
+        print("USAGE\n\t./302separation file [n | p1 p2]\nDESCRIPTION\nfile\tfile that contains the list of Facebook connections\nn\tmaximum length of the paths\npi\tname of someone in the file")
+    else:
+        get_list(argv[1])
+        if len(argv) == 3:
+            try :
+                set_max(int(argv[2]))
+            except:
+                exit(84)
+            print_all()
+        elif len(argv) == 4:
+            find_path(argv[2], argv[3])
+    return(0)
+
+def get_list(name):
+    global list
+    try :
+        f = open(name, "r")
+    except :
+        exit(84)
+    tmp = f.read()
+    tmp = tmp.split("\n")
+    for elem in tmp :
+        if (" is friends with " not in elem) :
+            exit(84)
+        elem = elem.split(" is friends with ")
+        for name in elem :
+            if name not in list :
+                list.append(name)
+    list.sort()
+    get_array(tmp)
+
+def get_array(file):
+    global list
+    global array
+    array = [[0 for x in range(len(list))] for y in range(len(list))] 
+
+    for elem in file :
+        elem = elem.split(" is friends with ")
+        array[list.index(elem[0])][list.index(elem[1])] = 1
+        array[list.index(elem[1])][list.index(elem[0])] = 1
+    get_path()
+
+def get_path() :
+    global list
+    global path
+    global array
+
+    g = Graph(len(list))
+    g.graph = array
+    for loop in range(len(list)):
+        g.dijkstra(loop)
+class Graph():
+ 
+    def __init__(self, vertices):
+        self.V = vertices
+        self.graph = [[0 for column in range(vertices)]
+                      for row in range(vertices)]
+ 
+    def add_solution(self, dist):
+        global path
+        path.append(dist)
+
+    def min_dist(self, dist, sptSet):
+        min = maxsize
+        for v in range(self.V):
+            if dist[v] < min and sptSet[v] == False:
+                min = dist[v]
+                min_index = v
+ 
+        return min_index
+ 
+    def dijkstra(self, src):
+ 
+        dist = [maxsize] * self.V
+        dist[src] = 0
+        sptSet = [False] * self.V
+ 
+        for cout in range(self.V):
+ 
+            u = self.min_dist(dist, sptSet)
+ 
+            sptSet[u] = True
+ 
+            for v in range(self.V):
+                if self.graph[u][v] > 0 and sptSet[v] == False and dist[v] > dist[u] + self.graph[u][v]:
+                    dist[v] = dist[u] + self.graph[u][v]
+ 
+        self.add_solution(dist)
+
+def set_max(max):
+    global list
+    global path
+    global array
+
+    for line in range(len(list)):
+        for col in range(len(list)) :
+            if path[line][col] > max :
+                path[line][col] = 0
+
+def find_path(name_1, name_2):
+    global list
+    global path
+
+    if name_1 not in list or name_2 not in list:
+        print("Degree of separation between" ,name_1, "and" ,name_2,": -1")
+        return()
+    result = path[list.index(name_1)][list.index(name_2)]
+    if (name_1 == name_2):
+        print("Degree of separation between" ,name_1, "and" ,name_1,": 0")
+    elif(result == 0) :
+        print("Degree of separation between" ,name_1, "and" ,name_2,": -1")
+    else :
+        print("Degree of separation between" ,name_1, "and" ,name_2,":", result)
+
+def print_all():
+    global list
+    global path
+    global array
+
+    print_list(list)
+    print()
+    print_array(array)
+    print()
+    print_array(path)
+
+def print_array(array):
+    for line in array:
+        for nb in line :
+            print(nb, end=' ')
+        print('')
+
+def print_list(list):
+    for name in list:
+        print(name)
+
+path = []
+list = []
+array = []
+main()

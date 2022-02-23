@@ -1,0 +1,10 @@
+<map id="Centipede::checkInputs" name="Centipede::checkInputs">
+<area shape="rect" id="node1" title="reset dir of centipede when touched" alt="" coords="5,132,180,159"/>
+<area shape="rect" id="node2" href="$d6/de5/classCentipede.html#a2013781655c94ca33353b7735b2fab18" title=" " alt="" coords="479,145,641,172"/>
+<area shape="rect" id="node3" href="$d6/de5/classCentipede.html#aba91b6e088c111cccc6648d3768dacea" title="change Direction of centipede" alt="" coords="248,31,411,57"/>
+<area shape="rect" id="node6" href="$d6/de5/classCentipede.html#ae3cbefb60e7ee097d8a1fa6d2b05773d" title="checkCollision bullet / centipede" alt="" coords="234,132,425,159"/>
+<area shape="rect" id="node7" href="$d6/de5/classCentipede.html#a23c8dbba7f6e57e24efcecd78e8d2f8b" title="create Centipede" alt="" coords="228,183,431,209"/>
+<area shape="rect" id="node8" href="$d6/de5/classCentipede.html#a4642328f9c57b2d61ecaa0c682e19c1a" title="action if wall hited" alt="" coords="259,233,400,260"/>
+<area shape="rect" id="node4" href="$d6/de5/classCentipede.html#a05010baae72716a1689391ffbccd0fd9" title=" " alt="" coords="485,56,635,83"/>
+<area shape="rect" id="node5" href="$d6/de5/classCentipede.html#a02a5e94636445a7e760247fdf69d35b1" title=" " alt="" coords="486,5,634,32"/>
+</map>

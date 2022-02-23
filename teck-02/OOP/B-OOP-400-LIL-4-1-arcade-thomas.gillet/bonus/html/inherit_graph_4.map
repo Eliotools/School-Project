@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$da/d45/classIGraphic.html" title="Interface for graph class." alt="" coords="5,56,81,83"/>
+<area shape="rect" id="node2" href="$d9/d3b/classMyNcurses.html" title="fucntion for draw game in ncurses use IGraphic interface" alt="" coords="129,5,224,32"/>
+<area shape="rect" id="node3" href="$d3/d02/classMySDL2.html" title="SDL2 function for draw game and handle input." alt="" coords="139,56,214,83"/>
+<area shape="rect" id="node4" href="$d9/dce/classMySfml.html" title="SFML function for draw game use IGraphic interface." alt="" coords="141,107,213,133"/>
+</map>

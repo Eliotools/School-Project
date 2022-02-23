@@ -1,0 +1,5 @@
+<map id="IGame" name="IGame">
+<area shape="rect" id="node1" title="Interface for game." alt="" coords="67,5,133,32"/>
+<area shape="rect" id="node2" href="$d6/de5/classCentipede.html" title="Centipede class for game Centipede use IGame for Interface." alt="" coords="5,80,93,107"/>
+<area shape="rect" id="node3" href="$d3/de9/classNibbler.html" title="Game use IGame as Interface." alt="" coords="117,80,187,107"/>
+</map>

@@ -1,0 +1,323 @@
+\hypertarget{classDLLoader}{}\doxysection{D\+L\+Loader Class Reference}
+\label{classDLLoader}\index{DLLoader@{DLLoader}}
+
+
+Load .so and create Instance of Interface.  
+
+
+
+
+{\ttfamily \#include $<$D\+L\+Loader.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDLLoader_a8ce5da9e3963146e6aeb15dcf1afdda9}{D\+L\+Loader}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDLLoader_a564de3277545e9e82201847b3a1c8f16}{$\sim$\+D\+L\+Loader}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor of \mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIGame}{I\+Game}} $\ast$ \mbox{\hyperlink{classDLLoader_ad2e79eb47057cdaa617a1d234c434b23}{get\+Instance\+Of\+Game}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em use dlopen() and dlsym() for create a new Instance of \mbox{\hyperlink{classIGame}{I\+Game}}, put new Instance in vector \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIGraphic}{I\+Graphic}} $\ast$ \mbox{\hyperlink{classDLLoader_af51edbc6d48f3eeda95b796c23335c52}{get\+Instance\+Of\+Graph}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em use dlopen() and dlsym() for create a new Instance of I\+Graph, put new Instance in vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDLLoader_a0b5109025c42d024bfc46737088ce64b}{close\+All\+Handles}} ()
+\begin{DoxyCompactList}\small\item\em close all handles create by dlopen \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classDLLoader_a896200f26c32f6802de0ff797a967d70}{get\+Graph\+Instance\+Name}} (int nb)
+\begin{DoxyCompactList}\small\item\em return name of nb element of \+\_\+graphics\+Name \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classDLLoader_a337b4664d9da29cd0257ef84fa048d89}{get\+Game\+Instance\+Name}} (int nb)
+\begin{DoxyCompactList}\small\item\em return name of nb element of \+\_\+games\+Name \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIGraphic}{I\+Graphic}} $\ast$ \mbox{\hyperlink{classDLLoader_a6f40999cf20b83a6c6cca78277be1bd2}{get\+Graph\+Instance}} (int nb)
+\begin{DoxyCompactList}\small\item\em return \mbox{\hyperlink{classIGame}{I\+Game}} instance of nb element of \+\_\+graphics \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIGame}{I\+Game}} $\ast$ \mbox{\hyperlink{classDLLoader_a44c5e819df3358ea5031a5507b28dc43}{get\+Game\+Instance}} (int nb)
+\begin{DoxyCompactList}\small\item\em return \mbox{\hyperlink{classIGame}{I\+Game}} instance of nb element of \+\_\+games \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDLLoader_a96b9d84be1cb924a385c5db92bc49b7d}{get\+Games\+Nb}} ()
+\begin{DoxyCompactList}\small\item\em return \+\_\+games\+Nb \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDLLoader_ade6aeb671baaa93d619ec5444e32b1f0}{get\+Graphics\+Nb}} ()
+\begin{DoxyCompactList}\small\item\em return \+\_\+graphics\+Nb \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDLLoader_a3b13653fd153965640dc1790d1780bd1}{inside\+Of\+Games}} ()
+\begin{DoxyCompactList}\small\item\em print all name of games \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classIGraphic}{I\+Graphic}} $\ast$ $>$ \mbox{\hyperlink{classDLLoader_a4cff55c430cd62d2d2587cfdfb88e90a}{\+\_\+graphics}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classDLLoader_a3bc41be1664ff80981cffa1833e65721}{\+\_\+graphics\+Name}}
+\item 
+int \mbox{\hyperlink{classDLLoader_a19e23093c685fd03be82ffa15e617264}{\+\_\+graphics\+Nb}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classIGame}{I\+Game}} $\ast$ $>$ \mbox{\hyperlink{classDLLoader_a98545c54e12528c06efb7787369169fe}{\+\_\+games}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classDLLoader_a912f0250bd219ac5a118b89211bbae12}{\+\_\+games\+Name}}
+\item 
+int \mbox{\hyperlink{classDLLoader_a23d04030abe7e22e65b9f3ee8b1a9b51}{\+\_\+games\+Nb}}
+\item 
+std\+::vector$<$ void $\ast$ $>$ \mbox{\hyperlink{classDLLoader_a89db736340718a473e930130b8766f83}{\+\_\+handles}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Load .so and create Instance of Interface. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDLLoader_a8ce5da9e3963146e6aeb15dcf1afdda9}\label{classDLLoader_a8ce5da9e3963146e6aeb15dcf1afdda9}} 
+\index{DLLoader@{DLLoader}!DLLoader@{DLLoader}}
+\index{DLLoader@{DLLoader}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{DLLoader()}{DLLoader()}}
+{\footnotesize\ttfamily D\+L\+Loader\+::\+D\+L\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}. 
+
+\mbox{\Hypertarget{classDLLoader_a564de3277545e9e82201847b3a1c8f16}\label{classDLLoader_a564de3277545e9e82201847b3a1c8f16}} 
+\index{DLLoader@{DLLoader}!````~DLLoader@{$\sim$DLLoader}}
+\index{````~DLLoader@{$\sim$DLLoader}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{$\sim$DLLoader()}{~DLLoader()}}
+{\footnotesize\ttfamily D\+L\+Loader\+::$\sim$\+D\+L\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor of \mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDLLoader_a0b5109025c42d024bfc46737088ce64b}\label{classDLLoader_a0b5109025c42d024bfc46737088ce64b}} 
+\index{DLLoader@{DLLoader}!closeAllHandles@{closeAllHandles}}
+\index{closeAllHandles@{closeAllHandles}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{closeAllHandles()}{closeAllHandles()}}
+{\footnotesize\ttfamily void D\+L\+Loader\+::close\+All\+Handles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+close all handles create by dlopen 
+
+\mbox{\Hypertarget{classDLLoader_a44c5e819df3358ea5031a5507b28dc43}\label{classDLLoader_a44c5e819df3358ea5031a5507b28dc43}} 
+\index{DLLoader@{DLLoader}!getGameInstance@{getGameInstance}}
+\index{getGameInstance@{getGameInstance}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{getGameInstance()}{getGameInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIGame}{I\+Game}} $\ast$ D\+L\+Loader\+::get\+Game\+Instance (\begin{DoxyParamCaption}\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+return \mbox{\hyperlink{classIGame}{I\+Game}} instance of nb element of \+\_\+games 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nb} & -\/$>$ nth element we wanted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+\_\+games\mbox{[}nb\mbox{]} -\/$>$ Instance \mbox{\hyperlink{classIGame}{I\+Game}} of vector \+\_\+games 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDLLoader_a337b4664d9da29cd0257ef84fa048d89}\label{classDLLoader_a337b4664d9da29cd0257ef84fa048d89}} 
+\index{DLLoader@{DLLoader}!getGameInstanceName@{getGameInstanceName}}
+\index{getGameInstanceName@{getGameInstanceName}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{getGameInstanceName()}{getGameInstanceName()}}
+{\footnotesize\ttfamily std\+::string D\+L\+Loader\+::get\+Game\+Instance\+Name (\begin{DoxyParamCaption}\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+return name of nb element of \+\_\+games\+Name 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nb} & -\/$>$ nth element we wanted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+\_\+games\+Name\mbox{[}nb\mbox{]} -\/$>$ nb element of vector of name 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d33/classDLLoader_a337b4664d9da29cd0257ef84fa048d89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDLLoader_a96b9d84be1cb924a385c5db92bc49b7d}\label{classDLLoader_a96b9d84be1cb924a385c5db92bc49b7d}} 
+\index{DLLoader@{DLLoader}!getGamesNb@{getGamesNb}}
+\index{getGamesNb@{getGamesNb}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{getGamesNb()}{getGamesNb()}}
+{\footnotesize\ttfamily int D\+L\+Loader\+::get\+Games\+Nb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+return \+\_\+games\+Nb 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+games\+Nb -\/$>$ number of game load 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d33/classDLLoader_a96b9d84be1cb924a385c5db92bc49b7d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDLLoader_ade6aeb671baaa93d619ec5444e32b1f0}\label{classDLLoader_ade6aeb671baaa93d619ec5444e32b1f0}} 
+\index{DLLoader@{DLLoader}!getGraphicsNb@{getGraphicsNb}}
+\index{getGraphicsNb@{getGraphicsNb}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{getGraphicsNb()}{getGraphicsNb()}}
+{\footnotesize\ttfamily int D\+L\+Loader\+::get\+Graphics\+Nb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+return \+\_\+graphics\+Nb 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+graphics\+Nb -\/$>$ number of graphic load 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDLLoader_a6f40999cf20b83a6c6cca78277be1bd2}\label{classDLLoader_a6f40999cf20b83a6c6cca78277be1bd2}} 
+\index{DLLoader@{DLLoader}!getGraphInstance@{getGraphInstance}}
+\index{getGraphInstance@{getGraphInstance}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{getGraphInstance()}{getGraphInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIGraphic}{I\+Graphic}} $\ast$ D\+L\+Loader\+::get\+Graph\+Instance (\begin{DoxyParamCaption}\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+return \mbox{\hyperlink{classIGame}{I\+Game}} instance of nb element of \+\_\+graphics 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nb} & -\/$>$ nth element we wanted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+\_\+graphics\mbox{[}nb\mbox{]} -\/$>$ Instance \mbox{\hyperlink{classIGame}{I\+Game}} of vector \+\_\+graphics 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDLLoader_a896200f26c32f6802de0ff797a967d70}\label{classDLLoader_a896200f26c32f6802de0ff797a967d70}} 
+\index{DLLoader@{DLLoader}!getGraphInstanceName@{getGraphInstanceName}}
+\index{getGraphInstanceName@{getGraphInstanceName}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{getGraphInstanceName()}{getGraphInstanceName()}}
+{\footnotesize\ttfamily std\+::string D\+L\+Loader\+::get\+Graph\+Instance\+Name (\begin{DoxyParamCaption}\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+return name of nb element of \+\_\+graphics\+Name 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+graphics\+Name\mbox{[}nb\mbox{]} -\/$>$ nb element of vector of name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDLLoader_ad2e79eb47057cdaa617a1d234c434b23}\label{classDLLoader_ad2e79eb47057cdaa617a1d234c434b23}} 
+\index{DLLoader@{DLLoader}!getInstanceOfGame@{getInstanceOfGame}}
+\index{getInstanceOfGame@{getInstanceOfGame}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{getInstanceOfGame()}{getInstanceOfGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIGame}{I\+Game}} $\ast$ D\+L\+Loader\+::get\+Instance\+Of\+Game (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+use dlopen() and dlsym() for create a new Instance of \mbox{\hyperlink{classIGame}{I\+Game}}, put new Instance in vector 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & -\/$>$ path of wanted lib \\
+\hline
+\mbox{\texttt{ in}}  & {\em gname} & -\/$>$ name for represents new Instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return of entry -\/$>$ link to function Entry\+Point of wanted class 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d33/classDLLoader_ad2e79eb47057cdaa617a1d234c434b23_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDLLoader_af51edbc6d48f3eeda95b796c23335c52}\label{classDLLoader_af51edbc6d48f3eeda95b796c23335c52}} 
+\index{DLLoader@{DLLoader}!getInstanceOfGraph@{getInstanceOfGraph}}
+\index{getInstanceOfGraph@{getInstanceOfGraph}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{getInstanceOfGraph()}{getInstanceOfGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIGraphic}{I\+Graphic}} $\ast$ D\+L\+Loader\+::get\+Instance\+Of\+Graph (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+use dlopen() and dlsym() for create a new Instance of I\+Graph, put new Instance in vector 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & -\/$>$ path of wanted lib \\
+\hline
+\mbox{\texttt{ in}}  & {\em gname} & -\/$>$ name for represents new Instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return of entry -\/$>$ link to function Entry\+Point of wanted class 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d33/classDLLoader_af51edbc6d48f3eeda95b796c23335c52_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classDLLoader_a3b13653fd153965640dc1790d1780bd1}\label{classDLLoader_a3b13653fd153965640dc1790d1780bd1}} 
+\index{DLLoader@{DLLoader}!insideOfGames@{insideOfGames}}
+\index{insideOfGames@{insideOfGames}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{insideOfGames()}{insideOfGames()}}
+{\footnotesize\ttfamily void D\+L\+Loader\+::inside\+Of\+Games (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+print all name of games 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d33/classDLLoader_a3b13653fd153965640dc1790d1780bd1_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classDLLoader_a98545c54e12528c06efb7787369169fe}\label{classDLLoader_a98545c54e12528c06efb7787369169fe}} 
+\index{DLLoader@{DLLoader}!\_games@{\_games}}
+\index{\_games@{\_games}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{\_games}{\_games}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classIGame}{I\+Game}} $\ast$$>$ D\+L\+Loader\+::\+\_\+games\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDLLoader_a912f0250bd219ac5a118b89211bbae12}\label{classDLLoader_a912f0250bd219ac5a118b89211bbae12}} 
+\index{DLLoader@{DLLoader}!\_gamesName@{\_gamesName}}
+\index{\_gamesName@{\_gamesName}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{\_gamesName}{\_gamesName}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ D\+L\+Loader\+::\+\_\+games\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDLLoader_a23d04030abe7e22e65b9f3ee8b1a9b51}\label{classDLLoader_a23d04030abe7e22e65b9f3ee8b1a9b51}} 
+\index{DLLoader@{DLLoader}!\_gamesNb@{\_gamesNb}}
+\index{\_gamesNb@{\_gamesNb}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{\_gamesNb}{\_gamesNb}}
+{\footnotesize\ttfamily int D\+L\+Loader\+::\+\_\+games\+Nb\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDLLoader_a4cff55c430cd62d2d2587cfdfb88e90a}\label{classDLLoader_a4cff55c430cd62d2d2587cfdfb88e90a}} 
+\index{DLLoader@{DLLoader}!\_graphics@{\_graphics}}
+\index{\_graphics@{\_graphics}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{\_graphics}{\_graphics}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classIGraphic}{I\+Graphic}} $\ast$$>$ D\+L\+Loader\+::\+\_\+graphics\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDLLoader_a3bc41be1664ff80981cffa1833e65721}\label{classDLLoader_a3bc41be1664ff80981cffa1833e65721}} 
+\index{DLLoader@{DLLoader}!\_graphicsName@{\_graphicsName}}
+\index{\_graphicsName@{\_graphicsName}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{\_graphicsName}{\_graphicsName}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ D\+L\+Loader\+::\+\_\+graphics\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDLLoader_a19e23093c685fd03be82ffa15e617264}\label{classDLLoader_a19e23093c685fd03be82ffa15e617264}} 
+\index{DLLoader@{DLLoader}!\_graphicsNb@{\_graphicsNb}}
+\index{\_graphicsNb@{\_graphicsNb}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{\_graphicsNb}{\_graphicsNb}}
+{\footnotesize\ttfamily int D\+L\+Loader\+::\+\_\+graphics\+Nb\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDLLoader_a89db736340718a473e930130b8766f83}\label{classDLLoader_a89db736340718a473e930130b8766f83}} 
+\index{DLLoader@{DLLoader}!\_handles@{\_handles}}
+\index{\_handles@{\_handles}!DLLoader@{DLLoader}}
+\doxysubsubsection{\texorpdfstring{\_handles}{\_handles}}
+{\footnotesize\ttfamily std\+::vector$<$void $\ast$$>$ D\+L\+Loader\+::\+\_\+handles\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core\+\_\+f/\mbox{\hyperlink{DLLoader_8hpp}{D\+L\+Loader.\+hpp}}\item 
+core\+\_\+f/\mbox{\hyperlink{DLLoader_8cpp}{D\+L\+Loader.\+cpp}}\end{DoxyCompactItemize}

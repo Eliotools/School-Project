@@ -1,0 +1,7 @@
+<map id="MySDL2::drawobj" name="MySDL2::drawobj">
+<area shape="rect" id="node1" title="call all function for draw game" alt="" coords="5,81,140,108"/>
+<area shape="rect" id="node2" href="$d3/d02/classMySDL2.html#a9644630f71d5c986df8c52bd40b1ccb4" title="draw apple" alt="" coords="189,5,341,32"/>
+<area shape="rect" id="node3" href="$d3/d02/classMySDL2.html#abf5595a27a433b5f4311535ef588e75d" title="draw bullet" alt="" coords="189,56,342,83"/>
+<area shape="rect" id="node4" href="$d3/d02/classMySDL2.html#a7d212c20c07223bc5b987a9cf4acf224" title="draw snake at given coord" alt="" coords="188,107,343,133"/>
+<area shape="rect" id="node5" href="$d3/d02/classMySDL2.html#a6c376be343d54467cbf14217aa7db85f" title="set _input to value set by key press" alt="" coords="197,157,333,184"/>
+</map>

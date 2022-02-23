@@ -1,0 +1,5 @@
+<map id="Centipede::getXpos" name="Centipede::getXpos">
+<area shape="rect" id="node1" title=" " alt="" coords="439,5,588,32"/>
+<area shape="rect" id="node2" href="$d6/de5/classCentipede.html#aba91b6e088c111cccc6648d3768dacea" title="change Direction of centipede" alt="" coords="228,5,391,32"/>
+<area shape="rect" id="node3" href="$d6/de5/classCentipede.html#a343fd3e3496260b2d916af47e59bf359" title="reset dir of centipede when touched" alt="" coords="5,5,180,32"/>
+</map>

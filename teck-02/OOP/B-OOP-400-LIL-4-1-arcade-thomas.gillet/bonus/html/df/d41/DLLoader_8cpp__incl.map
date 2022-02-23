@@ -1,0 +1,11 @@
+<map id="core_f/DLLoader.cpp" name="core_f/DLLoader.cpp">
+<area shape="rect" id="node1" title="DLLoader function for create Instance of IGame or IGraphic and manage it." alt="" coords="178,5,331,32"/>
+<area shape="rect" id="node2" href="$d9/d38/DLLoader_8hpp.html" title=" " alt="" coords="143,80,254,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="279,80,345,107"/>
+<area shape="rect" id="node3" href="$df/dd4/igame_8hpp.html" title=" " alt="" coords="5,229,149,256"/>
+<area shape="rect" id="node5" href="$dc/dee/igraphic_8hpp.html" title=" " alt="" coords="115,155,282,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="307,155,357,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="101,304,163,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="224,229,304,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="328,229,371,256"/>
+</map>

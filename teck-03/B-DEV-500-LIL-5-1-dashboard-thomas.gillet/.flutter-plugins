@@ -1,0 +1,26 @@
+# This is a generated file; do not edit or check into version control.
+cloud_firestore=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-3.1.0/
+cloud_firestore_web=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-2.5.0/
+firebase_auth=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-3.2.0/
+firebase_auth_web=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-3.2.0/
+firebase_core=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.10.0/
+firebase_core_web=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-1.2.0/
+firebase_storage=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-10.1.0/
+firebase_storage_web=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_web-3.1.0/
+google_sign_in=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-5.2.1/
+google_sign_in_web=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_web-0.10.0+3/
+url_launcher=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.0.16/
+url_launcher_android=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_android-6.0.13/
+url_launcher_ios=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_ios-6.0.13/
+url_launcher_linux=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-2.0.2/
+url_launcher_macos=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-2.0.2/
+url_launcher_web=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-2.0.4/
+url_launcher_windows=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-2.0.2/
+video_player=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/video_player-2.2.7/
+video_player_web=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/video_player_web-2.0.4/
+wakelock=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wakelock-0.5.6/
+wakelock_macos=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wakelock_macos-0.4.0/
+wakelock_web=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/wakelock_web-0.4.0/
+webview_flutter=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter-2.3.1/
+webview_flutter_android=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter_android-2.4.0/
+webview_flutter_wkwebview=/home/emartin/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter_wkwebview-2.4.0/

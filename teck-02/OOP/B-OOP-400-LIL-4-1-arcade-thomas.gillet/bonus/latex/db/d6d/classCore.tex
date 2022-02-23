@@ -1,0 +1,909 @@
+\hypertarget{classCore}{}\doxysection{Core Class Reference}
+\label{classCore}\index{Core@{Core}}
+
+
+\mbox{\hyperlink{classCore}{Core}} create bridge between game and graphic also do main menu.  
+
+
+
+
+{\ttfamily \#include $<$Core.\+hpp$>$}
+
+
+
+Collaboration diagram for Core\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{dc/dde/classCore__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCore_a14e63188e0aa7c4a6f72d5501384d1f9}{Core}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classCore}{Core}} constructor -\/$>$ Get Lib of lib/ folder. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCore_a776f8c46504b14183883c6273f93eaed}{$\sim$\+Core}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classCore}{Core}} Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a439e28de1c12d3c94cbe4aedd634cc7f}{p\+Actual}} ()
+\item 
+void \mbox{\hyperlink{classCore_a4d49c77cbc94586cf448ef0bcf2df15b}{p\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Print of avaible command in menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a910f8117f606c89728858aad64a7fde5}{p\+Not\+Handle}} (std\+::string error)
+\begin{DoxyCompactList}\small\item\em Print for Not\+Handle menu print. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCore_ae4d1d5378dfe726eabaab2e11b72d8c1}{get\+Play}} ()
+\begin{DoxyCompactList}\small\item\em Return \+\_\+play. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCore_a8b9cd9289be7b792d15f92e4d643a538}{start\+Or\+Exit}} ()
+\begin{DoxyCompactList}\small\item\em Handle start and exit command of menu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCore_ad87c276a31eca3ce6fa909903d1d41ce}{lib}} (\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}} loader)
+\begin{DoxyCompactList}\small\item\em Handle change of lib in menu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCore_a6e19c9a2e8c64db8f1e48cf7966014c7}{game\+Print}} (\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}} loader)
+\begin{DoxyCompactList}\small\item\em Handle change of game in menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a4c7cc26c7247a4e09cad8b3ed0c613f4}{get\+Input}} (int input, \mbox{\hyperlink{classDLLoader}{D\+L\+Loader}} loader)
+\begin{DoxyCompactList}\small\item\em Test input for changing lib of game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a562e9c9bdc49802df6926cb02a0ffa5e}{print\+Lib}} (std\+::vector$<$ std\+::string $>$ libs)
+\begin{DoxyCompactList}\small\item\em Print avaible graphics lib in menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a6a6a8899657bd5c6ff947f7a223b0bd0}{set\+Game}} (\mbox{\hyperlink{classIGame}{I\+Game}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em set \+\_\+game with a new \mbox{\hyperlink{classIGame}{I\+Game}} instance \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a94ef7948b341323b4a9b3008de6e2285}{set\+Graphic}} (\mbox{\hyperlink{classIGraphic}{I\+Graphic}} $\ast$graphic)
+\begin{DoxyCompactList}\small\item\em set \+\_\+graphic with a new Igraph instance \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_abe273e485c745925c2ec194ef57321b7}{set\+Next\+Game}} (\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}} loader)
+\begin{DoxyCompactList}\small\item\em set \+\_\+game to next \+\_\+games\+Name (vector containing name of all games lib we use). If actual \+\_\+game is last of vector, first one is set \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a62f33ee51fdd8d1a0b61857cc3039ef5}{set\+Next\+Graphic}} (\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}} loader)
+\begin{DoxyCompactList}\small\item\em set \+\_\+graphic to next \+\_\+graph\+Name (vector containing name of all graphics lib we use). If actual \+\_\+graphic is last of vector, first one is set \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a5adad85425061d43c1059c2d101547f0}{set\+Prev\+Game}} (\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}} loader)
+\begin{DoxyCompactList}\small\item\em set \+\_\+game to previous \+\_\+games\+Name (vector containing name of all games lib we use). If actual \+\_\+game is first of vector, last one is set \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a41d05febd199e8faacca04bb07162ba4}{set\+Prev\+Graphic}} (\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}} loader)
+\begin{DoxyCompactList}\small\item\em set \+\_\+graphic to previous \+\_\+graph\+Name (vector containing name of all graphics lib we use). If actual \+\_\+graphic is first of vector, last one is set \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a231e91160cdf9fa621ea8b29858585e5}{set\+Pos\+Graph}} (int i)
+\begin{DoxyCompactList}\small\item\em set \+\_\+pos\+Graph to i value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a268d7e8d056f10b2f6140536ad9ac1c2}{set\+Pos\+Game}} (int i)
+\begin{DoxyCompactList}\small\item\em set \+\_\+pos\+Game to i value \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCore_aa6fb5440eba1e907c5f9210ae4c0b004}{get\+Graph\+Name}} (int nb)
+\begin{DoxyCompactList}\small\item\em return name of graphic vector of given nb element \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCore_a1eff27c6afecd8f63e03be3eb7c1be80}{get\+Game\+Name}} (int nb)
+\begin{DoxyCompactList}\small\item\em return name of game vector of given nb element \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIGame}{I\+Game}} $\ast$ \mbox{\hyperlink{classCore_a30f2f75a0a677909f39fd66e123cbd67}{get\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Return \+\_\+game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIGraphic}{I\+Graphic}} $\ast$ \mbox{\hyperlink{classCore_a569683e5b5f0f2e99050c71491d3ee89}{get\+Graphic}} ()
+\begin{DoxyCompactList}\small\item\em return \+\_\+graphic \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCore_ad4063dabb457e7a8b80515065455132f}{game\+Loop}} (\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}} loader)
+\begin{DoxyCompactList}\small\item\em all function for restart game and do game loop \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCore_af95eb8a8a74716b38c88f80e778c9d7d}{in\+Games\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em check if given name is in vector \+\_\+games\+Name \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCore_a503146fe83d43df6bc59dfbd88d84fb0}{in\+Graphics\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em check if given name is in vector \+\_\+graph\+Name \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a9f185bd3679fe28a95dc11c5109a3e1e}{set\+First\+Game}} (\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}} loader)
+\begin{DoxyCompactList}\small\item\em set \+\_\+game to first game found in /lib dir \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a2a5f24b60d46b3ea72b4a64f332895df}{set\+First\+Graph}} (\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}} loader, std\+::string name)
+\begin{DoxyCompactList}\small\item\em set \+\_\+game to first graph found in /lib dir \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCore_a27d8c3cbdccb0de5bd4548e19c59d8de}{menu}} (\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}} loader)
+\begin{DoxyCompactList}\small\item\em menu loop \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCore_a181497c5ed32d74556c2c5185347f35a}{add\+Player\+Name}} (void)
+\begin{DoxyCompactList}\small\item\em get player name \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classCore_a867e8e50a4fce347299d5679029e83f5}{\+\_\+actual\+Game}}
+\item 
+std\+::string \mbox{\hyperlink{classCore_a0e1ddc318797d9474b58d4e2e7a3090e}{\+\_\+actual\+Lib}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIGame}{I\+Game}} $\ast$ \mbox{\hyperlink{classCore_ae4ebc2e4af5fce922e113a17e16a39c5}{\+\_\+game}}
+\item 
+\mbox{\hyperlink{classIGraphic}{I\+Graphic}} $\ast$ \mbox{\hyperlink{classCore_a473757a499465c6a5268543ebee67bdd}{\+\_\+graphic}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classCore_a86cfdc1250976a14b03b3ceafeb7cb49}{\+\_\+games\+Name}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classCore_ad430aa71f7b1e98e1052aba2c1e9dd71}{\+\_\+graph\+Name}}
+\item 
+bool \mbox{\hyperlink{classCore_a656fe17cba95305100c2124ae2281274}{\+\_\+play}}
+\item 
+int \mbox{\hyperlink{classCore_a5c7c2082e11d99a5792dd205dc0aa04e}{\+\_\+pos\+Game}}
+\item 
+int \mbox{\hyperlink{classCore_a00594b8aedb26147a4bbfa2e9774e890}{\+\_\+pos\+Graph}}
+\item 
+int \mbox{\hyperlink{classCore_a4157022e7a73e6b7058ad00bf1e95c1e}{\+\_\+max\+Graph}}
+\item 
+int \mbox{\hyperlink{classCore_a1625ff8f8c7c215f1ba19713a527f67f}{\+\_\+max\+Game}}
+\item 
+std\+::string \mbox{\hyperlink{classCore_afca93a78b9420f780fa5db692d8a91c7}{\+\_\+command}}
+\item 
+std\+::string \mbox{\hyperlink{classCore_ab372a2c675df97949e03892054b97589}{\+\_\+player\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCore}{Core}} create bridge between game and graphic also do main menu. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCore_a14e63188e0aa7c4a6f72d5501384d1f9}\label{classCore_a14e63188e0aa7c4a6f72d5501384d1f9}} 
+\index{Core@{Core}!Core@{Core}}
+\index{Core@{Core}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}}
+{\footnotesize\ttfamily Core\+::\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classCore}{Core}} constructor -\/$>$ Get Lib of lib/ folder. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a14e63188e0aa7c4a6f72d5501384d1f9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a776f8c46504b14183883c6273f93eaed}\label{classCore_a776f8c46504b14183883c6273f93eaed}} 
+\index{Core@{Core}!````~Core@{$\sim$Core}}
+\index{````~Core@{$\sim$Core}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{$\sim$Core()}{~Core()}}
+{\footnotesize\ttfamily Core\+::$\sim$\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classCore}{Core}} Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCore_a181497c5ed32d74556c2c5185347f35a}\label{classCore_a181497c5ed32d74556c2c5185347f35a}} 
+\index{Core@{Core}!addPlayerName@{addPlayerName}}
+\index{addPlayerName@{addPlayerName}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{addPlayerName()}{addPlayerName()}}
+{\footnotesize\ttfamily void Core\+::add\+Player\+Name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+get player name 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{db/d6d/classCore_a181497c5ed32d74556c2c5185347f35a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_ad4063dabb457e7a8b80515065455132f}\label{classCore_ad4063dabb457e7a8b80515065455132f}} 
+\index{Core@{Core}!gameLoop@{gameLoop}}
+\index{gameLoop@{gameLoop}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{gameLoop()}{gameLoop()}}
+{\footnotesize\ttfamily int Core\+::game\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+
+
+all function for restart game and do game loop 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em loader} & -\/$>$ get Input -\/$>$ change lib and game during game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if gq,e quit 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_ad4063dabb457e7a8b80515065455132f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{db/d6d/classCore_ad4063dabb457e7a8b80515065455132f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a6e19c9a2e8c64db8f1e48cf7966014c7}\label{classCore_a6e19c9a2e8c64db8f1e48cf7966014c7}} 
+\index{Core@{Core}!gamePrint@{gamePrint}}
+\index{gamePrint@{gamePrint}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{gamePrint()}{gamePrint()}}
+{\footnotesize\ttfamily int Core\+::game\+Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+
+
+Handle change of game in menu. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em loader} & (\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}) need for get\+Instance of Graph or Game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 or 0 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a6e19c9a2e8c64db8f1e48cf7966014c7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a6e19c9a2e8c64db8f1e48cf7966014c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a30f2f75a0a677909f39fd66e123cbd67}\label{classCore_a30f2f75a0a677909f39fd66e123cbd67}} 
+\index{Core@{Core}!getGame@{getGame}}
+\index{getGame@{getGame}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getGame()}{getGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIGame}{I\+Game}} $\ast$ Core\+::get\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return \+\_\+game. 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+game -\/$>$ Igame of \mbox{\hyperlink{classCore}{Core}} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a30f2f75a0a677909f39fd66e123cbd67_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a1eff27c6afecd8f63e03be3eb7c1be80}\label{classCore_a1eff27c6afecd8f63e03be3eb7c1be80}} 
+\index{Core@{Core}!getGameName@{getGameName}}
+\index{getGameName@{getGameName}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getGameName()}{getGameName()}}
+{\footnotesize\ttfamily std\+::string Core\+::get\+Game\+Name (\begin{DoxyParamCaption}\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+return name of game vector of given nb element 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nb} & -\/$>$ element of vector we want \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+\_\+games\+Name\mbox{[}nb\mbox{]} -\/$>$ nb element of vector of games names 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCore_a569683e5b5f0f2e99050c71491d3ee89}\label{classCore_a569683e5b5f0f2e99050c71491d3ee89}} 
+\index{Core@{Core}!getGraphic@{getGraphic}}
+\index{getGraphic@{getGraphic}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getGraphic()}{getGraphic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIGraphic}{I\+Graphic}} $\ast$ Core\+::get\+Graphic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+return \+\_\+graphic 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+graphic -\/$>$ I\+Graph of \mbox{\hyperlink{classCore}{Core}} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a569683e5b5f0f2e99050c71491d3ee89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_aa6fb5440eba1e907c5f9210ae4c0b004}\label{classCore_aa6fb5440eba1e907c5f9210ae4c0b004}} 
+\index{Core@{Core}!getGraphName@{getGraphName}}
+\index{getGraphName@{getGraphName}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getGraphName()}{getGraphName()}}
+{\footnotesize\ttfamily std\+::string Core\+::get\+Graph\+Name (\begin{DoxyParamCaption}\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+return name of graphic vector of given nb element 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nb} & -\/$>$ element of vector we want \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+\_\+graph\+Name\mbox{[}nb\mbox{]} -\/$>$ nb element of vector of graph names 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCore_a4c7cc26c7247a4e09cad8b3ed0c613f4}\label{classCore_a4c7cc26c7247a4e09cad8b3ed0c613f4}} 
+\index{Core@{Core}!getInput@{getInput}}
+\index{getInput@{getInput}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily void Core\+::get\+Input (\begin{DoxyParamCaption}\item[{int}]{input,  }\item[{\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+
+
+Test input for changing lib of game. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input} & -\/$>$ value of input return by \+\_\+graphic \\
+\hline
+\mbox{\texttt{ in}}  & {\em loader} & -\/$>$ Need for get new Instance \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a4c7cc26c7247a4e09cad8b3ed0c613f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a4c7cc26c7247a4e09cad8b3ed0c613f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_ae4d1d5378dfe726eabaab2e11b72d8c1}\label{classCore_ae4d1d5378dfe726eabaab2e11b72d8c1}} 
+\index{Core@{Core}!getPlay@{getPlay}}
+\index{getPlay@{getPlay}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{getPlay()}{getPlay()}}
+{\footnotesize\ttfamily bool Core\+::get\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return \+\_\+play. 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+play 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{db/d6d/classCore_ae4d1d5378dfe726eabaab2e11b72d8c1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_af95eb8a8a74716b38c88f80e778c9d7d}\label{classCore_af95eb8a8a74716b38c88f80e778c9d7d}} 
+\index{Core@{Core}!inGamesName@{inGamesName}}
+\index{inGamesName@{inGamesName}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{inGamesName()}{inGamesName()}}
+{\footnotesize\ttfamily int Core\+::in\+Games\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+check if given name is in vector \+\_\+games\+Name 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & -\/$>$ given name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if not found position of name in vector if found 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_af95eb8a8a74716b38c88f80e778c9d7d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a503146fe83d43df6bc59dfbd88d84fb0}\label{classCore_a503146fe83d43df6bc59dfbd88d84fb0}} 
+\index{Core@{Core}!inGraphicsName@{inGraphicsName}}
+\index{inGraphicsName@{inGraphicsName}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{inGraphicsName()}{inGraphicsName()}}
+{\footnotesize\ttfamily int Core\+::in\+Graphics\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+check if given name is in vector \+\_\+graph\+Name 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & -\/$>$ given name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if not found position of name in vector if found 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a503146fe83d43df6bc59dfbd88d84fb0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_ad87c276a31eca3ce6fa909903d1d41ce}\label{classCore_ad87c276a31eca3ce6fa909903d1d41ce}} 
+\index{Core@{Core}!lib@{lib}}
+\index{lib@{lib}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{lib()}{lib()}}
+{\footnotesize\ttfamily int Core\+::lib (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+
+
+Handle change of lib in menu. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em loader} & (\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}) need for get\+Instance of Graph or Game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 or 0 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{db/d6d/classCore_ad87c276a31eca3ce6fa909903d1d41ce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{db/d6d/classCore_ad87c276a31eca3ce6fa909903d1d41ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a27d8c3cbdccb0de5bd4548e19c59d8de}\label{classCore_a27d8c3cbdccb0de5bd4548e19c59d8de}} 
+\index{Core@{Core}!menu@{menu}}
+\index{menu@{menu}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily int Core\+::menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+
+
+menu loop 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em loader} & -\/$>$ get new Instance of game or graph \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 or 1 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a27d8c3cbdccb0de5bd4548e19c59d8de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{db/d6d/classCore_a27d8c3cbdccb0de5bd4548e19c59d8de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a439e28de1c12d3c94cbe4aedd634cc7f}\label{classCore_a439e28de1c12d3c94cbe4aedd634cc7f}} 
+\index{Core@{Core}!pActual@{pActual}}
+\index{pActual@{pActual}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{pActual()}{pActual()}}
+{\footnotesize\ttfamily void Core\+::p\+Actual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCore_a4d49c77cbc94586cf448ef0bcf2df15b}\label{classCore_a4d49c77cbc94586cf448ef0bcf2df15b}} 
+\index{Core@{Core}!pCommand@{pCommand}}
+\index{pCommand@{pCommand}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{pCommand()}{pCommand()}}
+{\footnotesize\ttfamily void Core\+::p\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print of avaible command in menu. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{db/d6d/classCore_a4d49c77cbc94586cf448ef0bcf2df15b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a4d49c77cbc94586cf448ef0bcf2df15b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a910f8117f606c89728858aad64a7fde5}\label{classCore_a910f8117f606c89728858aad64a7fde5}} 
+\index{Core@{Core}!pNotHandle@{pNotHandle}}
+\index{pNotHandle@{pNotHandle}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{pNotHandle()}{pNotHandle()}}
+{\footnotesize\ttfamily void Core\+::p\+Not\+Handle (\begin{DoxyParamCaption}\item[{std\+::string}]{error }\end{DoxyParamCaption})}
+
+
+
+Print for Not\+Handle menu print. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em String} & for type of not handle type \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a910f8117f606c89728858aad64a7fde5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a562e9c9bdc49802df6926cb02a0ffa5e}\label{classCore_a562e9c9bdc49802df6926cb02a0ffa5e}} 
+\index{Core@{Core}!printLib@{printLib}}
+\index{printLib@{printLib}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{printLib()}{printLib()}}
+{\footnotesize\ttfamily void Core\+::print\+Lib (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{libs }\end{DoxyParamCaption})}
+
+
+
+Print avaible graphics lib in menu. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em vector} & of libs name \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a562e9c9bdc49802df6926cb02a0ffa5e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a9f185bd3679fe28a95dc11c5109a3e1e}\label{classCore_a9f185bd3679fe28a95dc11c5109a3e1e}} 
+\index{Core@{Core}!setFirstGame@{setFirstGame}}
+\index{setFirstGame@{setFirstGame}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setFirstGame()}{setFirstGame()}}
+{\footnotesize\ttfamily void Core\+::set\+First\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+
+
+set \+\_\+game to first game found in /lib dir 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em loader} & -\/$>$ use to get instance of game \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a9f185bd3679fe28a95dc11c5109a3e1e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{db/d6d/classCore_a9f185bd3679fe28a95dc11c5109a3e1e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a2a5f24b60d46b3ea72b4a64f332895df}\label{classCore_a2a5f24b60d46b3ea72b4a64f332895df}} 
+\index{Core@{Core}!setFirstGraph@{setFirstGraph}}
+\index{setFirstGraph@{setFirstGraph}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setFirstGraph()}{setFirstGraph()}}
+{\footnotesize\ttfamily void Core\+::set\+First\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}}]{loader,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+set \+\_\+game to first graph found in /lib dir 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em loader} & -\/$>$ use to get instance of graph \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a2a5f24b60d46b3ea72b4a64f332895df_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{db/d6d/classCore_a2a5f24b60d46b3ea72b4a64f332895df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a6a6a8899657bd5c6ff947f7a223b0bd0}\label{classCore_a6a6a8899657bd5c6ff947f7a223b0bd0}} 
+\index{Core@{Core}!setGame@{setGame}}
+\index{setGame@{setGame}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setGame()}{setGame()}}
+{\footnotesize\ttfamily void Core\+::set\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIGame}{I\+Game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+set \+\_\+game with a new \mbox{\hyperlink{classIGame}{I\+Game}} instance 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em game} & -\/$>$ new Instance of \mbox{\hyperlink{classIGame}{I\+Game}} \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a6a6a8899657bd5c6ff947f7a223b0bd0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a94ef7948b341323b4a9b3008de6e2285}\label{classCore_a94ef7948b341323b4a9b3008de6e2285}} 
+\index{Core@{Core}!setGraphic@{setGraphic}}
+\index{setGraphic@{setGraphic}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setGraphic()}{setGraphic()}}
+{\footnotesize\ttfamily void Core\+::set\+Graphic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIGraphic}{I\+Graphic}} $\ast$}]{graphic }\end{DoxyParamCaption})}
+
+
+
+set \+\_\+graphic with a new Igraph instance 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em graphic} & -\/$>$ new Instance of Igraph \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCore_abe273e485c745925c2ec194ef57321b7}\label{classCore_abe273e485c745925c2ec194ef57321b7}} 
+\index{Core@{Core}!setNextGame@{setNextGame}}
+\index{setNextGame@{setNextGame}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setNextGame()}{setNextGame()}}
+{\footnotesize\ttfamily void Core\+::set\+Next\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+
+
+set \+\_\+game to next \+\_\+games\+Name (vector containing name of all games lib we use). If actual \+\_\+game is last of vector, first one is set 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em loader} & -\/$>$ need to create new Instance of lib \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_abe273e485c745925c2ec194ef57321b7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_abe273e485c745925c2ec194ef57321b7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a62f33ee51fdd8d1a0b61857cc3039ef5}\label{classCore_a62f33ee51fdd8d1a0b61857cc3039ef5}} 
+\index{Core@{Core}!setNextGraphic@{setNextGraphic}}
+\index{setNextGraphic@{setNextGraphic}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setNextGraphic()}{setNextGraphic()}}
+{\footnotesize\ttfamily void Core\+::set\+Next\+Graphic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+
+
+set \+\_\+graphic to next \+\_\+graph\+Name (vector containing name of all graphics lib we use). If actual \+\_\+graphic is last of vector, first one is set 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em loader} & -\/$>$ need to create new Instance of lib \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a62f33ee51fdd8d1a0b61857cc3039ef5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a62f33ee51fdd8d1a0b61857cc3039ef5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a268d7e8d056f10b2f6140536ad9ac1c2}\label{classCore_a268d7e8d056f10b2f6140536ad9ac1c2}} 
+\index{Core@{Core}!setPosGame@{setPosGame}}
+\index{setPosGame@{setPosGame}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setPosGame()}{setPosGame()}}
+{\footnotesize\ttfamily void Core\+::set\+Pos\+Game (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+set \+\_\+pos\+Game to i value 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i} & -\/$>$ new value we want to set \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a268d7e8d056f10b2f6140536ad9ac1c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a231e91160cdf9fa621ea8b29858585e5}\label{classCore_a231e91160cdf9fa621ea8b29858585e5}} 
+\index{Core@{Core}!setPosGraph@{setPosGraph}}
+\index{setPosGraph@{setPosGraph}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setPosGraph()}{setPosGraph()}}
+{\footnotesize\ttfamily void Core\+::set\+Pos\+Graph (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+set \+\_\+pos\+Graph to i value 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i} & -\/$>$ new value we want to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCore_a5adad85425061d43c1059c2d101547f0}\label{classCore_a5adad85425061d43c1059c2d101547f0}} 
+\index{Core@{Core}!setPrevGame@{setPrevGame}}
+\index{setPrevGame@{setPrevGame}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setPrevGame()}{setPrevGame()}}
+{\footnotesize\ttfamily void Core\+::set\+Prev\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+
+
+set \+\_\+game to previous \+\_\+games\+Name (vector containing name of all games lib we use). If actual \+\_\+game is first of vector, last one is set 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em loader} & -\/$>$ need to create new Instance of lib \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a5adad85425061d43c1059c2d101547f0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a5adad85425061d43c1059c2d101547f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a41d05febd199e8faacca04bb07162ba4}\label{classCore_a41d05febd199e8faacca04bb07162ba4}} 
+\index{Core@{Core}!setPrevGraphic@{setPrevGraphic}}
+\index{setPrevGraphic@{setPrevGraphic}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{setPrevGraphic()}{setPrevGraphic()}}
+{\footnotesize\ttfamily void Core\+::set\+Prev\+Graphic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+
+
+set \+\_\+graphic to previous \+\_\+graph\+Name (vector containing name of all graphics lib we use). If actual \+\_\+graphic is first of vector, last one is set 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em loader} & -\/$>$ need to create new Instance of lib \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a41d05febd199e8faacca04bb07162ba4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a41d05febd199e8faacca04bb07162ba4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCore_a8b9cd9289be7b792d15f92e4d643a538}\label{classCore_a8b9cd9289be7b792d15f92e4d643a538}} 
+\index{Core@{Core}!startOrExit@{startOrExit}}
+\index{startOrExit@{startOrExit}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{startOrExit()}{startOrExit()}}
+{\footnotesize\ttfamily int Core\+::start\+Or\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle start and exit command of menu. 
+
+\begin{DoxyReturn}{Returns}
+-\/1 if exit 2 if reload and 0 for other case 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a8b9cd9289be7b792d15f92e4d643a538_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{db/d6d/classCore_a8b9cd9289be7b792d15f92e4d643a538_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCore_a867e8e50a4fce347299d5679029e83f5}\label{classCore_a867e8e50a4fce347299d5679029e83f5}} 
+\index{Core@{Core}!\_actualGame@{\_actualGame}}
+\index{\_actualGame@{\_actualGame}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{\_actualGame}{\_actualGame}}
+{\footnotesize\ttfamily std\+::string Core\+::\+\_\+actual\+Game}
+
+\mbox{\Hypertarget{classCore_a0e1ddc318797d9474b58d4e2e7a3090e}\label{classCore_a0e1ddc318797d9474b58d4e2e7a3090e}} 
+\index{Core@{Core}!\_actualLib@{\_actualLib}}
+\index{\_actualLib@{\_actualLib}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{\_actualLib}{\_actualLib}}
+{\footnotesize\ttfamily std\+::string Core\+::\+\_\+actual\+Lib}
+
+\mbox{\Hypertarget{classCore_afca93a78b9420f780fa5db692d8a91c7}\label{classCore_afca93a78b9420f780fa5db692d8a91c7}} 
+\index{Core@{Core}!\_command@{\_command}}
+\index{\_command@{\_command}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{\_command}{\_command}}
+{\footnotesize\ttfamily std\+::string Core\+::\+\_\+command\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCore_ae4ebc2e4af5fce922e113a17e16a39c5}\label{classCore_ae4ebc2e4af5fce922e113a17e16a39c5}} 
+\index{Core@{Core}!\_game@{\_game}}
+\index{\_game@{\_game}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{\_game}{\_game}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIGame}{I\+Game}}$\ast$ Core\+::\+\_\+game\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCore_a86cfdc1250976a14b03b3ceafeb7cb49}\label{classCore_a86cfdc1250976a14b03b3ceafeb7cb49}} 
+\index{Core@{Core}!\_gamesName@{\_gamesName}}
+\index{\_gamesName@{\_gamesName}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{\_gamesName}{\_gamesName}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Core\+::\+\_\+games\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCore_a473757a499465c6a5268543ebee67bdd}\label{classCore_a473757a499465c6a5268543ebee67bdd}} 
+\index{Core@{Core}!\_graphic@{\_graphic}}
+\index{\_graphic@{\_graphic}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{\_graphic}{\_graphic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIGraphic}{I\+Graphic}}$\ast$ Core\+::\+\_\+graphic\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCore_ad430aa71f7b1e98e1052aba2c1e9dd71}\label{classCore_ad430aa71f7b1e98e1052aba2c1e9dd71}} 
+\index{Core@{Core}!\_graphName@{\_graphName}}
+\index{\_graphName@{\_graphName}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{\_graphName}{\_graphName}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Core\+::\+\_\+graph\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCore_a1625ff8f8c7c215f1ba19713a527f67f}\label{classCore_a1625ff8f8c7c215f1ba19713a527f67f}} 
+\index{Core@{Core}!\_maxGame@{\_maxGame}}
+\index{\_maxGame@{\_maxGame}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{\_maxGame}{\_maxGame}}
+{\footnotesize\ttfamily int Core\+::\+\_\+max\+Game\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCore_a4157022e7a73e6b7058ad00bf1e95c1e}\label{classCore_a4157022e7a73e6b7058ad00bf1e95c1e}} 
+\index{Core@{Core}!\_maxGraph@{\_maxGraph}}
+\index{\_maxGraph@{\_maxGraph}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{\_maxGraph}{\_maxGraph}}
+{\footnotesize\ttfamily int Core\+::\+\_\+max\+Graph\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCore_a656fe17cba95305100c2124ae2281274}\label{classCore_a656fe17cba95305100c2124ae2281274}} 
+\index{Core@{Core}!\_play@{\_play}}
+\index{\_play@{\_play}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{\_play}{\_play}}
+{\footnotesize\ttfamily bool Core\+::\+\_\+play\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCore_ab372a2c675df97949e03892054b97589}\label{classCore_ab372a2c675df97949e03892054b97589}} 
+\index{Core@{Core}!\_playerName@{\_playerName}}
+\index{\_playerName@{\_playerName}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{\_playerName}{\_playerName}}
+{\footnotesize\ttfamily std\+::string Core\+::\+\_\+player\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCore_a5c7c2082e11d99a5792dd205dc0aa04e}\label{classCore_a5c7c2082e11d99a5792dd205dc0aa04e}} 
+\index{Core@{Core}!\_posGame@{\_posGame}}
+\index{\_posGame@{\_posGame}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{\_posGame}{\_posGame}}
+{\footnotesize\ttfamily int Core\+::\+\_\+pos\+Game\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCore_a00594b8aedb26147a4bbfa2e9774e890}\label{classCore_a00594b8aedb26147a4bbfa2e9774e890}} 
+\index{Core@{Core}!\_posGraph@{\_posGraph}}
+\index{\_posGraph@{\_posGraph}!Core@{Core}}
+\doxysubsubsection{\texorpdfstring{\_posGraph}{\_posGraph}}
+{\footnotesize\ttfamily int Core\+::\+\_\+pos\+Graph\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core\+\_\+f/\mbox{\hyperlink{Core_8hpp}{Core.\+hpp}}\item 
+core\+\_\+f/\mbox{\hyperlink{core_8cpp}{core.\+cpp}}\end{DoxyCompactItemize}

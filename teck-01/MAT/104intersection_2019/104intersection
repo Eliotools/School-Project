@@ -1,0 +1,81 @@
+#!/usr/bin/env python3                                                                                               
+
+import sys
+from math import *
+
+def main():
+    if (sys.argv[1] == "-h"):
+            hache()
+    elif (len(sys.argv) != 9):
+            exit(84)
+    try :
+        for x in range (8):
+            a = int(sys.argv[x+1])
+    except :
+        exit(84)
+    else:
+        next()
+
+def next ():
+    opt = float(sys.argv[1])
+    a = float(sys.argv[2])
+    b = float(sys.argv[3])
+    c = float(sys.argv[4])
+    alpha = float(sys.argv[5])
+    beta = float(sys.argv[6])
+    gamma = float(sys.argv[7])
+    more = float(sys.argv[8])
+
+    if (opt == 1):
+        sphere(a, b, c, alpha, beta, gamma, more)
+    if (opt == 2):
+        cylinder(a, b, c, alpha, beta, gamma, more)
+    if (opt == 3):
+        cone(a, b, c, alpha, beta, gamma, more)
+    else :
+        exit(84)
+
+def sphere(a, b, c, alpha, beta, gamma, d):
+    print("sphere of radius %d" %d)
+    print("Line passing through the point (%d,"%a,"%d," %b,"%d)" %c,"and parallel to the vector (%d,"%alpha,"%d," %beta,"%d)" %gamma)
+
+def cylinder(a, b, c, alpha, beta, gamma, d):
+    print("Cylinder of radius %d" %d)
+    print("Line passing through the point (%d,"%a,"%d," %b,"%d)" %c,"and parallel to the vector (%d,"%alpha,"%d," %beta,"%d)" %gamma)
+
+def cone(a, b, c, alpha, beta, gamma, teta):
+    print("Cone with a %d degree angle"%teta)
+    teta = (teta * pi)/180
+    print("Line passing through the point (%d,"%a,"%d," %b,"%d)" %c,"and parallel to the vector (%d,"%alpha,"%d," %beta,"%d)" %gamma)
+    u = tan(pow(teta,2)) * (pow(alpha,2) + pow(beta,2)) - pow(gamma,2)
+    v = tan(pow(teta,2)) *(2*a*alpha + 2*b*beta) - (2*c*gamma)
+    w = tan(pow(teta,2)) * (a*a + b*b) - c*c
+    #u = pow(alpha, 2) + pow(beta, 2) - (pow(gamma, 2) / pow(tan(teta), 2))
+    #v = (2 * a * alpha) + (2 * b * beta) - (2 * c * gamma / pow(tan(teta), 2))
+    #w = pow(a, 2) + pow(b, 2) - pow(c, 2) / pow(tan(teta), 2)
+    delta = (v*v) - (4*u*w)
+    if (delta > 0):
+        x_1 = float((-v -sqrt(delta) / (2*u)))
+        x_2 = float((-v +sqrt(delta) / (2*u)))
+        x = a + alpha*x_1
+        y = b + beta*x_1
+        z = c + gamma*x_1
+    if (delta == 0):
+        x_ = float(-v/(2*u))
+        x = a + alpha*x_
+        y = b + beta*x_
+        z = c + gamma*x_
+    print(x)
+    print(y)
+    print(z)
+
+def hache():
+    print("USAGE\n    ./104intersection opt xp yp zp xv yv zv p \n \nDESCRIPTION\n \
+    opt             surface option: 1 for a sphere, 2 for a cylinder, 3 for a cone\n \
+    (xp, yp, zp)    coordinates of a point by which the light ray passes through\n \
+    (xv, yv, zv)    coordinates of a vector parallel to the light ray\n \
+    p               parameter: radius of the sphere, radius of the cylinder, or\n \
+                    angle formed by the cone and the Z-axis");
+    exit(0)
+
+main()

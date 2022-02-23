@@ -1,0 +1,7 @@
+start   -->     'x'
+letf    -->     '%c'
+right   -->     '%c'
+turn    -->     '%c'
+drop    -->     '%c'
+quit    -->     '%c'
+pause   -->     '%c'

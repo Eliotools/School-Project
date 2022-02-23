@@ -1,0 +1,98 @@
+#!/usr/bin/env python3
+
+from sys import *
+from os.path import exists
+
+
+def main() :
+    if len(argv) == 1:
+        exit(84)
+    elif argv[1] == "-h":
+        print("USAGE\n\t./303make makefile [file]\nDESCRIPTION\n\tmakefile name of the makefile\n\tfile name of a recently modified file")
+    elif len(argv) == 2:
+        makefile(argv[1])
+    elif len(argv) == 3:
+        makefile()
+
+def open_file(name):
+    if exists(name) :
+        f = open(name, "r")
+        tmp = f.read()
+        tmp = tmp.split('\n')
+        for line in tmp:
+            if line == '':
+                tmp.remove(line)
+        return(tmp)
+    else :
+        exit(84)
+
+def get_name(file):
+    name = []
+    for line in file:
+        tmp = line.split(' ')
+        for names in tmp:
+            names = names.replace(':', '')
+            if names not in name and names[0] != '-' and names != 'cc':
+                name.append(names)
+
+    return(sorted(name))
+
+def fill_array(file, names):
+    global dict
+    global array
+
+    array = [[0 for x in range(len(names))] for y in range(len(names))]
+    for line in file:
+        line = line.split(' ')
+        for name in line:
+            if name == 'cc' or name[0] == '-':
+                continue
+            name = name.replace(':', '')
+            if name+':' == line[0] :
+                y = name
+            elif name != y:
+                if y not in dict[name]:
+                    dict[name].append(y)
+                array[names.index(name)][names.index(y)] = 1
+
+def print_list(names):
+    global array
+    global dict
+    for key in dict :
+        print()
+        while (key != False):
+            print(key, end='')
+            if (len(dict[key]) != 0) :
+                key = dict[key][0]
+                print(end=' => ')
+            else :
+                key = False
+    print()
+
+def creat_dict(names):
+    global dict
+    dict = {}
+    for name in names:
+        dict[name] = []
+
+def makefile(name = "") :
+    file = open_file(name)
+    names = get_name(file)
+    creat_dict(names)
+    print(dict)
+    fill_array(file, names)
+    print(dict)
+    print_array()
+    print_list(names)
+
+
+def print_array():
+    global array
+
+    for line in array:
+        for nb in line :
+            print(nb, end=' ')
+        print('')
+array = []
+dict = {}
+main()

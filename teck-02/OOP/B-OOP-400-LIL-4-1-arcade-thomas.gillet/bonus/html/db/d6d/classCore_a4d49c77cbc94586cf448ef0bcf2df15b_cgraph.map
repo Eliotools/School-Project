@@ -1,0 +1,6 @@
+<map id="Core::pCommand" name="Core::pCommand">
+<area shape="rect" id="node1" title="Print of avaible command in menu." alt="" coords="5,56,140,83"/>
+<area shape="rect" id="node2" href="$db/d6d/classCore.html#a30f2f75a0a677909f39fd66e123cbd67" title="Return _game." alt="" coords="193,5,313,32"/>
+<area shape="rect" id="node3" href="$d2/dd1/classIGame.html#a519baab82692b12bd9bda1eb1daa9f84" title=" " alt="" coords="188,56,319,83"/>
+<area shape="rect" id="node4" href="$db/d6d/classCore.html#a562e9c9bdc49802df6926cb02a0ffa5e" title="Print avaible graphics lib in menu." alt="" coords="199,107,308,133"/>
+</map>

@@ -1,0 +1,90 @@
+#!/usr/bin/env python3                                                                                               
+
+from sys import argv
+from math import pi
+from math import sin
+
+def main() :
+    if (len(argv) != 2) :
+        print("la")
+        exit (84)
+    try :
+        a = int(argv[1])
+    except :
+        print(argv[1])
+        exit (84)
+    next (int(argv[1]))
+
+def next(n) :
+    print("Midpoint:")
+    midpoint(fonction, n)
+
+    print("\nTrapezoidal2:")
+    trapezoidal2(fonction, n)
+
+    print("\nSimpson:")
+    simpson(fonction, n)
+
+#def trapezoidal(f, n):
+#    res = 0
+#    for loop in range (1, 10000):
+#        res += f(n, loop/2)
+#    res = abs(((res * 2 + f(n, 0) + f(n, 5000)) * (5000) / (20000)))
+#    print("I%.0f =" %n, "%.10f" %res)
+#    print("diff = %.10f" %abs((res - (pi / 2))))
+
+def trapezoidal2(f, n):
+    a = 0
+    b = 5000
+    i = 1
+    h = (b-a) / 10000
+    result = 0
+    while (i < 2*b) :
+        result += f(n, a + i * h)
+        i+= 1
+    result = abs(((result * 2 + f(n, a) + f(n, b)) * (b - a) / (20000)))
+    print("I%.0f =" %n, "%.10f" %result)
+    print("diff = %.10f" %abs((result - (pi / 2))))
+
+def midpoint(f, n):
+    a = 0
+    b = 1000
+    i = 1
+    h = (b-a) / 10000
+    res = 0
+    while (i < b):
+        res += f(n, a + i * h)
+        i += 1
+    res *= h
+    res = abs(res)
+    print("I%.0f =" %n, "%.10f" %res)
+    print("diff = %.10f" %abs((res - (pi / 2))))
+
+def simpson(f, n):
+    a = 0
+    b = 5000
+    i = a
+    h = (b-a) / 10000
+    res = 0
+    result = 0
+    while (i < 2*b) :
+        result += f(n, a+i * h) + (h/2)
+        i += 1
+    i += 1
+    while (i < 2*b) :
+        res += f(n, a + i * h)
+    res = ((result * 4) + (res * 2) + f(n, a) + f(n, b)) * (b-a) / (60000)
+    res = abs(res)
+    print("I%.0f =" %n, "%.10f" %res)
+    print("diff = %.10f" %abs((res - (pi / 2))))
+
+
+def fonction(n , x):
+    r = 1
+    if x == 0:
+        return r
+    for loop in range (n+1):
+        r = r * (sin(x / (2 * loop + 1)) / (x / (2 * loop + 1)))
+    return r
+
+main()

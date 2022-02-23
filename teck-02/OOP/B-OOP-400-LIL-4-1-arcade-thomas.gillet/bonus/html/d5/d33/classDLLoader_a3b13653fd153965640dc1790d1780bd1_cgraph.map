@@ -1,0 +1,5 @@
+<map id="DLLoader::insideOfGames" name="DLLoader::insideOfGames">
+<area shape="rect" id="node1" title="print all name of games" alt="" coords="5,31,196,57"/>
+<area shape="rect" id="node2" href="$d5/d33/classDLLoader.html#a337b4664d9da29cd0257ef84fa048d89" title="return name of nb element of _gamesName" alt="" coords="244,5,489,32"/>
+<area shape="rect" id="node3" href="$d5/d33/classDLLoader.html#a96b9d84be1cb924a385c5db92bc49b7d" title="return _gamesNb" alt="" coords="279,56,455,83"/>
+</map>

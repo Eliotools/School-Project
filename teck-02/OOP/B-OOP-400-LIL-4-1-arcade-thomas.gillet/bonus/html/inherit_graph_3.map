@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d2/dd1/classIGame.html" title="Interface for game." alt="" coords="5,31,71,57"/>
+<area shape="rect" id="node2" href="$d6/de5/classCentipede.html" title="Centipede class for game Centipede use IGame for Interface." alt="" coords="119,5,207,32"/>
+<area shape="rect" id="node3" href="$d3/de9/classNibbler.html" title="Game use IGame as Interface." alt="" coords="128,56,197,83"/>
+</map>

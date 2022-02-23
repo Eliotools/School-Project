@@ -1,0 +1,646 @@
+\begin{theindex}
+
+  \item {\_\_attribute\_\_}
+    \subitem {centipede.cpp}, \hyperpage{93}
+    \subitem {MySDL2.cpp}, \hyperpage{103, 104}
+    \subitem {ncurses.cpp}, \hyperpage{101}
+    \subitem {nibbler.cpp}, \hyperpage{97}
+    \subitem {sfmldraw.cpp}, \hyperpage{106, 107}
+  \item {\_actualGame}
+    \subitem {Core}, \hyperpage{41}
+  \item {\_actualLib}
+    \subitem {Core}, \hyperpage{41}
+  \item {\_command}
+    \subitem {Core}, \hyperpage{41}
+  \item {\_event}
+    \subitem {MySDL2}, \hyperpage{66}
+  \item {\_game}
+    \subitem {Core}, \hyperpage{41}
+  \item {\_games}
+    \subitem {DLLoader}, \hyperpage{48}
+  \item {\_gamesName}
+    \subitem {Core}, \hyperpage{41}
+    \subitem {DLLoader}, \hyperpage{48}
+  \item {\_gamesNb}
+    \subitem {DLLoader}, \hyperpage{48}
+  \item {\_graphName}
+    \subitem {Core}, \hyperpage{42}
+  \item {\_graphic}
+    \subitem {Core}, \hyperpage{41}
+  \item {\_graphics}
+    \subitem {DLLoader}, \hyperpage{48}
+  \item {\_graphicsName}
+    \subitem {DLLoader}, \hyperpage{48}
+  \item {\_graphicsNb}
+    \subitem {DLLoader}, \hyperpage{49}
+  \item {\_handles}
+    \subitem {DLLoader}, \hyperpage{49}
+  \item {\_input}
+    \subitem {MyNcurses}, \hyperpage{60}
+    \subitem {MySDL2}, \hyperpage{67}
+    \subitem {MySfml}, \hyperpage{71}
+  \item {\_maxGame}
+    \subitem {Core}, \hyperpage{42}
+  \item {\_maxGraph}
+    \subitem {Core}, \hyperpage{42}
+  \item {\_play}
+    \subitem {Core}, \hyperpage{42}
+  \item {\_playerName}
+    \subitem {Core}, \hyperpage{42}
+  \item {\_posGame}
+    \subitem {Core}, \hyperpage{42}
+  \item {\_posGraph}
+    \subitem {Core}, \hyperpage{42}
+  \item {\_render}
+    \subitem {MySDL2}, \hyperpage{67}
+  \item {\_screen}
+    \subitem {MyNcurses}, \hyperpage{60}
+    \subitem {MySDL2}, \hyperpage{67}
+  \item {\_x}
+    \subitem {Bullet}, \hyperpage{10}
+  \item {\_y}
+    \subitem {Bullet}, \hyperpage{10}
+  \item {$\sim$Bullet}
+    \subitem {Bullet}, \hyperpage{9}
+  \item {$\sim$Centipede}
+    \subitem {Centipede}, \hyperpage{12}
+  \item {$\sim$Core}
+    \subitem {Core}, \hyperpage{22}
+  \item {$\sim$DLLoader}
+    \subitem {DLLoader}, \hyperpage{44}
+  \item {$\sim$IGame}
+    \subitem {IGame}, \hyperpage{50}
+  \item {$\sim$IGraphic}
+    \subitem {IGraphic}, \hyperpage{54}
+  \item {$\sim$MyNcurses}
+    \subitem {MyNcurses}, \hyperpage{57}
+  \item {$\sim$MySDL2}
+    \subitem {MySDL2}, \hyperpage{62}
+  \item {$\sim$MySfml}
+    \subitem {MySfml}, \hyperpage{69}
+  \item {$\sim$Nibbler}
+    \subitem {Nibbler}, \hyperpage{74}
+
+  \indexspace
+
+  \item {addPlayerName}
+    \subitem {Core}, \hyperpage{22}
+  \item {apple}
+    \subitem {MyNcurses}, \hyperpage{60}
+    \subitem {MySfml}, \hyperpage{71}
+
+  \indexspace
+
+  \item {Bullet}, \hyperpage{9}
+    \subitem {\_x}, \hyperpage{10}
+    \subitem {\_y}, \hyperpage{10}
+    \subitem {$\sim$Bullet}, \hyperpage{9}
+    \subitem {Bullet}, \hyperpage{9}
+  \item {bullet}
+    \subitem {MyNcurses}, \hyperpage{60}
+    \subitem {MySfml}, \hyperpage{72}
+  \item {bullet\_x}
+    \subitem {Centipede}, \hyperpage{18}
+  \item {bullet\_y}
+    \subitem {Centipede}, \hyperpage{18}
+
+  \indexspace
+
+  \item {calledFirst}
+    \subitem {centipede.cpp}, \hyperpage{94}
+    \subitem {MySDL2.cpp}, \hyperpage{104}
+    \subitem {ncurses.cpp}, \hyperpage{101}
+    \subitem {nibbler.cpp}, \hyperpage{98}
+    \subitem {sfmldraw.cpp}, \hyperpage{107}
+  \item {calledLast}
+    \subitem {centipede.cpp}, \hyperpage{94}
+    \subitem {MySDL2.cpp}, \hyperpage{104}
+    \subitem {ncurses.cpp}, \hyperpage{101}
+    \subitem {nibbler.cpp}, \hyperpage{98}
+  \item {calledLastgra}
+    \subitem {sfmldraw.cpp}, \hyperpage{107}
+  \item {Centipede}, \hyperpage{10}
+    \subitem {$\sim$Centipede}, \hyperpage{12}
+    \subitem {bullet\_x}, \hyperpage{18}
+    \subitem {bullet\_y}, \hyperpage{18}
+    \subitem {Centipede}, \hyperpage{12}
+    \subitem {changeDir}, \hyperpage{12}
+    \subitem {checkCollision}, \hyperpage{13}
+    \subitem {checkInputs}, \hyperpage{13}
+    \subitem {createCentipede}, \hyperpage{14}
+    \subitem {food\_x}, \hyperpage{18}
+    \subitem {food\_y}, \hyperpage{18}
+    \subitem {getBulletX}, \hyperpage{15}
+    \subitem {getBulletY}, \hyperpage{15}
+    \subitem {getFoodX}, \hyperpage{15}
+    \subitem {getFoodY}, \hyperpage{15}
+    \subitem {getScore}, \hyperpage{15}
+    \subitem {getSnake}, \hyperpage{16}
+    \subitem {getSnakeXpos}, \hyperpage{16}
+    \subitem {getSnakeYpos}, \hyperpage{16}
+    \subitem {getXpos}, \hyperpage{16}
+    \subitem {getYpos}, \hyperpage{16}
+    \subitem {hit\_counter}, \hyperpage{18}
+    \subitem {hitWall}, \hyperpage{17}
+    \subitem {lock}, \hyperpage{18}
+    \subitem {relaunch}, \hyperpage{17}
+    \subitem {setLock}, \hyperpage{17}
+    \subitem {snakes}, \hyperpage{18}
+    \subitem {wall}, \hyperpage{19}
+    \subitem {x}, \hyperpage{19}
+    \subitem {xcoords}, \hyperpage{19}
+    \subitem {y}, \hyperpage{19}
+    \subitem {ycoords}, \hyperpage{19}
+  \item {centipede.cpp}
+    \subitem {\_\_attribute\_\_}, \hyperpage{93}
+    \subitem {calledFirst}, \hyperpage{94}
+    \subitem {calledLast}, \hyperpage{94}
+    \subitem {entryPoint}, \hyperpage{94}
+  \item {changeDir}
+    \subitem {Centipede}, \hyperpage{12}
+    \subitem {Nibbler}, \hyperpage{74}
+  \item {changeFoodCoord}
+    \subitem {Nibbler}, \hyperpage{75}
+  \item {checkCollision}
+    \subitem {Centipede}, \hyperpage{13}
+  \item {checkInputs}
+    \subitem {Centipede}, \hyperpage{13}
+    \subitem {IGame}, \hyperpage{50}
+    \subitem {Nibbler}, \hyperpage{76}
+  \item {checkSnake}
+    \subitem {Nibbler}, \hyperpage{76}
+  \item {closeAllHandles}
+    \subitem {DLLoader}, \hyperpage{44}
+  \item {Core}, \hyperpage{20}
+    \subitem {\_actualGame}, \hyperpage{41}
+    \subitem {\_actualLib}, \hyperpage{41}
+    \subitem {\_command}, \hyperpage{41}
+    \subitem {\_game}, \hyperpage{41}
+    \subitem {\_gamesName}, \hyperpage{41}
+    \subitem {\_graphName}, \hyperpage{42}
+    \subitem {\_graphic}, \hyperpage{41}
+    \subitem {\_maxGame}, \hyperpage{42}
+    \subitem {\_maxGraph}, \hyperpage{42}
+    \subitem {\_play}, \hyperpage{42}
+    \subitem {\_playerName}, \hyperpage{42}
+    \subitem {\_posGame}, \hyperpage{42}
+    \subitem {\_posGraph}, \hyperpage{42}
+    \subitem {$\sim$Core}, \hyperpage{22}
+    \subitem {addPlayerName}, \hyperpage{22}
+    \subitem {Core}, \hyperpage{22}
+    \subitem {gameLoop}, \hyperpage{23}
+    \subitem {gamePrint}, \hyperpage{24}
+    \subitem {getGame}, \hyperpage{25}
+    \subitem {getGameName}, \hyperpage{25}
+    \subitem {getGraphic}, \hyperpage{26}
+    \subitem {getGraphName}, \hyperpage{26}
+    \subitem {getInput}, \hyperpage{27}
+    \subitem {getPlay}, \hyperpage{28}
+    \subitem {inGamesName}, \hyperpage{28}
+    \subitem {inGraphicsName}, \hyperpage{29}
+    \subitem {lib}, \hyperpage{29}
+    \subitem {menu}, \hyperpage{30}
+    \subitem {pActual}, \hyperpage{31}
+    \subitem {pCommand}, \hyperpage{31}
+    \subitem {pNotHandle}, \hyperpage{32}
+    \subitem {printLib}, \hyperpage{33}
+    \subitem {setFirstGame}, \hyperpage{33}
+    \subitem {setFirstGraph}, \hyperpage{34}
+    \subitem {setGame}, \hyperpage{35}
+    \subitem {setGraphic}, \hyperpage{35}
+    \subitem {setNextGame}, \hyperpage{36}
+    \subitem {setNextGraphic}, \hyperpage{37}
+    \subitem {setPosGame}, \hyperpage{37}
+    \subitem {setPosGraph}, \hyperpage{38}
+    \subitem {setPrevGame}, \hyperpage{38}
+    \subitem {setPrevGraphic}, \hyperpage{39}
+    \subitem {startOrExit}, \hyperpage{40}
+  \item {Core.hpp}
+    \subitem {gameLoop}, \hyperpage{85}
+    \subitem {get\_lib}, \hyperpage{85}
+  \item {core\_f/core.cpp}, \hyperpage{83}
+  \item {core\_f/Core.hpp}, \hyperpage{84}
+  \item {core\_f/DLLoader.cpp}, \hyperpage{86}
+  \item {core\_f/DLLoader.hpp}, \hyperpage{87}
+  \item {core\_f/libfinder.cpp}, \hyperpage{88}
+  \item {core\_f/main.cpp}, \hyperpage{91}
+  \item {createCentipede}
+    \subitem {Centipede}, \hyperpage{14}
+  \item {createSnake}
+    \subitem {Nibbler}, \hyperpage{77}
+
+  \indexspace
+
+  \item {DLLoader}, \hyperpage{43}
+    \subitem {\_games}, \hyperpage{48}
+    \subitem {\_gamesName}, \hyperpage{48}
+    \subitem {\_gamesNb}, \hyperpage{48}
+    \subitem {\_graphics}, \hyperpage{48}
+    \subitem {\_graphicsName}, \hyperpage{48}
+    \subitem {\_graphicsNb}, \hyperpage{49}
+    \subitem {\_handles}, \hyperpage{49}
+    \subitem {$\sim$DLLoader}, \hyperpage{44}
+    \subitem {closeAllHandles}, \hyperpage{44}
+    \subitem {DLLoader}, \hyperpage{44}
+    \subitem {getGameInstance}, \hyperpage{44}
+    \subitem {getGameInstanceName}, \hyperpage{45}
+    \subitem {getGamesNb}, \hyperpage{45}
+    \subitem {getGraphicsNb}, \hyperpage{45}
+    \subitem {getGraphInstance}, \hyperpage{46}
+    \subitem {getGraphInstanceName}, \hyperpage{46}
+    \subitem {getInstanceOfGame}, \hyperpage{46}
+    \subitem {getInstanceOfGraph}, \hyperpage{47}
+    \subitem {insideOfGames}, \hyperpage{47}
+  \item {drawApple}
+    \subitem {MySDL2}, \hyperpage{62}
+  \item {drawBullet}
+    \subitem {MySDL2}, \hyperpage{63}
+  \item {drawobj}
+    \subitem {IGraphic}, \hyperpage{54}
+    \subitem {MyNcurses}, \hyperpage{57}
+    \subitem {MySDL2}, \hyperpage{63}
+    \subitem {MySfml}, \hyperpage{69}
+  \item {drawSnake}
+    \subitem {MySDL2}, \hyperpage{64}
+
+  \indexspace
+
+  \item {entryPoint}
+    \subitem {centipede.cpp}, \hyperpage{94}
+    \subitem {MySDL2.cpp}, \hyperpage{104}
+    \subitem {ncurses.cpp}, \hyperpage{101}
+    \subitem {nibbler.cpp}, \hyperpage{98}
+    \subitem {sfmldraw.cpp}, \hyperpage{107}
+
+  \indexspace
+
+  \item {find\_in\_game}
+    \subitem {libfinder.cpp}, \hyperpage{88}
+  \item {find\_in\_gra}
+    \subitem {libfinder.cpp}, \hyperpage{89}
+  \item {food\_x}
+    \subitem {Centipede}, \hyperpage{18}
+    \subitem {Nibbler}, \hyperpage{80}
+  \item {food\_y}
+    \subitem {Centipede}, \hyperpage{18}
+    \subitem {Nibbler}, \hyperpage{80}
+
+  \indexspace
+
+  \item {game/centipede/centipede.cpp}, \hyperpage{92}
+  \item {game/centipede/centipede.hpp}, \hyperpage{94}
+  \item {game/igame.hpp}, \hyperpage{95}
+  \item {game/nibbler/nibbler.cpp}, \hyperpage{96}
+  \item {game/nibbler/nibbler.hpp}, \hyperpage{98}
+  \item {gameLoop}
+    \subitem {Core}, \hyperpage{23}
+    \subitem {Core.hpp}, \hyperpage{85}
+  \item {gamePrint}
+    \subitem {Core}, \hyperpage{24}
+  \item {get\_lib}
+    \subitem {Core.hpp}, \hyperpage{85}
+    \subitem {libfinder.cpp}, \hyperpage{89}
+  \item {getBulletX}
+    \subitem {Centipede}, \hyperpage{15}
+    \subitem {IGame}, \hyperpage{50}
+    \subitem {Nibbler}, \hyperpage{78}
+  \item {getBulletY}
+    \subitem {Centipede}, \hyperpage{15}
+    \subitem {IGame}, \hyperpage{51}
+    \subitem {Nibbler}, \hyperpage{78}
+  \item {getFoodX}
+    \subitem {Centipede}, \hyperpage{15}
+    \subitem {IGame}, \hyperpage{51}
+    \subitem {Nibbler}, \hyperpage{78}
+  \item {getFoodY}
+    \subitem {Centipede}, \hyperpage{15}
+    \subitem {IGame}, \hyperpage{51}
+    \subitem {Nibbler}, \hyperpage{78}
+  \item {getGame}
+    \subitem {Core}, \hyperpage{25}
+  \item {getGameInstance}
+    \subitem {DLLoader}, \hyperpage{44}
+  \item {getGameInstanceName}
+    \subitem {DLLoader}, \hyperpage{45}
+  \item {getGameName}
+    \subitem {Core}, \hyperpage{25}
+  \item {getGamesNb}
+    \subitem {DLLoader}, \hyperpage{45}
+  \item {getGraphic}
+    \subitem {Core}, \hyperpage{26}
+  \item {getGraphicsNb}
+    \subitem {DLLoader}, \hyperpage{45}
+  \item {getGraphInstance}
+    \subitem {DLLoader}, \hyperpage{46}
+  \item {getGraphInstanceName}
+    \subitem {DLLoader}, \hyperpage{46}
+  \item {getGraphName}
+    \subitem {Core}, \hyperpage{26}
+  \item {getInput}
+    \subitem {Core}, \hyperpage{27}
+    \subitem {IGraphic}, \hyperpage{54}
+    \subitem {MyNcurses}, \hyperpage{58}
+    \subitem {MySDL2}, \hyperpage{65}
+    \subitem {MySfml}, \hyperpage{70}
+  \item {getInstanceOfGame}
+    \subitem {DLLoader}, \hyperpage{46}
+  \item {getInstanceOfGraph}
+    \subitem {DLLoader}, \hyperpage{47}
+  \item {getPlay}
+    \subitem {Core}, \hyperpage{28}
+  \item {getScore}
+    \subitem {Centipede}, \hyperpage{15}
+    \subitem {IGame}, \hyperpage{51}
+    \subitem {Nibbler}, \hyperpage{78}
+  \item {getSnake}
+    \subitem {Centipede}, \hyperpage{16}
+    \subitem {Nibbler}, \hyperpage{79}
+  \item {getSnakeXpos}
+    \subitem {Centipede}, \hyperpage{16}
+    \subitem {IGame}, \hyperpage{51}
+    \subitem {Nibbler}, \hyperpage{79}
+  \item {getSnakeYpos}
+    \subitem {Centipede}, \hyperpage{16}
+    \subitem {IGame}, \hyperpage{52}
+    \subitem {Nibbler}, \hyperpage{79}
+  \item {getXpos}
+    \subitem {Centipede}, \hyperpage{16}
+    \subitem {IGame}, \hyperpage{52}
+    \subitem {Nibbler}, \hyperpage{79}
+  \item {getYpos}
+    \subitem {Centipede}, \hyperpage{16}
+    \subitem {IGame}, \hyperpage{52}
+    \subitem {Nibbler}, \hyperpage{79}
+  \item {graphic/igraphic.hpp}, \hyperpage{99}
+  \item {graphic/ncurses/ncurses.cpp}, \hyperpage{100}
+  \item {graphic/ncurses/ncurses.hpp}, \hyperpage{102}
+  \item {graphic/sdl\_deux/MySDL2.cpp}, \hyperpage{103}
+  \item {graphic/sdl\_deux/MySDL2.hpp}, \hyperpage{105}
+  \item {graphic/sfml/sfmldraw.cpp}, \hyperpage{105}
+  \item {graphic/sfml/sfmldraw.hpp}, \hyperpage{108}
+
+  \indexspace
+
+  \item {hit\_counter}
+    \subitem {Centipede}, \hyperpage{18}
+  \item {hitWall}
+    \subitem {Centipede}, \hyperpage{17}
+
+  \indexspace
+
+  \item {IGame}, \hyperpage{49}
+    \subitem {$\sim$IGame}, \hyperpage{50}
+    \subitem {checkInputs}, \hyperpage{50}
+    \subitem {getBulletX}, \hyperpage{50}
+    \subitem {getBulletY}, \hyperpage{51}
+    \subitem {getFoodX}, \hyperpage{51}
+    \subitem {getFoodY}, \hyperpage{51}
+    \subitem {getScore}, \hyperpage{51}
+    \subitem {getSnakeXpos}, \hyperpage{51}
+    \subitem {getSnakeYpos}, \hyperpage{52}
+    \subitem {getXpos}, \hyperpage{52}
+    \subitem {getYpos}, \hyperpage{52}
+    \subitem {relaunch}, \hyperpage{52}
+    \subitem {setLock}, \hyperpage{52}
+  \item {IGraphic}, \hyperpage{53}
+    \subitem {$\sim$IGraphic}, \hyperpage{54}
+    \subitem {drawobj}, \hyperpage{54}
+    \subitem {getInput}, \hyperpage{54}
+    \subitem {launch}, \hyperpage{54}
+    \subitem {settingInput}, \hyperpage{55}
+    \subitem {stop}, \hyperpage{55}
+  \item {inGamesName}
+    \subitem {Core}, \hyperpage{28}
+  \item {inGraphicsName}
+    \subitem {Core}, \hyperpage{29}
+  \item {init}
+    \subitem {MyNcurses}, \hyperpage{58}
+    \subitem {MySDL2}, \hyperpage{65}
+    \subitem {MySfml}, \hyperpage{70}
+  \item {insideOfGames}
+    \subitem {DLLoader}, \hyperpage{47}
+
+  \indexspace
+
+  \item {launch}
+    \subitem {IGraphic}, \hyperpage{54}
+    \subitem {MyNcurses}, \hyperpage{58}
+    \subitem {MySDL2}, \hyperpage{65}
+    \subitem {MySfml}, \hyperpage{70}
+  \item {lib}
+    \subitem {Core}, \hyperpage{29}
+  \item {libfinder.cpp}
+    \subitem {find\_in\_game}, \hyperpage{88}
+    \subitem {find\_in\_gra}, \hyperpage{89}
+    \subitem {get\_lib}, \hyperpage{89}
+    \subitem {niddleyearsold}, \hyperpage{90}
+  \item {lock}
+    \subitem {Centipede}, \hyperpage{18}
+    \subitem {Nibbler}, \hyperpage{81}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{91}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{91}
+  \item {menu}
+    \subitem {Core}, \hyperpage{30}
+  \item {MyNcurses}, \hyperpage{56}
+    \subitem {\_input}, \hyperpage{60}
+    \subitem {\_screen}, \hyperpage{60}
+    \subitem {$\sim$MyNcurses}, \hyperpage{57}
+    \subitem {apple}, \hyperpage{60}
+    \subitem {bullet}, \hyperpage{60}
+    \subitem {drawobj}, \hyperpage{57}
+    \subitem {getInput}, \hyperpage{58}
+    \subitem {init}, \hyperpage{58}
+    \subitem {launch}, \hyperpage{58}
+    \subitem {MyNcurses}, \hyperpage{57}
+    \subitem {print\_map}, \hyperpage{59}
+    \subitem {rectangle}, \hyperpage{60}
+    \subitem {settingInput}, \hyperpage{59}
+    \subitem {stop}, \hyperpage{59}
+  \item {MySDL2}, \hyperpage{61}
+    \subitem {\_event}, \hyperpage{66}
+    \subitem {\_input}, \hyperpage{67}
+    \subitem {\_render}, \hyperpage{67}
+    \subitem {\_screen}, \hyperpage{67}
+    \subitem {$\sim$MySDL2}, \hyperpage{62}
+    \subitem {drawApple}, \hyperpage{62}
+    \subitem {drawBullet}, \hyperpage{63}
+    \subitem {drawobj}, \hyperpage{63}
+    \subitem {drawSnake}, \hyperpage{64}
+    \subitem {getInput}, \hyperpage{65}
+    \subitem {init}, \hyperpage{65}
+    \subitem {launch}, \hyperpage{65}
+    \subitem {MySDL2}, \hyperpage{62}
+    \subitem {setInput}, \hyperpage{65}
+    \subitem {settingInput}, \hyperpage{66}
+    \subitem {stop}, \hyperpage{66}
+  \item {MySDL2.cpp}
+    \subitem {\_\_attribute\_\_}, \hyperpage{103, 104}
+    \subitem {calledFirst}, \hyperpage{104}
+    \subitem {calledLast}, \hyperpage{104}
+    \subitem {entryPoint}, \hyperpage{104}
+  \item {MySfml}, \hyperpage{67}
+    \subitem {\_input}, \hyperpage{71}
+    \subitem {$\sim$MySfml}, \hyperpage{69}
+    \subitem {apple}, \hyperpage{71}
+    \subitem {bullet}, \hyperpage{72}
+    \subitem {drawobj}, \hyperpage{69}
+    \subitem {getInput}, \hyperpage{70}
+    \subitem {init}, \hyperpage{70}
+    \subitem {launch}, \hyperpage{70}
+    \subitem {MySfml}, \hyperpage{69}
+    \subitem {rectangle}, \hyperpage{72}
+    \subitem {screen}, \hyperpage{72}
+    \subitem {setInput}, \hyperpage{70}
+    \subitem {settingInput}, \hyperpage{71}
+    \subitem {stop}, \hyperpage{71}
+
+  \indexspace
+
+  \item {ncurses.cpp}
+    \subitem {\_\_attribute\_\_}, \hyperpage{101}
+    \subitem {calledFirst}, \hyperpage{101}
+    \subitem {calledLast}, \hyperpage{101}
+    \subitem {entryPoint}, \hyperpage{101}
+  \item {Nibbler}, \hyperpage{72}
+    \subitem {$\sim$Nibbler}, \hyperpage{74}
+    \subitem {changeDir}, \hyperpage{74}
+    \subitem {changeFoodCoord}, \hyperpage{75}
+    \subitem {checkInputs}, \hyperpage{76}
+    \subitem {checkSnake}, \hyperpage{76}
+    \subitem {createSnake}, \hyperpage{77}
+    \subitem {food\_x}, \hyperpage{80}
+    \subitem {food\_y}, \hyperpage{80}
+    \subitem {getBulletX}, \hyperpage{78}
+    \subitem {getBulletY}, \hyperpage{78}
+    \subitem {getFoodX}, \hyperpage{78}
+    \subitem {getFoodY}, \hyperpage{78}
+    \subitem {getScore}, \hyperpage{78}
+    \subitem {getSnake}, \hyperpage{79}
+    \subitem {getSnakeXpos}, \hyperpage{79}
+    \subitem {getSnakeYpos}, \hyperpage{79}
+    \subitem {getXpos}, \hyperpage{79}
+    \subitem {getYpos}, \hyperpage{79}
+    \subitem {lock}, \hyperpage{81}
+    \subitem {Nibbler}, \hyperpage{74}
+    \subitem {relaunch}, \hyperpage{80}
+    \subitem {score}, \hyperpage{81}
+    \subitem {setLock}, \hyperpage{80}
+    \subitem {snakes}, \hyperpage{81}
+    \subitem {x}, \hyperpage{81}
+    \subitem {xcoords}, \hyperpage{81}
+    \subitem {y}, \hyperpage{81}
+    \subitem {ycoords}, \hyperpage{81}
+  \item {nibbler.cpp}
+    \subitem {\_\_attribute\_\_}, \hyperpage{97}
+    \subitem {calledFirst}, \hyperpage{98}
+    \subitem {calledLast}, \hyperpage{98}
+    \subitem {entryPoint}, \hyperpage{98}
+  \item {niddleyearsold}
+    \subitem {libfinder.cpp}, \hyperpage{90}
+
+  \indexspace
+
+  \item {pActual}
+    \subitem {Core}, \hyperpage{31}
+  \item {pCommand}
+    \subitem {Core}, \hyperpage{31}
+  \item {pNotHandle}
+    \subitem {Core}, \hyperpage{32}
+  \item {print\_map}
+    \subitem {MyNcurses}, \hyperpage{59}
+  \item {printLib}
+    \subitem {Core}, \hyperpage{33}
+
+  \indexspace
+
+  \item {rectangle}
+    \subitem {MyNcurses}, \hyperpage{60}
+    \subitem {MySfml}, \hyperpage{72}
+  \item {relaunch}
+    \subitem {Centipede}, \hyperpage{17}
+    \subitem {IGame}, \hyperpage{52}
+    \subitem {Nibbler}, \hyperpage{80}
+
+  \indexspace
+
+  \item {score}
+    \subitem {Nibbler}, \hyperpage{81}
+  \item {screen}
+    \subitem {MySfml}, \hyperpage{72}
+  \item {setFirstGame}
+    \subitem {Core}, \hyperpage{33}
+  \item {setFirstGraph}
+    \subitem {Core}, \hyperpage{34}
+  \item {setGame}
+    \subitem {Core}, \hyperpage{35}
+  \item {setGraphic}
+    \subitem {Core}, \hyperpage{35}
+  \item {setInput}
+    \subitem {MySDL2}, \hyperpage{65}
+    \subitem {MySfml}, \hyperpage{70}
+  \item {setLock}
+    \subitem {Centipede}, \hyperpage{17}
+    \subitem {IGame}, \hyperpage{52}
+    \subitem {Nibbler}, \hyperpage{80}
+  \item {setNextGame}
+    \subitem {Core}, \hyperpage{36}
+  \item {setNextGraphic}
+    \subitem {Core}, \hyperpage{37}
+  \item {setPosGame}
+    \subitem {Core}, \hyperpage{37}
+  \item {setPosGraph}
+    \subitem {Core}, \hyperpage{38}
+  \item {setPrevGame}
+    \subitem {Core}, \hyperpage{38}
+  \item {setPrevGraphic}
+    \subitem {Core}, \hyperpage{39}
+  \item {settingInput}
+    \subitem {IGraphic}, \hyperpage{55}
+    \subitem {MyNcurses}, \hyperpage{59}
+    \subitem {MySDL2}, \hyperpage{66}
+    \subitem {MySfml}, \hyperpage{71}
+  \item {sfmldraw.cpp}
+    \subitem {\_\_attribute\_\_}, \hyperpage{106, 107}
+    \subitem {calledFirst}, \hyperpage{107}
+    \subitem {calledLastgra}, \hyperpage{107}
+    \subitem {entryPoint}, \hyperpage{107}
+  \item {snakes}
+    \subitem {Centipede}, \hyperpage{18}
+    \subitem {Nibbler}, \hyperpage{81}
+  \item {startOrExit}
+    \subitem {Core}, \hyperpage{40}
+  \item {stop}
+    \subitem {IGraphic}, \hyperpage{55}
+    \subitem {MyNcurses}, \hyperpage{59}
+    \subitem {MySDL2}, \hyperpage{66}
+    \subitem {MySfml}, \hyperpage{71}
+
+  \indexspace
+
+  \item {wall}
+    \subitem {Centipede}, \hyperpage{19}
+
+  \indexspace
+
+  \item {x}
+    \subitem {Centipede}, \hyperpage{19}
+    \subitem {Nibbler}, \hyperpage{81}
+  \item {xcoords}
+    \subitem {Centipede}, \hyperpage{19}
+    \subitem {Nibbler}, \hyperpage{81}
+
+  \indexspace
+
+  \item {y}
+    \subitem {Centipede}, \hyperpage{19}
+    \subitem {Nibbler}, \hyperpage{81}
+  \item {ycoords}
+    \subitem {Centipede}, \hyperpage{19}
+    \subitem {Nibbler}, \hyperpage{81}
+
+\end{theindex}

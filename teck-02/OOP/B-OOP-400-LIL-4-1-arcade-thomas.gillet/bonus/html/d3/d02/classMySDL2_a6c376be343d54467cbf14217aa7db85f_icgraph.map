@@ -1,0 +1,4 @@
+<map id="MySDL2::setInput" name="MySDL2::setInput">
+<area shape="rect" id="node1" title="set _input to value set by key press" alt="" coords="188,5,324,32"/>
+<area shape="rect" id="node2" href="$d3/d02/classMySDL2.html#a7ff0f2b483338e2615fb9fe32e1a3140" title="call all function for draw game" alt="" coords="5,5,140,32"/>
+</map>

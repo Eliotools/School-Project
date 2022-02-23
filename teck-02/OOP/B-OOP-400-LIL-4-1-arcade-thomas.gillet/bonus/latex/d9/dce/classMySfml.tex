@@ -1,0 +1,259 @@
+\hypertarget{classMySfml}{}\doxysection{My\+Sfml Class Reference}
+\label{classMySfml}\index{MySfml@{MySfml}}
+
+
+S\+F\+ML function for draw game use \mbox{\hyperlink{classIGraphic}{I\+Graphic}} interface.  
+
+
+
+
+{\ttfamily \#include $<$sfmldraw.\+hpp$>$}
+
+
+
+Inheritance diagram for My\+Sfml\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=137pt]{da/d55/classMySfml__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for My\+Sfml\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=137pt]{d6/d43/classMySfml__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMySfml_ab5394ea1f17588cb4dfcba0d7f8fc2f6}{My\+Sfml}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMySfml_a43556907a73c2c43ac5caddca9243f0e}{$\sim$\+My\+Sfml}} ()
+\begin{DoxyCompactList}\small\item\em deconstructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMySfml_a9128c038436cde5c559134759f1dd751}{init}} ()
+\item 
+void \mbox{\hyperlink{classMySfml_a7500ba024ac008c3cd1756ffeae9f49b}{stop}} ()
+\begin{DoxyCompactList}\small\item\em close window \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMySfml_a2416993474489de2aeb7080bc57c7902}{launch}} ()
+\begin{DoxyCompactList}\small\item\em set screen and element to draw \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMySfml_a03cab5548eec67bb4b9d6ae4992a220b}{get\+Input}} ()
+\begin{DoxyCompactList}\small\item\em return \+\_\+input \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMySfml_aa36a91c14050554b0ca94366a4a4ef72}{set\+Input}} (sf\+::\+Event event)
+\begin{DoxyCompactList}\small\item\em set \+\_\+input with correspondant key pressed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMySfml_a9fab53f39185c2d7cc5c2d7cb1e2a142}{setting\+Input}} (int input)
+\begin{DoxyCompactList}\small\item\em set \+\_\+input to given input \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMySfml_af04934a6fb7d148eeca8ad8cc3e64f27}{drawobj}} (std\+::vector$<$ int $>$ xcoords, std\+::vector$<$ int $>$ ycoords, int food\+\_\+x, int food\+\_\+y, int bullet\+\_\+x, int bullet\+\_\+y)
+\begin{DoxyCompactList}\small\item\em draw and set position of obj of game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMySfml_a3e9fe9b5350fa4507ecca22f2546efce}{\+\_\+input}}
+\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{classMySfml_ab8f476693ba0d36f0adcd7989b18ccfe}{screen}}
+\item 
+sf\+::\+Rectangle\+Shape $\ast$ \mbox{\hyperlink{classMySfml_ad7b0a7bc276bda5448ac388008f82765}{rectangle}}
+\item 
+sf\+::\+Circle\+Shape $\ast$ \mbox{\hyperlink{classMySfml_a618b1f08617bceda75e9d2d580408d52}{apple}}
+\item 
+sf\+::\+Circle\+Shape $\ast$ \mbox{\hyperlink{classMySfml_a5ca001efb9c6e7e430d38cfbae0ec5bb}{bullet}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+S\+F\+ML function for draw game use \mbox{\hyperlink{classIGraphic}{I\+Graphic}} interface. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMySfml_ab5394ea1f17588cb4dfcba0d7f8fc2f6}\label{classMySfml_ab5394ea1f17588cb4dfcba0d7f8fc2f6}} 
+\index{MySfml@{MySfml}!MySfml@{MySfml}}
+\index{MySfml@{MySfml}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{MySfml()}{MySfml()}}
+{\footnotesize\ttfamily My\+Sfml\+::\+My\+Sfml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+\mbox{\Hypertarget{classMySfml_a43556907a73c2c43ac5caddca9243f0e}\label{classMySfml_a43556907a73c2c43ac5caddca9243f0e}} 
+\index{MySfml@{MySfml}!````~MySfml@{$\sim$MySfml}}
+\index{````~MySfml@{$\sim$MySfml}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{$\sim$MySfml()}{~MySfml()}}
+{\footnotesize\ttfamily My\+Sfml\+::$\sim$\+My\+Sfml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+deconstructor 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMySfml_af04934a6fb7d148eeca8ad8cc3e64f27}\label{classMySfml_af04934a6fb7d148eeca8ad8cc3e64f27}} 
+\index{MySfml@{MySfml}!drawobj@{drawobj}}
+\index{drawobj@{drawobj}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{drawobj()}{drawobj()}}
+{\footnotesize\ttfamily void My\+Sfml\+::drawobj (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{xcoords,  }\item[{std\+::vector$<$ int $>$}]{ycoords,  }\item[{int}]{food\+\_\+x,  }\item[{int}]{food\+\_\+y,  }\item[{int}]{bullet\+\_\+x,  }\item[{int}]{bullet\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw and set position of obj of game 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em xcoord} & -\/$>$ vector of x coor d of snake \\
+\hline
+\mbox{\texttt{ in}}  & {\em ycoords} & -\/$>$ vector ycoords for snake \\
+\hline
+\mbox{\texttt{ in}}  & {\em food\+\_\+x} & -\/$>$ coord x of apple \\
+\hline
+\mbox{\texttt{ in}}  & {\em food\+\_\+y} & -\/$>$ coord y of apple \\
+\hline
+\mbox{\texttt{ in}}  & {\em bullet\+\_\+x} & -\/$>$ coord x of bullet \\
+\hline
+\mbox{\texttt{ in}}  & {\em bullet\+\_\+y} & -\/$>$ coord y of bullet \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIGraphic_a5c3c3fcd1b2c10b09cf9507bab1b46e2}{I\+Graphic}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{d9/dce/classMySfml_af04934a6fb7d148eeca8ad8cc3e64f27_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMySfml_a03cab5548eec67bb4b9d6ae4992a220b}\label{classMySfml_a03cab5548eec67bb4b9d6ae4992a220b}} 
+\index{MySfml@{MySfml}!getInput@{getInput}}
+\index{getInput@{getInput}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily int My\+Sfml\+::get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+return \+\_\+input 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+input 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGraphic_a2c7e0525eaf0483d258afafdac0eb862}{I\+Graphic}}.
+
+\mbox{\Hypertarget{classMySfml_a9128c038436cde5c559134759f1dd751}\label{classMySfml_a9128c038436cde5c559134759f1dd751}} 
+\index{MySfml@{MySfml}!init@{init}}
+\index{init@{init}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void My\+Sfml\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMySfml_a2416993474489de2aeb7080bc57c7902}\label{classMySfml_a2416993474489de2aeb7080bc57c7902}} 
+\index{MySfml@{MySfml}!launch@{launch}}
+\index{launch@{launch}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{launch()}{launch()}}
+{\footnotesize\ttfamily void My\+Sfml\+::launch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set screen and element to draw 
+
+
+
+Implements \mbox{\hyperlink{classIGraphic_a165d65bd8fc43a4793f5870d010e9e3c}{I\+Graphic}}.
+
+\mbox{\Hypertarget{classMySfml_aa36a91c14050554b0ca94366a4a4ef72}\label{classMySfml_aa36a91c14050554b0ca94366a4a4ef72}} 
+\index{MySfml@{MySfml}!setInput@{setInput}}
+\index{setInput@{setInput}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{setInput()}{setInput()}}
+{\footnotesize\ttfamily void My\+Sfml\+::set\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Event}]{event }\end{DoxyParamCaption})}
+
+
+
+set \+\_\+input with correspondant key pressed 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & -\/$>$ event of key press \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{d9/dce/classMySfml_aa36a91c14050554b0ca94366a4a4ef72_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMySfml_a9fab53f39185c2d7cc5c2d7cb1e2a142}\label{classMySfml_a9fab53f39185c2d7cc5c2d7cb1e2a142}} 
+\index{MySfml@{MySfml}!settingInput@{settingInput}}
+\index{settingInput@{settingInput}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{settingInput()}{settingInput()}}
+{\footnotesize\ttfamily void My\+Sfml\+::setting\+Input (\begin{DoxyParamCaption}\item[{int}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set \+\_\+input to given input 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input} & -\/$>$ new input \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIGraphic_a35505f3e08c326c1e66f78f89840a511}{I\+Graphic}}.
+
+\mbox{\Hypertarget{classMySfml_a7500ba024ac008c3cd1756ffeae9f49b}\label{classMySfml_a7500ba024ac008c3cd1756ffeae9f49b}} 
+\index{MySfml@{MySfml}!stop@{stop}}
+\index{stop@{stop}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void My\+Sfml\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+close window 
+
+
+
+Implements \mbox{\hyperlink{classIGraphic_a6e666a39fe92b331158b32da5f038b60}{I\+Graphic}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMySfml_a3e9fe9b5350fa4507ecca22f2546efce}\label{classMySfml_a3e9fe9b5350fa4507ecca22f2546efce}} 
+\index{MySfml@{MySfml}!\_input@{\_input}}
+\index{\_input@{\_input}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{\_input}{\_input}}
+{\footnotesize\ttfamily int My\+Sfml\+::\+\_\+input\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMySfml_a618b1f08617bceda75e9d2d580408d52}\label{classMySfml_a618b1f08617bceda75e9d2d580408d52}} 
+\index{MySfml@{MySfml}!apple@{apple}}
+\index{apple@{apple}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{apple}{apple}}
+{\footnotesize\ttfamily sf\+::\+Circle\+Shape$\ast$ My\+Sfml\+::apple\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMySfml_a5ca001efb9c6e7e430d38cfbae0ec5bb}\label{classMySfml_a5ca001efb9c6e7e430d38cfbae0ec5bb}} 
+\index{MySfml@{MySfml}!bullet@{bullet}}
+\index{bullet@{bullet}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{bullet}{bullet}}
+{\footnotesize\ttfamily sf\+::\+Circle\+Shape$\ast$ My\+Sfml\+::bullet\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMySfml_ad7b0a7bc276bda5448ac388008f82765}\label{classMySfml_ad7b0a7bc276bda5448ac388008f82765}} 
+\index{MySfml@{MySfml}!rectangle@{rectangle}}
+\index{rectangle@{rectangle}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{rectangle}{rectangle}}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape$\ast$ My\+Sfml\+::rectangle\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMySfml_ab8f476693ba0d36f0adcd7989b18ccfe}\label{classMySfml_ab8f476693ba0d36f0adcd7989b18ccfe}} 
+\index{MySfml@{MySfml}!screen@{screen}}
+\index{screen@{screen}!MySfml@{MySfml}}
+\doxysubsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window$\ast$ My\+Sfml\+::screen\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+graphic/sfml/\mbox{\hyperlink{sfmldraw_8hpp}{sfmldraw.\+hpp}}\item 
+graphic/sfml/\mbox{\hyperlink{sfmldraw_8cpp}{sfmldraw.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="MySDL2" name="MySDL2">
+<area shape="rect" id="node1" title="SDL2 function for draw game and handle input." alt="" coords="6,80,81,107"/>
+<area shape="rect" id="node2" href="$da/d45/classIGraphic.html" title="Interface for graph class." alt="" coords="5,5,81,32"/>
+</map>

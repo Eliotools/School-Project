@@ -1,0 +1,133 @@
+\hypertarget{classIGraphic}{}\doxysection{I\+Graphic Class Reference}
+\label{classIGraphic}\index{IGraphic@{IGraphic}}
+
+
+Interface for graph class.  
+
+
+
+
+{\ttfamily \#include $<$igraphic.\+hpp$>$}
+
+
+
+Inheritance diagram for I\+Graphic\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{d1/da9/classIGraphic__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIGraphic_aca238e622e55e4c3a61e1c7344902271}{$\sim$\+I\+Graphic}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classIGraphic_a5c3c3fcd1b2c10b09cf9507bab1b46e2}{drawobj}} (std\+::vector$<$ int $>$ xcoords, std\+::vector$<$ int $>$ ycoords, int food\+\_\+x, int food\+\_\+y, int bullet\+\_\+x, int bullet\+\_\+y)=0
+\item 
+virtual int \mbox{\hyperlink{classIGraphic_a2c7e0525eaf0483d258afafdac0eb862}{get\+Input}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classIGraphic_a165d65bd8fc43a4793f5870d010e9e3c}{launch}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classIGraphic_a6e666a39fe92b331158b32da5f038b60}{stop}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classIGraphic_a35505f3e08c326c1e66f78f89840a511}{setting\+Input}} (int)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for graph class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIGraphic_aca238e622e55e4c3a61e1c7344902271}\label{classIGraphic_aca238e622e55e4c3a61e1c7344902271}} 
+\index{IGraphic@{IGraphic}!````~IGraphic@{$\sim$IGraphic}}
+\index{````~IGraphic@{$\sim$IGraphic}!IGraphic@{IGraphic}}
+\doxysubsubsection{\texorpdfstring{$\sim$IGraphic()}{~IGraphic()}}
+{\footnotesize\ttfamily virtual I\+Graphic\+::$\sim$\+I\+Graphic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIGraphic_a5c3c3fcd1b2c10b09cf9507bab1b46e2}\label{classIGraphic_a5c3c3fcd1b2c10b09cf9507bab1b46e2}} 
+\index{IGraphic@{IGraphic}!drawobj@{drawobj}}
+\index{drawobj@{drawobj}!IGraphic@{IGraphic}}
+\doxysubsubsection{\texorpdfstring{drawobj()}{drawobj()}}
+{\footnotesize\ttfamily virtual void I\+Graphic\+::drawobj (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{xcoords,  }\item[{std\+::vector$<$ int $>$}]{ycoords,  }\item[{int}]{food\+\_\+x,  }\item[{int}]{food\+\_\+y,  }\item[{int}]{bullet\+\_\+x,  }\item[{int}]{bullet\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classMySDL2_a7ff0f2b483338e2615fb9fe32e1a3140}{My\+S\+D\+L2}}, \mbox{\hyperlink{classMySfml_af04934a6fb7d148eeca8ad8cc3e64f27}{My\+Sfml}}, and \mbox{\hyperlink{classMyNcurses_aa250b0a36102336441b55f77cd9852bc}{My\+Ncurses}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d45/classIGraphic_a5c3c3fcd1b2c10b09cf9507bab1b46e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classIGraphic_a2c7e0525eaf0483d258afafdac0eb862}\label{classIGraphic_a2c7e0525eaf0483d258afafdac0eb862}} 
+\index{IGraphic@{IGraphic}!getInput@{getInput}}
+\index{getInput@{getInput}!IGraphic@{IGraphic}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily virtual int I\+Graphic\+::get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classMySDL2_a9be1408bcf6656f9768d8bf7e3df80f7}{My\+S\+D\+L2}}, \mbox{\hyperlink{classMySfml_a03cab5548eec67bb4b9d6ae4992a220b}{My\+Sfml}}, and \mbox{\hyperlink{classMyNcurses_aa870d829ccda8ea1ab76e6b41f582441}{My\+Ncurses}}.
+
+\mbox{\Hypertarget{classIGraphic_a165d65bd8fc43a4793f5870d010e9e3c}\label{classIGraphic_a165d65bd8fc43a4793f5870d010e9e3c}} 
+\index{IGraphic@{IGraphic}!launch@{launch}}
+\index{launch@{launch}!IGraphic@{IGraphic}}
+\doxysubsubsection{\texorpdfstring{launch()}{launch()}}
+{\footnotesize\ttfamily virtual void I\+Graphic\+::launch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classMySDL2_a2a3831923e875fb7bd76d873e4f4d8de}{My\+S\+D\+L2}}, \mbox{\hyperlink{classMyNcurses_a099b41a06bb07b85034e4fcbbbd275ad}{My\+Ncurses}}, and \mbox{\hyperlink{classMySfml_a2416993474489de2aeb7080bc57c7902}{My\+Sfml}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d45/classIGraphic_a165d65bd8fc43a4793f5870d010e9e3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classIGraphic_a35505f3e08c326c1e66f78f89840a511}\label{classIGraphic_a35505f3e08c326c1e66f78f89840a511}} 
+\index{IGraphic@{IGraphic}!settingInput@{settingInput}}
+\index{settingInput@{settingInput}!IGraphic@{IGraphic}}
+\doxysubsubsection{\texorpdfstring{settingInput()}{settingInput()}}
+{\footnotesize\ttfamily virtual void I\+Graphic\+::setting\+Input (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classMySDL2_a525ff0e6a21c1c51d183a75f55603b3b}{My\+S\+D\+L2}}, \mbox{\hyperlink{classMySfml_a9fab53f39185c2d7cc5c2d7cb1e2a142}{My\+Sfml}}, and \mbox{\hyperlink{classMyNcurses_ad094d08b6fec057a069ec429ff8b8f7a}{My\+Ncurses}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d45/classIGraphic_a35505f3e08c326c1e66f78f89840a511_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classIGraphic_a6e666a39fe92b331158b32da5f038b60}\label{classIGraphic_a6e666a39fe92b331158b32da5f038b60}} 
+\index{IGraphic@{IGraphic}!stop@{stop}}
+\index{stop@{stop}!IGraphic@{IGraphic}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily virtual void I\+Graphic\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classMySDL2_ad3107cf3db94a09c0015630eb73a867b}{My\+S\+D\+L2}}, \mbox{\hyperlink{classMyNcurses_a4dfeae5a8b938c8dc8a327c27d949b0a}{My\+Ncurses}}, and \mbox{\hyperlink{classMySfml_a7500ba024ac008c3cd1756ffeae9f49b}{My\+Sfml}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d45/classIGraphic_a6e666a39fe92b331158b32da5f038b60_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graphic/\mbox{\hyperlink{igraphic_8hpp}{igraphic.\+hpp}}\end{DoxyCompactItemize}

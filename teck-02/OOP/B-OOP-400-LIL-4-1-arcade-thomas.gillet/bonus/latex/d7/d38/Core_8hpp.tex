@@ -1,0 +1,73 @@
+\hypertarget{Core_8hpp}{}\doxysection{core\+\_\+f/\+Core.hpp File Reference}
+\label{Core_8hpp}\index{core\_f/Core.hpp@{core\_f/Core.hpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}../game/igame.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../graphic/igraphic.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}D\+L\+Loader.\+hpp\char`\"{}}\newline
+Include dependency graph for Core.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d1d/Core_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{d1/d56/Core_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classCore}{Core}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classCore}{Core}} create bridge between game and graphic also do main menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{Core_8hpp_a3414392f4389d745958ce059aa44b161}{get\+\_\+lib}} (int i)
+\begin{DoxyCompactList}\small\item\em find in directory new lib \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Core_8hpp_af2181a88bdb3e45411b1ca85638398c9}{game\+Loop}} (\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}} loader, \mbox{\hyperlink{classCore}{Core}} core)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Core_8hpp_af2181a88bdb3e45411b1ca85638398c9}\label{Core_8hpp_af2181a88bdb3e45411b1ca85638398c9}} 
+\index{Core.hpp@{Core.hpp}!gameLoop@{gameLoop}}
+\index{gameLoop@{gameLoop}!Core.hpp@{Core.hpp}}
+\doxysubsubsection{\texorpdfstring{gameLoop()}{gameLoop()}}
+{\footnotesize\ttfamily int game\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDLLoader}{D\+L\+Loader}}}]{loader,  }\item[{\mbox{\hyperlink{classCore}{Core}}}]{core }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Core_8hpp_a3414392f4389d745958ce059aa44b161}\label{Core_8hpp_a3414392f4389d745958ce059aa44b161}} 
+\index{Core.hpp@{Core.hpp}!get\_lib@{get\_lib}}
+\index{get\_lib@{get\_lib}!Core.hpp@{Core.hpp}}
+\doxysubsubsection{\texorpdfstring{get\_lib()}{get\_lib()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ get\+\_\+lib (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+find in directory new lib 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i} & -\/$>$ 1 for game 2 for graph \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+files -\/$>$ name of new lib 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{d7/d38/Core_8hpp_a3414392f4389d745958ce059aa44b161_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d7/d38/Core_8hpp_a3414392f4389d745958ce059aa44b161_icgraph}
+\end{center}
+\end{figure}

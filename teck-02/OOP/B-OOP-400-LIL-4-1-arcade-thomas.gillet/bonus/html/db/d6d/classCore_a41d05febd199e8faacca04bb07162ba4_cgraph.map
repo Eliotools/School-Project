@@ -1,0 +1,6 @@
+<map id="Core::setPrevGraphic" name="Core::setPrevGraphic">
+<area shape="rect" id="node1" title="set _graphic to previous _graphName (vector containing name of all graphics lib we use)...." alt="" coords="5,56,164,83"/>
+<area shape="rect" id="node2" href="$d5/d33/classDLLoader.html#af51edbc6d48f3eeda95b796c23335c52" title="use dlopen() and dlsym() for create a new Instance of IGraph, put new Instance in vector" alt="" coords="212,5,433,32"/>
+<area shape="rect" id="node3" href="$da/d45/classIGraphic.html#a165d65bd8fc43a4793f5870d010e9e3c" title=" " alt="" coords="259,56,386,83"/>
+<area shape="rect" id="node4" href="$da/d45/classIGraphic.html#a6e666a39fe92b331158b32da5f038b60" title=" " alt="" coords="267,107,379,133"/>
+</map>

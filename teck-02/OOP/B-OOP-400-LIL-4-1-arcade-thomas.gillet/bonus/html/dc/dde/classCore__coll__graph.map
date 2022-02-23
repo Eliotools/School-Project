@@ -1,0 +1,5 @@
+<map id="Core" name="Core">
+<area shape="rect" id="node1" title="Core create bridge between game and graphic also do main menu." alt="" coords="64,95,116,121"/>
+<area shape="rect" id="node2" href="$da/d45/classIGraphic.html" title="Interface for graph class." alt="" coords="5,5,81,32"/>
+<area shape="rect" id="node3" href="$d2/dd1/classIGame.html" title="Interface for game." alt="" coords="105,5,171,32"/>
+</map>

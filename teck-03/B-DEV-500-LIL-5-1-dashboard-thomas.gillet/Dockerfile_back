@@ -1,0 +1,13 @@
+FROM node:16
+
+WORKDIR /usr/src/app
+
+COPY API/package*.json ./
+
+RUN npm install
+
+COPY . .
+
+RUN pwd
+
+CMD [ "node", "API/index.js" ]

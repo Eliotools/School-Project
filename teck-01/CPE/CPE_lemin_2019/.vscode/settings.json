@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "function.h": "c",
+        "lemin.h": "c",
+        "unistd.h": "c",
+        "*.tcc": "c",
+        "string_view": "c",
+        "algorithm": "c"
+    }
+}

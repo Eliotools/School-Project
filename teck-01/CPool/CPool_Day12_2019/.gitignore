@@ -1,0 +1,5 @@
+main.c
+lib/my/*.o
+lib/my/*.a
+*.o
+*.a

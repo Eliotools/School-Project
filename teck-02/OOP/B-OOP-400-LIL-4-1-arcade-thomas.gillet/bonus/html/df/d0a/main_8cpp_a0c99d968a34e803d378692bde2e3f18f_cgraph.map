@@ -1,0 +1,39 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="main" alt="" coords="5,284,60,311"/>
+<area shape="rect" id="node2" href="$db/d6d/classCore.html#a181497c5ed32d74556c2c5185347f35a" title="get player name" alt="" coords="108,5,272,32"/>
+<area shape="rect" id="node3" href="$db/d6d/classCore.html#ad4063dabb457e7a8b80515065455132f" title="all function for restart game and do game loop" alt="" coords="126,284,254,311"/>
+<area shape="rect" id="node6" href="$db/d6d/classCore.html#a569683e5b5f0f2e99050c71491d3ee89" title="return _graphic" alt="" coords="328,107,459,133"/>
+<area shape="rect" id="node16" href="$da/d45/classIGraphic.html#a6e666a39fe92b331158b32da5f038b60" title=" " alt="" coords="785,183,897,209"/>
+<area shape="rect" id="node19" href="$db/d6d/classCore.html#a27d8c3cbdccb0de5bd4548e19c59d8de" title="menu loop" alt="" coords="141,816,239,843"/>
+<area shape="rect" id="node34" href="$db/d6d/classCore.html#a9f185bd3679fe28a95dc11c5109a3e1e" title="set _game to first game found in /lib dir" alt="" coords="117,1019,263,1045"/>
+<area shape="rect" id="node37" href="$db/d6d/classCore.html#a2a5f24b60d46b3ea72b4a64f332895df" title="set _game to first graph found in /lib dir" alt="" coords="320,411,467,437"/>
+<area shape="rect" id="node4" href="$da/d45/classIGraphic.html#a5c3c3fcd1b2c10b09cf9507bab1b46e2" title=" " alt="" coords="325,259,461,285"/>
+<area shape="rect" id="node5" href="$db/d6d/classCore.html#a30f2f75a0a677909f39fd66e123cbd67" title="Return _game." alt="" coords="539,715,659,741"/>
+<area shape="rect" id="node7" href="$db/d6d/classCore.html#a4c7cc26c7247a4e09cad8b3ed0c613f4" title="Test input for changing lib of game." alt="" coords="336,309,451,336"/>
+<area shape="rect" id="node10" href="$d2/dd1/classIGame.html#ae418636ffdb98bdbe36f1d448944b90b" title=" " alt="" coords="777,487,906,513"/>
+<area shape="rect" id="node11" href="$d2/dd1/classIGame.html#a42bc9c96b3f6233b8cc5f8a79a629eaf" title=" " alt="" coords="780,588,903,615"/>
+<area shape="rect" id="node15" href="$da/d45/classIGraphic.html#a165d65bd8fc43a4793f5870d010e9e3c" title=" " alt="" coords="778,259,905,285"/>
+<area shape="rect" id="node8" href="$db/d6d/classCore.html#abe273e485c745925c2ec194ef57321b7" title="set _game to next _gamesName (vector containing name of all games lib we use). If actual _game is las..." alt="" coords="523,512,674,539"/>
+<area shape="rect" id="node13" href="$db/d6d/classCore.html#a62f33ee51fdd8d1a0b61857cc3039ef5" title="set _graphic to next _graphName (vector containing name of all graphics lib we use)...." alt="" coords="518,259,679,285"/>
+<area shape="rect" id="node17" href="$db/d6d/classCore.html#a5adad85425061d43c1059c2d101547f0" title="set _game to previous _gamesName (vector containing name of all games lib we use)...." alt="" coords="525,563,673,589"/>
+<area shape="rect" id="node18" href="$db/d6d/classCore.html#a41d05febd199e8faacca04bb07162ba4" title="set _graphic to previous _graphName (vector containing name of all graphics lib we use)...." alt="" coords="519,309,678,336"/>
+<area shape="rect" id="node9" href="$d5/d33/classDLLoader.html#ad2e79eb47057cdaa617a1d234c434b23" title="use dlopen() and dlsym() for create a new Instance of IGame, put new Instance in vector" alt="" coords="731,791,952,817"/>
+<area shape="rect" id="node12" href="$da/d45/classIGraphic.html#a35505f3e08c326c1e66f78f89840a511" title=" " alt="" coords="760,537,923,564"/>
+<area shape="rect" id="node14" href="$d5/d33/classDLLoader.html#af51edbc6d48f3eeda95b796c23335c52" title="use dlopen() and dlsym() for create a new Instance of IGraph, put new Instance in vector" alt="" coords="731,360,952,387"/>
+<area shape="rect" id="node20" href="$db/d6d/classCore.html#a6e19c9a2e8c64db8f1e48cf7966014c7" title="Handle change of game in menu." alt="" coords="330,917,457,944"/>
+<area shape="rect" id="node22" href="$db/d6d/classCore.html#ae4d1d5378dfe726eabaab2e11b72d8c1" title="Return _play." alt="" coords="339,765,448,792"/>
+<area shape="rect" id="node23" href="$db/d6d/classCore.html#ad87c276a31eca3ce6fa909903d1d41ce" title="Handle change of lib in menu." alt="" coords="355,613,431,640"/>
+<area shape="rect" id="node25" href="$db/d6d/classCore.html#a4d49c77cbc94586cf448ef0bcf2df15b" title="Print of avaible command in menu." alt="" coords="326,816,461,843"/>
+<area shape="rect" id="node28" href="$db/d6d/classCore.html#a910f8117f606c89728858aad64a7fde5" title="Print for NotHandle menu print." alt="" coords="325,867,462,893"/>
+<area shape="rect" id="node29" href="$db/d6d/classCore.html#a8b9cd9289be7b792d15f92e4d643a538" title="Handle start and exit command of menu." alt="" coords="328,1019,459,1045"/>
+<area shape="rect" id="node21" href="$db/d6d/classCore.html#af95eb8a8a74716b38c88f80e778c9d7d" title="check if given name is in vector _gamesName" alt="" coords="520,867,677,893"/>
+<area shape="rect" id="node24" href="$db/d6d/classCore.html#a503146fe83d43df6bc59dfbd88d84fb0" title="check if given name is in vector _graphName" alt="" coords="515,613,683,640"/>
+<area shape="rect" id="node26" href="$d2/dd1/classIGame.html#a519baab82692b12bd9bda1eb1daa9f84" title=" " alt="" coords="533,816,664,843"/>
+<area shape="rect" id="node27" href="$db/d6d/classCore.html#a562e9c9bdc49802df6926cb02a0ffa5e" title="Print avaible graphics lib in menu." alt="" coords="544,765,653,792"/>
+<area shape="rect" id="node30" href="$d7/d38/Core_8hpp.html#a3414392f4389d745958ce059aa44b161" title="find in directory new lib" alt="" coords="565,1019,632,1045"/>
+<area shape="rect" id="node31" href="$d4/d65/libfinder_8cpp.html#af054024e09f47108e85cd2918d8b8b02" title="check if given name is one of graphics games we wanted" alt="" coords="787,1069,896,1096"/>
+<area shape="rect" id="node32" href="$d4/d65/libfinder_8cpp.html#a33dbd95cb8c6eed0a09ca061f8cda195" title="check if given name is one of graphics libs we wanted" alt="" coords="795,968,888,995"/>
+<area shape="rect" id="node33" href="$d4/d65/libfinder_8cpp.html#aaf97a600d074a08d923667f310900f3a" title="need help to known what function do" alt="" coords="782,1019,901,1045"/>
+<area shape="rect" id="node35" href="$db/d6d/classCore.html#a6a6a8899657bd5c6ff947f7a223b0bd0" title="set _game with a new IGame instance" alt="" coords="334,1069,453,1096"/>
+<area shape="rect" id="node36" href="$db/d6d/classCore.html#a268d7e8d056f10b2f6140536ad9ac1c2" title="set _posGame to i value" alt="" coords="322,1120,465,1147"/>
+</map>

@@ -1,0 +1,121 @@
+#!/usr/bin/env python3
+from sys import *
+
+def main():
+    if (len(argv) != 2):
+        exit(84)
+    if (argv[1] == "-h"):
+        print("USAGE\n\t./301dannon file\nDESCRIPTION\n\tfile    file that contains the numbers to be sorted, separated by spaces")
+    else:
+        get_array(argv[1])
+    return(0)
+    
+def get_array(name):
+    try :
+        f = open(name, "r")
+    except :
+        exit(84)
+    tmp = f.read()
+    tmp = tmp.split(" ")
+    list = []
+    for elem in tmp:
+        try :
+            list.append(float(elem))
+        except :
+            exit(84)
+    printer(list)
+
+def printer(list):
+    global quick
+    if len(list) == 1:
+        print(len(list), "element")
+    else :
+        print(len(list), "elements")
+    quick_sort(list)
+    print("Selection sort:", selection_sort(list.copy()), "comparisons")
+    print("Insertion sort:", insertion_sort(list.copy()), "comparisons")
+    print("Bubble sort:", selection_sort(list.copy()), "comparisons")
+    print("Quicksort:", quick, "comparisons")
+    print("Merge sort:", merge_sort(list.copy()), "comparisons")
+
+def selection_sort(list):
+    nb = 0
+    for i in range(len(list)):
+        min = i
+        for j in range(i+1, len(list)):
+            nb += 1
+            if(list[min]) > list[j]:
+                min = j
+        list[i], list[min] = list[min], list[i]
+    return(nb)
+
+def insertion_sort(list):
+    nb = 0
+    for i in range (1, len(list)):
+        j = i
+        while j > 0:
+            nb += 1
+            if list[j - 1] <=  list[j] :
+                list[j], list[j - 1] = list[j-1], list[j]
+            else :
+                break
+            j -= 1
+    return(nb)
+
+def quick_sort(list):
+    global quick
+    if (len(list) <= 1):
+        return list
+    
+    pivot = list[0]
+    min = []
+    max = []
+
+    list.pop(0)
+    for elem in list:
+        quick += 1
+        if elem < pivot :
+            min.append(elem)
+        else :
+            max.append(elem)
+    list =  quick_sort(min) + [pivot] + quick_sort(max)
+    return(list)
+
+def merge_sort(list):
+    global merge
+    if len(list) > 1:
+        mid = len(list) // 2
+        min = list[:mid]
+        max = list[mid:]
+
+        merge_sort(min)
+        merge_sort(max)
+
+        i, j, k = 0, 0, 0
+        
+        while i < len(min) and j < len(max):
+            merge += 1
+            if min[i] <= max[j]:
+                list[k] = min[i]
+                i += 1
+            else:
+                list[k] = max[j]
+                j += 1
+            k += 1
+
+        while i < len(min):
+            list[k] = min[i]
+            i += 1
+            k += 1
+
+        while j < len(max):
+            list[k]=max[j]
+            j += 1
+            k += 1
+        return(merge)
+
+
+
+quick = 0
+merge = 0
+main()

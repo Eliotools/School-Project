@@ -1,0 +1,17 @@
+version: "2.2"
+services:
+  
+  front:
+    build:
+      context: .
+      dockerfile: Dockerfile_front
+    ports:
+      - "4040:4040"
+  back:
+    build:
+      context: .
+      dockerfile: Dockerfile_back
+    ports:
+      - "8080:8080"
+  redis:
+    image: "debian:latest"

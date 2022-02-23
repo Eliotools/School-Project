@@ -1,0 +1,4 @@
+<map id="Centipede::changeDir" name="Centipede::changeDir">
+<area shape="rect" id="node1" title="change Direction of centipede" alt="" coords="228,5,391,32"/>
+<area shape="rect" id="node2" href="$d6/de5/classCentipede.html#a343fd3e3496260b2d916af47e59bf359" title="reset dir of centipede when touched" alt="" coords="5,5,180,32"/>
+</map>

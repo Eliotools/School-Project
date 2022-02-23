@@ -1,0 +1,1 @@
+rm -rf build && mkdir build && cd build && conan install .. --build=missing && cp conanbuildinfo.cmake ../ && cp conaninfo.txt .. && cmake .. -G "Unix Makefiles" && cd .. && cmake . && make

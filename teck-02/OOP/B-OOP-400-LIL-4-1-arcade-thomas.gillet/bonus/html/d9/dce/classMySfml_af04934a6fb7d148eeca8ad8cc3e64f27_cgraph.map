@@ -1,0 +1,4 @@
+<map id="MySfml::drawobj" name="MySfml::drawobj">
+<area shape="rect" id="node1" title="draw and set position of obj of game" alt="" coords="5,5,137,32"/>
+<area shape="rect" id="node2" href="$d9/dce/classMySfml.html#aa36a91c14050554b0ca94366a4a4ef72" title="set _input with correspondant key pressed" alt="" coords="185,5,319,32"/>
+</map>

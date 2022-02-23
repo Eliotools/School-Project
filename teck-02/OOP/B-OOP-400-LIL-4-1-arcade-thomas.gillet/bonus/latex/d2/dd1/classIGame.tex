@@ -1,0 +1,212 @@
+\hypertarget{classIGame}{}\doxysection{I\+Game Class Reference}
+\label{classIGame}\index{IGame@{IGame}}
+
+
+Interface for game.  
+
+
+
+
+{\ttfamily \#include $<$igame.\+hpp$>$}
+
+
+
+Inheritance diagram for I\+Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{d9/d8d/classIGame__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIGame_a91b14c1b6019364120d5c5e4d4c64414}{$\sim$\+I\+Game}} ()=default
+\item 
+virtual int \mbox{\hyperlink{classIGame_a8bf89652ef3639606f5674867aa153fc}{check\+Inputs}} (int dir)=0
+\item 
+virtual int \mbox{\hyperlink{classIGame_ab0e195dae9b2cbe6aaa6c533396af425}{get\+Xpos}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classIGame_a63b030e5a81569cc2c6c2379b93280db}{get\+Ypos}} ()=0
+\item 
+virtual std\+::vector$<$ int $>$ \mbox{\hyperlink{classIGame_a2a6274820a8a4237a4fc3bf358a370aa}{get\+Snake\+Xpos}} ()=0
+\item 
+virtual std\+::vector$<$ int $>$ \mbox{\hyperlink{classIGame_ae691d9328a454b491ddc4204b01961a4}{get\+Snake\+Ypos}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classIGame_a3fdcf618754985092292eda097ad2f93}{get\+FoodY}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classIGame_afbd255356ae8489d888f8aa68598a9e8}{get\+FoodX}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classIGame_a41ff7592ae8b09ae97c241552a5b278d}{get\+BulletX}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classIGame_a492c8aca60ea294f79f8a2b6d6edaf2b}{get\+BulletY}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classIGame_a42bc9c96b3f6233b8cc5f8a79a629eaf}{set\+Lock}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classIGame_ae418636ffdb98bdbe36f1d448944b90b}{relaunch}} ()=0
+\item 
+virtual int \mbox{\hyperlink{classIGame_a519baab82692b12bd9bda1eb1daa9f84}{get\+Score}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for game. 
+
+Interface for Game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIGame_a91b14c1b6019364120d5c5e4d4c64414}\label{classIGame_a91b14c1b6019364120d5c5e4d4c64414}} 
+\index{IGame@{IGame}!````~IGame@{$\sim$IGame}}
+\index{````~IGame@{$\sim$IGame}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{$\sim$IGame()}{~IGame()}}
+{\footnotesize\ttfamily virtual I\+Game\+::$\sim$\+I\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIGame_a8bf89652ef3639606f5674867aa153fc}\label{classIGame_a8bf89652ef3639606f5674867aa153fc}} 
+\index{IGame@{IGame}!checkInputs@{checkInputs}}
+\index{checkInputs@{checkInputs}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{checkInputs()}{checkInputs()}}
+{\footnotesize\ttfamily virtual int I\+Game\+::check\+Inputs (\begin{DoxyParamCaption}\item[{int}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classCentipede_a343fd3e3496260b2d916af47e59bf359}{Centipede}}, and \mbox{\hyperlink{classNibbler_a1bde8daae879560bf5ada4fedcfc5276}{Nibbler}}.
+
+\mbox{\Hypertarget{classIGame_a41ff7592ae8b09ae97c241552a5b278d}\label{classIGame_a41ff7592ae8b09ae97c241552a5b278d}} 
+\index{IGame@{IGame}!getBulletX@{getBulletX}}
+\index{getBulletX@{getBulletX}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getBulletX()}{getBulletX()}}
+{\footnotesize\ttfamily virtual int I\+Game\+::get\+BulletX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classCentipede_a1faf7b579330e791cea064e25ca3c984}{Centipede}}, and \mbox{\hyperlink{classNibbler_aaee4a422a333b326365535a3e341e31a}{Nibbler}}.
+
+\mbox{\Hypertarget{classIGame_a492c8aca60ea294f79f8a2b6d6edaf2b}\label{classIGame_a492c8aca60ea294f79f8a2b6d6edaf2b}} 
+\index{IGame@{IGame}!getBulletY@{getBulletY}}
+\index{getBulletY@{getBulletY}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getBulletY()}{getBulletY()}}
+{\footnotesize\ttfamily virtual int I\+Game\+::get\+BulletY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classCentipede_a4ef997e3be9cda5241e12ec83fae1940}{Centipede}}, and \mbox{\hyperlink{classNibbler_aff194f5f7a09cc37ddfe410ec1e07360}{Nibbler}}.
+
+\mbox{\Hypertarget{classIGame_afbd255356ae8489d888f8aa68598a9e8}\label{classIGame_afbd255356ae8489d888f8aa68598a9e8}} 
+\index{IGame@{IGame}!getFoodX@{getFoodX}}
+\index{getFoodX@{getFoodX}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getFoodX()}{getFoodX()}}
+{\footnotesize\ttfamily virtual int I\+Game\+::get\+FoodX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classCentipede_a8094684fac33a1fb1cc925bceda0b790}{Centipede}}, and \mbox{\hyperlink{classNibbler_a8d3144a5f64c5f7a452a7ccee4ac6ec6}{Nibbler}}.
+
+\mbox{\Hypertarget{classIGame_a3fdcf618754985092292eda097ad2f93}\label{classIGame_a3fdcf618754985092292eda097ad2f93}} 
+\index{IGame@{IGame}!getFoodY@{getFoodY}}
+\index{getFoodY@{getFoodY}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getFoodY()}{getFoodY()}}
+{\footnotesize\ttfamily virtual int I\+Game\+::get\+FoodY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classCentipede_a42accd720c6fe260c2efed726349c3bf}{Centipede}}, and \mbox{\hyperlink{classNibbler_ad23194ca39046377af10d68023ef4ed5}{Nibbler}}.
+
+\mbox{\Hypertarget{classIGame_a519baab82692b12bd9bda1eb1daa9f84}\label{classIGame_a519baab82692b12bd9bda1eb1daa9f84}} 
+\index{IGame@{IGame}!getScore@{getScore}}
+\index{getScore@{getScore}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily virtual int I\+Game\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classCentipede_a97d5612da4c8d023e4b4cdf909118c73}{Centipede}}, and \mbox{\hyperlink{classNibbler_a9776bb38e2ac0c3ba430d90137b01195}{Nibbler}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dd1/classIGame_a519baab82692b12bd9bda1eb1daa9f84_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classIGame_a2a6274820a8a4237a4fc3bf358a370aa}\label{classIGame_a2a6274820a8a4237a4fc3bf358a370aa}} 
+\index{IGame@{IGame}!getSnakeXpos@{getSnakeXpos}}
+\index{getSnakeXpos@{getSnakeXpos}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getSnakeXpos()}{getSnakeXpos()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$int$>$ I\+Game\+::get\+Snake\+Xpos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classCentipede_a6a9eefabcf1b3c203c0061c6bb368738}{Centipede}}, and \mbox{\hyperlink{classNibbler_aaf68752c0937304be88c6f97677b5e69}{Nibbler}}.
+
+\mbox{\Hypertarget{classIGame_ae691d9328a454b491ddc4204b01961a4}\label{classIGame_ae691d9328a454b491ddc4204b01961a4}} 
+\index{IGame@{IGame}!getSnakeYpos@{getSnakeYpos}}
+\index{getSnakeYpos@{getSnakeYpos}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getSnakeYpos()}{getSnakeYpos()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$int$>$ I\+Game\+::get\+Snake\+Ypos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classCentipede_afbc0cf192e547425b1f00cb37ba45ef0}{Centipede}}, and \mbox{\hyperlink{classNibbler_a59bb2db82db150b99891d8bb91dd32c9}{Nibbler}}.
+
+\mbox{\Hypertarget{classIGame_ab0e195dae9b2cbe6aaa6c533396af425}\label{classIGame_ab0e195dae9b2cbe6aaa6c533396af425}} 
+\index{IGame@{IGame}!getXpos@{getXpos}}
+\index{getXpos@{getXpos}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getXpos()}{getXpos()}}
+{\footnotesize\ttfamily virtual int I\+Game\+::get\+Xpos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classCentipede_a05010baae72716a1689391ffbccd0fd9}{Centipede}}, and \mbox{\hyperlink{classNibbler_a69e8570137bfcd0f319e45a815435155}{Nibbler}}.
+
+\mbox{\Hypertarget{classIGame_a63b030e5a81569cc2c6c2379b93280db}\label{classIGame_a63b030e5a81569cc2c6c2379b93280db}} 
+\index{IGame@{IGame}!getYpos@{getYpos}}
+\index{getYpos@{getYpos}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{getYpos()}{getYpos()}}
+{\footnotesize\ttfamily virtual int I\+Game\+::get\+Ypos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classCentipede_a02a5e94636445a7e760247fdf69d35b1}{Centipede}}, and \mbox{\hyperlink{classNibbler_a8ea94373d447e640f2760ffc9827ddb8}{Nibbler}}.
+
+\mbox{\Hypertarget{classIGame_ae418636ffdb98bdbe36f1d448944b90b}\label{classIGame_ae418636ffdb98bdbe36f1d448944b90b}} 
+\index{IGame@{IGame}!relaunch@{relaunch}}
+\index{relaunch@{relaunch}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{relaunch()}{relaunch()}}
+{\footnotesize\ttfamily virtual void I\+Game\+::relaunch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classCentipede_a292f0324264f79d96a4a3206247d6392}{Centipede}}, and \mbox{\hyperlink{classNibbler_a2eacf89aa5f7e3e5570fd955dbc4d98d}{Nibbler}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dd1/classIGame_ae418636ffdb98bdbe36f1d448944b90b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classIGame_a42bc9c96b3f6233b8cc5f8a79a629eaf}\label{classIGame_a42bc9c96b3f6233b8cc5f8a79a629eaf}} 
+\index{IGame@{IGame}!setLock@{setLock}}
+\index{setLock@{setLock}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{setLock()}{setLock()}}
+{\footnotesize\ttfamily virtual void I\+Game\+::set\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classCentipede_a64e1fcdaa30d296126aad893c4b0be87}{Centipede}}, and \mbox{\hyperlink{classNibbler_ad8573df85cfee1b388a0238cdb134191}{Nibbler}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/dd1/classIGame_a42bc9c96b3f6233b8cc5f8a79a629eaf_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game/\mbox{\hyperlink{igame_8hpp}{igame.\+hpp}}\end{DoxyCompactItemize}

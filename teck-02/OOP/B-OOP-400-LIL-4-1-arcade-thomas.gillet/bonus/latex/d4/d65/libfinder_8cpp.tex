@@ -1,0 +1,137 @@
+\hypertarget{libfinder_8cpp}{}\doxysection{core\+\_\+f/libfinder.cpp File Reference}
+\label{libfinder_8cpp}\index{core\_f/libfinder.cpp@{core\_f/libfinder.cpp}}
+
+
+Function for add new lib in actual lib vector.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$dirent.\+h$>$}\newline
+Include dependency graph for libfinder.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{d0/d21/libfinder_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{libfinder_8cpp_aaf97a600d074a08d923667f310900f3a}{niddleyearsold}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em need help to known what function do \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{libfinder_8cpp_a33dbd95cb8c6eed0a09ca061f8cda195}{find\+\_\+in\+\_\+gra}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em check if given name is one of graphics libs we wanted \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{libfinder_8cpp_af054024e09f47108e85cd2918d8b8b02}{find\+\_\+in\+\_\+game}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em check if given name is one of graphics games we wanted \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{libfinder_8cpp_a3414392f4389d745958ce059aa44b161}{get\+\_\+lib}} (int i)
+\begin{DoxyCompactList}\small\item\em find in directory new lib \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Function for add new lib in actual lib vector. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{libfinder_8cpp_af054024e09f47108e85cd2918d8b8b02}\label{libfinder_8cpp_af054024e09f47108e85cd2918d8b8b02}} 
+\index{libfinder.cpp@{libfinder.cpp}!find\_in\_game@{find\_in\_game}}
+\index{find\_in\_game@{find\_in\_game}!libfinder.cpp@{libfinder.cpp}}
+\doxysubsubsection{\texorpdfstring{find\_in\_game()}{find\_in\_game()}}
+{\footnotesize\ttfamily int find\+\_\+in\+\_\+game (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+check if given name is one of graphics games we wanted 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & -\/$>$ name of game \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d65/libfinder_8cpp_af054024e09f47108e85cd2918d8b8b02_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{libfinder_8cpp_a33dbd95cb8c6eed0a09ca061f8cda195}\label{libfinder_8cpp_a33dbd95cb8c6eed0a09ca061f8cda195}} 
+\index{libfinder.cpp@{libfinder.cpp}!find\_in\_gra@{find\_in\_gra}}
+\index{find\_in\_gra@{find\_in\_gra}!libfinder.cpp@{libfinder.cpp}}
+\doxysubsubsection{\texorpdfstring{find\_in\_gra()}{find\_in\_gra()}}
+{\footnotesize\ttfamily int find\+\_\+in\+\_\+gra (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+check if given name is one of graphics libs we wanted 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & -\/$>$ name of lib \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d65/libfinder_8cpp_a33dbd95cb8c6eed0a09ca061f8cda195_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{libfinder_8cpp_a3414392f4389d745958ce059aa44b161}\label{libfinder_8cpp_a3414392f4389d745958ce059aa44b161}} 
+\index{libfinder.cpp@{libfinder.cpp}!get\_lib@{get\_lib}}
+\index{get\_lib@{get\_lib}!libfinder.cpp@{libfinder.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_lib()}{get\_lib()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ get\+\_\+lib (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+find in directory new lib 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i} & -\/$>$ 1 for game 2 for graph \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+files -\/$>$ name of new lib 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{d4/d65/libfinder_8cpp_a3414392f4389d745958ce059aa44b161_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d65/libfinder_8cpp_a3414392f4389d745958ce059aa44b161_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{libfinder_8cpp_aaf97a600d074a08d923667f310900f3a}\label{libfinder_8cpp_aaf97a600d074a08d923667f310900f3a}} 
+\index{libfinder.cpp@{libfinder.cpp}!niddleyearsold@{niddleyearsold}}
+\index{niddleyearsold@{niddleyearsold}!libfinder.cpp@{libfinder.cpp}}
+\doxysubsubsection{\texorpdfstring{niddleyearsold()}{niddleyearsold()}}
+{\footnotesize\ttfamily int niddleyearsold (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+need help to known what function do 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 is not handle lib 2 if contains .so and arcade 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d65/libfinder_8cpp_aaf97a600d074a08d923667f310900f3a_icgraph}
+\end{center}
+\end{figure}

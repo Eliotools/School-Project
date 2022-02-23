@@ -1,0 +1,12 @@
+test/*
+.vs*
+a.out
+*.o
+myteams_cli
+myteams_server
+user
+teams
+channel
+thread
+private
+replies

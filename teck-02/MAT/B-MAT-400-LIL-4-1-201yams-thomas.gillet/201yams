@@ -1,0 +1,132 @@
+#!/usr/bin/clisp
+
+;; TODO Error management --> check if number
+;; TODO Find why ./201yams 0 0 0 0 0 full_2_3 don't work
+
+(defun main ()
+    (all_arg)
+    (if (string= way "pair") (format t "Chances to get a ~d pair: ~,2f%" nb (proba 2)))
+    (if (string= way "three") (format t "Chances to get a ~d three-of-a-kind: ~,2f%" nb (proba 3)))
+    (if (string= way "four") (format t "Chances to get a ~d four-of-a-kind: ~,2f%" nb (proba 4)))
+    (if (string= way "yams") (format t "Chances to get a ~d yams: ~,2f%" nb (proba 5)))
+    (if (string= way "full") (full (subseq find (position #\_ find) (length find))))    
+    (if (string= way "straight") (straight))
+)
+
+(defun all_arg ()
+    (if (= 1 (length *args*)) (ashes) )
+    (if (/= 6 (length *args*))(my_error "wrong number of arg"))
+    (set_arg)
+    (check-arg)
+    (defvar way (subseq find  0 (position #\_ find)))
+    (if (and (not (= (count #\_ find) 2)) (string= way "full")) (my_error "params should be full_A_B"))
+    (if (and (> (count #\_ find) 1) (not(string= way "full"))) (my_error "params should be combination_A"))
+    (defvar nb (parse-integer(subseq find (1- (length find)))))
+    (defvar nb_dice (+ 5 0))
+    (defvar nth (nth_equal nb))
+    (defvar div (/ 1 6))
+)
+
+(defun ashes ()
+    (progn
+        (if (string= (first *args*) "-h") ( format t "USAGE
+    ./201yams d1 d2 d3 d4 d5 c
+
+DESCRIPTION
+    d1 value of the first die (0 if not thrown)
+    d2 value of the second die (0 if not thrown)
+    d3 value of the third die (0 if not thrown)
+    d4 value of the fourth die (0 if not thrown)
+    d5 value of the fifth die (0 if not thrown)
+    c expected combination
+"))
+        (quit 0)
+        0)
+)
+
+(defun set_arg ()
+    (defvar d1 (parse-integer (first *args*)))
+    (defvar d2 (parse-integer (second *args*)))
+    (defvar d3 (parse-integer (third *args*)))
+    (defvar d4 (parse-integer (fourth *args*)))
+    (defvar d5 (parse-integer (fifth *args*)))
+    (defvar find (sixth *args*))
+
+)
+(defun check-arg ()
+    (if (not (position #\_ find)) (my_error "missing '_' in arg"))
+    (if (or (< 6 d1) (> 0 d1)) (my_error "wrong d1"))
+    (if (or (< 6 d2) (> 0 d2)) (my_error "wrong d2"))
+    (if (or (< 6 d3) (> 0 d3)) (my_error "wrong d3"))
+    (if (or (< 6 d4) (> 0 d4)) (my_error "wrong d4"))
+    (if (or (< 6 d5) (> 0 d5)) (my_error "wrong d5"))
+)
+
+(defun my_error (str)
+    (progn
+        (format t "Error occured -> ~s" str)
+        (quit 84)
+        84)
+)
+
+(defun nth_equal (x)
+    (let ((y 0))
+        (if (= d1 x) (incf y))
+        (if (= d2 x) (incf y))
+        (if (= d3 x) (incf y))
+        (if (= d4 x) (incf y))
+        (if (= d5 x) (incf y))
+        (return-from nth_equal y)
+    y)
+)
+
+(defun full_calculate_pair ()
+    (setq nb_dice 2)
+    (return-from full_calculate_pair (proba 2 pair))
+)
+
+(defun full_calculate_three ()
+    (setq nb_dice 3)
+    (return-from full_calculate_three (proba 3 three))
+)
+
+(defun full (x)
+    (setq pair (parse-integer(subseq find (1- (length find)))))
+    (setq three (parse-integer(subseq x 1 2)))
+    (setq nth (- 5(+ (- 3 (nth_equal three)) (- 2 (nth_equal pair)))))
+    (format t "Chances to get a ~d full of ~d: ~,2f%" three pair (proba 5))
+)
+
+(defun straight ()
+    (setq dote nb)
+    (setq nb_dice nb)
+    (if (or (< 6 dote) (> 1 dote)) (my_error "straight_A :  A should be a dice number"))
+    (loop while (> dote 0)
+        do(if (> (nth_equal dote) 0) (setq nb_dice (- nb_dice 1)))
+        (setq dote (- dote 1))
+    )
+    (format t "Chances to get a ~d straight: ~,2f%" nb (proba nb_dice))
+)
+(defun factorial (n)
+    (cond
+        ((= n 0) 1)
+        ((= n 1) 1)
+        (t
+            (* n (factorial (- n 1)))))
+)
+
+(defun binom (a b)
+    (setq res (* (* (/ (factorial a) (* (factorial b) (factorial(- a b)))) (expt div b)) (expt (- 1 div) (- a b))))
+)
+
+(defun proba (c)
+    (setq final 0)
+    (setq dote (- c nth))
+    (if (>= nth c) (setq final 1)
+    (loop while (< dote (+ 1 (- nb_dice nth))) 
+        do (setf final (+ final (binom (- nb_dice nth) dote)))
+        (setf dote (+ dote 1))))
+    (return-from proba (float (* final 100)))
+)
+
+(main)

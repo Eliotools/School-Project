@@ -1,0 +1,480 @@
+\hypertarget{classCentipede}{}\doxysection{Centipede Class Reference}
+\label{classCentipede}\index{Centipede@{Centipede}}
+
+
+\mbox{\hyperlink{classCentipede}{Centipede}} class for game \mbox{\hyperlink{classCentipede}{Centipede}} use \mbox{\hyperlink{classIGame}{I\+Game}} for Interface.  
+
+
+
+
+{\ttfamily \#include $<$centipede.\+hpp$>$}
+
+
+
+Inheritance diagram for Centipede\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{d2/d54/classCentipede__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Centipede\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{d7/da6/classCentipede__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCentipede_a2013781655c94ca33353b7735b2fab18}{Centipede}} (int a, int b)
+\item 
+\mbox{\hyperlink{classCentipede_a960454b63733792b46ab91c959e8ec2c}{$\sim$\+Centipede}} ()
+\item 
+int \mbox{\hyperlink{classCentipede_a05010baae72716a1689391ffbccd0fd9}{get\+Xpos}} ()
+\item 
+int \mbox{\hyperlink{classCentipede_a02a5e94636445a7e760247fdf69d35b1}{get\+Ypos}} ()
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classCentipede_a6a9eefabcf1b3c203c0061c6bb368738}{get\+Snake\+Xpos}} ()
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classCentipede_afbc0cf192e547425b1f00cb37ba45ef0}{get\+Snake\+Ypos}} ()
+\item 
+int \mbox{\hyperlink{classCentipede_a42accd720c6fe260c2efed726349c3bf}{get\+FoodY}} ()
+\item 
+int \mbox{\hyperlink{classCentipede_a8094684fac33a1fb1cc925bceda0b790}{get\+FoodX}} ()
+\item 
+int \mbox{\hyperlink{classCentipede_a4ef997e3be9cda5241e12ec83fae1940}{get\+BulletY}} ()
+\item 
+int \mbox{\hyperlink{classCentipede_a1faf7b579330e791cea064e25ca3c984}{get\+BulletX}} ()
+\item 
+std\+::list$<$ \mbox{\hyperlink{classCentipede}{Centipede}} $>$ \mbox{\hyperlink{classCentipede_affef68bab991e82b968f5e14405d6ebe}{get\+Snake}} ()
+\item 
+int \mbox{\hyperlink{classCentipede_a343fd3e3496260b2d916af47e59bf359}{check\+Inputs}} (int dir)
+\begin{DoxyCompactList}\small\item\em reset dir of centipede when touched \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCentipede_a64e1fcdaa30d296126aad893c4b0be87}{set\+Lock}} ()
+\begin{DoxyCompactList}\small\item\em set lock to false for good restart of centipede \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCentipede_a292f0324264f79d96a4a3206247d6392}{relaunch}} ()
+\begin{DoxyCompactList}\small\item\em relaunch correctly game \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCentipede_a97d5612da4c8d023e4b4cdf909118c73}{get\+Score}} ()
+\begin{DoxyCompactList}\small\item\em return score \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCentipede_a23c8dbba7f6e57e24efcecd78e8d2f8b}{create\+Centipede}} ()
+\begin{DoxyCompactList}\small\item\em create \mbox{\hyperlink{classCentipede}{Centipede}} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCentipede_aba91b6e088c111cccc6648d3768dacea}{change\+Dir}} (\mbox{\hyperlink{classCentipede}{Centipede}} logic, int dir)
+\begin{DoxyCompactList}\small\item\em change Direction of centipede \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCentipede_a4642328f9c57b2d61ecaa0c682e19c1a}{hit\+Wall}} ()
+\begin{DoxyCompactList}\small\item\em action if wall hited \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCentipede_ae3cbefb60e7ee097d8a1fa6d2b05773d}{check\+Collision}} (int xx)
+\begin{DoxyCompactList}\small\item\em check\+Collision bullet / centipede \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCentipede_a75ac268531da009d730b34b30fecd257}{x}}
+\item 
+int \mbox{\hyperlink{classCentipede_a11645ba3afd18c927a91e1c5a70eaf7e}{y}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{classCentipede}{Centipede}} $>$ \mbox{\hyperlink{classCentipede_a73488a8ac28f4452cb6b3ae7b664d4ea}{snakes}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classCentipede_acd7526468fdc3bff3138d86071934d1c}{xcoords}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classCentipede_a425fdf1fc9d5cb8b421d96804c028b0b}{ycoords}}
+\item 
+int \mbox{\hyperlink{classCentipede_a70bd48a364d932b4e830e44a63f63723}{food\+\_\+x}}
+\item 
+int \mbox{\hyperlink{classCentipede_a196a2b4617f6aba31d56b93b7dbf6570}{food\+\_\+y}}
+\item 
+bool \mbox{\hyperlink{classCentipede_ab08a4da7380d2952887152f1409ee2ce}{lock}}
+\item 
+int \mbox{\hyperlink{classCentipede_a3e897b720f6712f4c3d1f89a2ef3aa91}{wall}}
+\item 
+int \mbox{\hyperlink{classCentipede_a5d53a81ace6e9afc25a14b105d2845d1}{bullet\+\_\+x}}
+\item 
+int \mbox{\hyperlink{classCentipede_a7a7307bd4e5bff2c21131658fc11465e}{bullet\+\_\+y}}
+\item 
+int \mbox{\hyperlink{classCentipede_a12b3a42276d636cf52baadbe0917e458}{hit\+\_\+counter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCentipede}{Centipede}} class for game \mbox{\hyperlink{classCentipede}{Centipede}} use \mbox{\hyperlink{classIGame}{I\+Game}} for Interface. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCentipede_a2013781655c94ca33353b7735b2fab18}\label{classCentipede_a2013781655c94ca33353b7735b2fab18}} 
+\index{Centipede@{Centipede}!Centipede@{Centipede}}
+\index{Centipede@{Centipede}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{Centipede()}{Centipede()}}
+{\footnotesize\ttfamily Centipede\+::\+Centipede (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/de5/classCentipede_a2013781655c94ca33353b7735b2fab18_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCentipede_a960454b63733792b46ab91c959e8ec2c}\label{classCentipede_a960454b63733792b46ab91c959e8ec2c}} 
+\index{Centipede@{Centipede}!````~Centipede@{$\sim$Centipede}}
+\index{````~Centipede@{$\sim$Centipede}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{$\sim$Centipede()}{~Centipede()}}
+{\footnotesize\ttfamily Centipede\+::$\sim$\+Centipede (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCentipede_aba91b6e088c111cccc6648d3768dacea}\label{classCentipede_aba91b6e088c111cccc6648d3768dacea}} 
+\index{Centipede@{Centipede}!changeDir@{changeDir}}
+\index{changeDir@{changeDir}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{changeDir()}{changeDir()}}
+{\footnotesize\ttfamily int Centipede\+::change\+Dir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCentipede}{Centipede}}}]{logic,  }\item[{int}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+change Direction of centipede 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em logic} & for position of centipede \\
+\hline
+\mbox{\texttt{ in}}  & {\em direction} & of centipde \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 or 0 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/de5/classCentipede_aba91b6e088c111cccc6648d3768dacea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/de5/classCentipede_aba91b6e088c111cccc6648d3768dacea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCentipede_ae3cbefb60e7ee097d8a1fa6d2b05773d}\label{classCentipede_ae3cbefb60e7ee097d8a1fa6d2b05773d}} 
+\index{Centipede@{Centipede}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily void Centipede\+::check\+Collision (\begin{DoxyParamCaption}\item[{int}]{xx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+check\+Collision bullet / centipede 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em xx} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/de5/classCentipede_ae3cbefb60e7ee097d8a1fa6d2b05773d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCentipede_a343fd3e3496260b2d916af47e59bf359}\label{classCentipede_a343fd3e3496260b2d916af47e59bf359}} 
+\index{Centipede@{Centipede}!checkInputs@{checkInputs}}
+\index{checkInputs@{checkInputs}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{checkInputs()}{checkInputs()}}
+{\footnotesize\ttfamily int Centipede\+::check\+Inputs (\begin{DoxyParamCaption}\item[{int}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+reset dir of centipede when touched 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dir} & -\/$>$ direction of centipede \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 or 2 for good exit 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGame_a8bf89652ef3639606f5674867aa153fc}{I\+Game}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/de5/classCentipede_a343fd3e3496260b2d916af47e59bf359_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCentipede_a23c8dbba7f6e57e24efcecd78e8d2f8b}\label{classCentipede_a23c8dbba7f6e57e24efcecd78e8d2f8b}} 
+\index{Centipede@{Centipede}!createCentipede@{createCentipede}}
+\index{createCentipede@{createCentipede}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{createCentipede()}{createCentipede()}}
+{\footnotesize\ttfamily void Centipede\+::create\+Centipede (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+create \mbox{\hyperlink{classCentipede}{Centipede}} 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/de5/classCentipede_a23c8dbba7f6e57e24efcecd78e8d2f8b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/de5/classCentipede_a23c8dbba7f6e57e24efcecd78e8d2f8b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCentipede_a1faf7b579330e791cea064e25ca3c984}\label{classCentipede_a1faf7b579330e791cea064e25ca3c984}} 
+\index{Centipede@{Centipede}!getBulletX@{getBulletX}}
+\index{getBulletX@{getBulletX}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{getBulletX()}{getBulletX()}}
+{\footnotesize\ttfamily int Centipede\+::get\+BulletX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_a41ff7592ae8b09ae97c241552a5b278d}{I\+Game}}.
+
+\mbox{\Hypertarget{classCentipede_a4ef997e3be9cda5241e12ec83fae1940}\label{classCentipede_a4ef997e3be9cda5241e12ec83fae1940}} 
+\index{Centipede@{Centipede}!getBulletY@{getBulletY}}
+\index{getBulletY@{getBulletY}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{getBulletY()}{getBulletY()}}
+{\footnotesize\ttfamily int Centipede\+::get\+BulletY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_a492c8aca60ea294f79f8a2b6d6edaf2b}{I\+Game}}.
+
+\mbox{\Hypertarget{classCentipede_a8094684fac33a1fb1cc925bceda0b790}\label{classCentipede_a8094684fac33a1fb1cc925bceda0b790}} 
+\index{Centipede@{Centipede}!getFoodX@{getFoodX}}
+\index{getFoodX@{getFoodX}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{getFoodX()}{getFoodX()}}
+{\footnotesize\ttfamily int Centipede\+::get\+FoodX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_afbd255356ae8489d888f8aa68598a9e8}{I\+Game}}.
+
+\mbox{\Hypertarget{classCentipede_a42accd720c6fe260c2efed726349c3bf}\label{classCentipede_a42accd720c6fe260c2efed726349c3bf}} 
+\index{Centipede@{Centipede}!getFoodY@{getFoodY}}
+\index{getFoodY@{getFoodY}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{getFoodY()}{getFoodY()}}
+{\footnotesize\ttfamily int Centipede\+::get\+FoodY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_a3fdcf618754985092292eda097ad2f93}{I\+Game}}.
+
+\mbox{\Hypertarget{classCentipede_a97d5612da4c8d023e4b4cdf909118c73}\label{classCentipede_a97d5612da4c8d023e4b4cdf909118c73}} 
+\index{Centipede@{Centipede}!getScore@{getScore}}
+\index{getScore@{getScore}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily int Centipede\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+return score 
+
+\begin{DoxyReturn}{Returns}
+hit\+\_\+counter -\/$>$ score of centipede 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGame_a519baab82692b12bd9bda1eb1daa9f84}{I\+Game}}.
+
+\mbox{\Hypertarget{classCentipede_affef68bab991e82b968f5e14405d6ebe}\label{classCentipede_affef68bab991e82b968f5e14405d6ebe}} 
+\index{Centipede@{Centipede}!getSnake@{getSnake}}
+\index{getSnake@{getSnake}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{getSnake()}{getSnake()}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classCentipede}{Centipede}}$>$ Centipede\+::get\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCentipede_a6a9eefabcf1b3c203c0061c6bb368738}\label{classCentipede_a6a9eefabcf1b3c203c0061c6bb368738}} 
+\index{Centipede@{Centipede}!getSnakeXpos@{getSnakeXpos}}
+\index{getSnakeXpos@{getSnakeXpos}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{getSnakeXpos()}{getSnakeXpos()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Centipede\+::get\+Snake\+Xpos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_a2a6274820a8a4237a4fc3bf358a370aa}{I\+Game}}.
+
+\mbox{\Hypertarget{classCentipede_afbc0cf192e547425b1f00cb37ba45ef0}\label{classCentipede_afbc0cf192e547425b1f00cb37ba45ef0}} 
+\index{Centipede@{Centipede}!getSnakeYpos@{getSnakeYpos}}
+\index{getSnakeYpos@{getSnakeYpos}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{getSnakeYpos()}{getSnakeYpos()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Centipede\+::get\+Snake\+Ypos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_ae691d9328a454b491ddc4204b01961a4}{I\+Game}}.
+
+\mbox{\Hypertarget{classCentipede_a05010baae72716a1689391ffbccd0fd9}\label{classCentipede_a05010baae72716a1689391ffbccd0fd9}} 
+\index{Centipede@{Centipede}!getXpos@{getXpos}}
+\index{getXpos@{getXpos}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{getXpos()}{getXpos()}}
+{\footnotesize\ttfamily int Centipede\+::get\+Xpos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_ab0e195dae9b2cbe6aaa6c533396af425}{I\+Game}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/de5/classCentipede_a05010baae72716a1689391ffbccd0fd9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCentipede_a02a5e94636445a7e760247fdf69d35b1}\label{classCentipede_a02a5e94636445a7e760247fdf69d35b1}} 
+\index{Centipede@{Centipede}!getYpos@{getYpos}}
+\index{getYpos@{getYpos}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{getYpos()}{getYpos()}}
+{\footnotesize\ttfamily int Centipede\+::get\+Ypos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_a63b030e5a81569cc2c6c2379b93280db}{I\+Game}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/de5/classCentipede_a02a5e94636445a7e760247fdf69d35b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCentipede_a4642328f9c57b2d61ecaa0c682e19c1a}\label{classCentipede_a4642328f9c57b2d61ecaa0c682e19c1a}} 
+\index{Centipede@{Centipede}!hitWall@{hitWall}}
+\index{hitWall@{hitWall}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{hitWall()}{hitWall()}}
+{\footnotesize\ttfamily void Centipede\+::hit\+Wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+action if wall hited 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/de5/classCentipede_a4642328f9c57b2d61ecaa0c682e19c1a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCentipede_a292f0324264f79d96a4a3206247d6392}\label{classCentipede_a292f0324264f79d96a4a3206247d6392}} 
+\index{Centipede@{Centipede}!relaunch@{relaunch}}
+\index{relaunch@{relaunch}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{relaunch()}{relaunch()}}
+{\footnotesize\ttfamily void Centipede\+::relaunch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+relaunch correctly game 
+
+
+
+Implements \mbox{\hyperlink{classIGame_ae418636ffdb98bdbe36f1d448944b90b}{I\+Game}}.
+
+\mbox{\Hypertarget{classCentipede_a64e1fcdaa30d296126aad893c4b0be87}\label{classCentipede_a64e1fcdaa30d296126aad893c4b0be87}} 
+\index{Centipede@{Centipede}!setLock@{setLock}}
+\index{setLock@{setLock}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{setLock()}{setLock()}}
+{\footnotesize\ttfamily void Centipede\+::set\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set lock to false for good restart of centipede 
+
+
+
+Implements \mbox{\hyperlink{classIGame_a42bc9c96b3f6233b8cc5f8a79a629eaf}{I\+Game}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCentipede_a5d53a81ace6e9afc25a14b105d2845d1}\label{classCentipede_a5d53a81ace6e9afc25a14b105d2845d1}} 
+\index{Centipede@{Centipede}!bullet\_x@{bullet\_x}}
+\index{bullet\_x@{bullet\_x}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{bullet\_x}{bullet\_x}}
+{\footnotesize\ttfamily int Centipede\+::bullet\+\_\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCentipede_a7a7307bd4e5bff2c21131658fc11465e}\label{classCentipede_a7a7307bd4e5bff2c21131658fc11465e}} 
+\index{Centipede@{Centipede}!bullet\_y@{bullet\_y}}
+\index{bullet\_y@{bullet\_y}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{bullet\_y}{bullet\_y}}
+{\footnotesize\ttfamily int Centipede\+::bullet\+\_\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCentipede_a70bd48a364d932b4e830e44a63f63723}\label{classCentipede_a70bd48a364d932b4e830e44a63f63723}} 
+\index{Centipede@{Centipede}!food\_x@{food\_x}}
+\index{food\_x@{food\_x}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{food\_x}{food\_x}}
+{\footnotesize\ttfamily int Centipede\+::food\+\_\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCentipede_a196a2b4617f6aba31d56b93b7dbf6570}\label{classCentipede_a196a2b4617f6aba31d56b93b7dbf6570}} 
+\index{Centipede@{Centipede}!food\_y@{food\_y}}
+\index{food\_y@{food\_y}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{food\_y}{food\_y}}
+{\footnotesize\ttfamily int Centipede\+::food\+\_\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCentipede_a12b3a42276d636cf52baadbe0917e458}\label{classCentipede_a12b3a42276d636cf52baadbe0917e458}} 
+\index{Centipede@{Centipede}!hit\_counter@{hit\_counter}}
+\index{hit\_counter@{hit\_counter}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{hit\_counter}{hit\_counter}}
+{\footnotesize\ttfamily int Centipede\+::hit\+\_\+counter\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCentipede_ab08a4da7380d2952887152f1409ee2ce}\label{classCentipede_ab08a4da7380d2952887152f1409ee2ce}} 
+\index{Centipede@{Centipede}!lock@{lock}}
+\index{lock@{lock}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{lock}{lock}}
+{\footnotesize\ttfamily bool Centipede\+::lock\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCentipede_a73488a8ac28f4452cb6b3ae7b664d4ea}\label{classCentipede_a73488a8ac28f4452cb6b3ae7b664d4ea}} 
+\index{Centipede@{Centipede}!snakes@{snakes}}
+\index{snakes@{snakes}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{snakes}{snakes}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classCentipede}{Centipede}}$>$ Centipede\+::snakes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCentipede_a3e897b720f6712f4c3d1f89a2ef3aa91}\label{classCentipede_a3e897b720f6712f4c3d1f89a2ef3aa91}} 
+\index{Centipede@{Centipede}!wall@{wall}}
+\index{wall@{wall}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{wall}{wall}}
+{\footnotesize\ttfamily int Centipede\+::wall\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCentipede_a75ac268531da009d730b34b30fecd257}\label{classCentipede_a75ac268531da009d730b34b30fecd257}} 
+\index{Centipede@{Centipede}!x@{x}}
+\index{x@{x}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Centipede\+::x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCentipede_acd7526468fdc3bff3138d86071934d1c}\label{classCentipede_acd7526468fdc3bff3138d86071934d1c}} 
+\index{Centipede@{Centipede}!xcoords@{xcoords}}
+\index{xcoords@{xcoords}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{xcoords}{xcoords}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Centipede\+::xcoords\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCentipede_a11645ba3afd18c927a91e1c5a70eaf7e}\label{classCentipede_a11645ba3afd18c927a91e1c5a70eaf7e}} 
+\index{Centipede@{Centipede}!y@{y}}
+\index{y@{y}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Centipede\+::y\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCentipede_a425fdf1fc9d5cb8b421d96804c028b0b}\label{classCentipede_a425fdf1fc9d5cb8b421d96804c028b0b}} 
+\index{Centipede@{Centipede}!ycoords@{ycoords}}
+\index{ycoords@{ycoords}!Centipede@{Centipede}}
+\doxysubsubsection{\texorpdfstring{ycoords}{ycoords}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Centipede\+::ycoords\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game/centipede/\mbox{\hyperlink{centipede_8hpp}{centipede.\+hpp}}\item 
+game/centipede/\mbox{\hyperlink{centipede_8cpp}{centipede.\+cpp}}\end{DoxyCompactItemize}

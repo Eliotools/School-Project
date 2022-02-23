@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+import sys
+from math import *
+
+if (sys.argv[1] == "-h"):
+        print("USAGE\n    ./102architect x y transfo1 arg11 [arg12] [transfo2 arg12 [arg22]] ... \n \nDESCRIPTION\n   x  abscissa of the original point\n   y   ordinate of the orignal point\n\n   transfo arg1 [arg2]\n   -t i j  translation along vector (i, j)\n   -z m n scaling by  factorirs m (x=axis) and n (y = axis)\n   -r d rotation  centered in O by a d degree angle\n   -s d reflection over the axis passing through O with an inclination \n         angle of d degree")
+try:
+        x = float(sys.argv[1])
+        y = float(sys.argv[2])
+except IndexError:
+        sys.exit(84)
+matrice = [1.00, 0.00, 0.00,
+       0.00, 1.00, 0.00,
+       0.00, 0.00, 1.00]
+x = float(sys.argv[1])
+y = float(sys.argv[2])
+action = (sys.argv[3][1])
+if (action == 't'):
+        a = float(sys.argv[4])
+        b = float(sys.argv[5])
+        c = x+a
+        d = y+b
+        print('Translation along vector(%.0f,'%a,'%.0f)'%b)
+        matrice[2] = a + matrice[2]
+        matrice[5] = b + matrice[5]
+if (action == 'z'):
+        a = float(sys.argv[4])
+        b = float(sys.argv[5])
+        c = x*a
+        d = y*b
+        print('Scaling by factors %.0f'%a,'and %.0f'%b)
+        matrice[0] = a * matrice[0]
+        matrice[4] = b * matrice[4]
+if (action == 'r'):
+        teta = float(sys.argv[4])
+        a = round(cos(degrees(teta)))
+        b = round(sin(degrees(-teta)))
+        print('Rotation by a %.0f degrees angle' %teta)
+        matrice[0] = a
+        matrice[1] = -b
+        matrice[3] = b
+        matrice[4] = -a
+if (action == 's') :
+        teta = float(sys.argv[4])
+        a = round(cos(2 * degrees(teta))) 
+        b = round(sin(2 * degrees(teta)))
+        matrice[0] = -b
+        matrice[1] = a
+        matrice[3] = -a
+        matrice[4] = b
+        print('Reflection over an axis with an inclination angle og %.0f degrees ' %teta)
+
+
+print('%.2f'%matrice[0],'\t%.2f'%matrice[1],'\t%.2f'%matrice[2])
+print('%.2f'%matrice[3],'\t%.2f'%matrice[4],'\t%.2f'%matrice[5])
+print('%.2f'%matrice[6],'\t%.2f'%matrice[7],'\t%.2f'%matrice[7])
+a = matrice[0] * x + matrice[1] * y + matrice[2]
+b = matrice[3] * x + matrice[4] * y + matrice[5]
+print('(%.2f,'%x,' %.2f'%y,') => (%.2f,'%a,'%.2f)'%b)
+

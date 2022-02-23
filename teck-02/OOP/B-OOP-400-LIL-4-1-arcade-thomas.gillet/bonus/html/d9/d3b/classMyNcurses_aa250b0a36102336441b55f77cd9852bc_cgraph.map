@@ -1,0 +1,4 @@
+<map id="MyNcurses::drawobj" name="MyNcurses::drawobj">
+<area shape="rect" id="node1" title="draw snake, apple, bullet" alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node2" href="$d9/d3b/classMyNcurses.html#a1fecbda0057aa88af11cb0af72108137" title="print ext map" alt="" coords="208,5,376,32"/>
+</map>

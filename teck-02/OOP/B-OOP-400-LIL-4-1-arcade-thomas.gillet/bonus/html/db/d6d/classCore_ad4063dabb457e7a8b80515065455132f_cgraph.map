@@ -1,0 +1,18 @@
+<map id="Core::gameLoop" name="Core::gameLoop">
+<area shape="rect" id="node1" title="all function for restart game and do game loop" alt="" coords="5,208,133,235"/>
+<area shape="rect" id="node2" href="$da/d45/classIGraphic.html#a5c3c3fcd1b2c10b09cf9507bab1b46e2" title=" " alt="" coords="181,5,317,32"/>
+<area shape="rect" id="node3" href="$db/d6d/classCore.html#a30f2f75a0a677909f39fd66e123cbd67" title="Return _game." alt="" coords="189,56,309,83"/>
+<area shape="rect" id="node4" href="$db/d6d/classCore.html#a569683e5b5f0f2e99050c71491d3ee89" title="return _graphic" alt="" coords="184,107,315,133"/>
+<area shape="rect" id="node5" href="$db/d6d/classCore.html#a4c7cc26c7247a4e09cad8b3ed0c613f4" title="Test input for changing lib of game." alt="" coords="192,233,307,260"/>
+<area shape="rect" id="node8" href="$d2/dd1/classIGame.html#ae418636ffdb98bdbe36f1d448944b90b" title=" " alt="" coords="621,132,750,159"/>
+<area shape="rect" id="node9" href="$d2/dd1/classIGame.html#a42bc9c96b3f6233b8cc5f8a79a629eaf" title=" " alt="" coords="624,284,747,311"/>
+<area shape="rect" id="node13" href="$da/d45/classIGraphic.html#a165d65bd8fc43a4793f5870d010e9e3c" title=" " alt="" coords="622,385,749,412"/>
+<area shape="rect" id="node14" href="$da/d45/classIGraphic.html#a6e666a39fe92b331158b32da5f038b60" title=" " alt="" coords="629,436,741,463"/>
+<area shape="rect" id="node6" href="$db/d6d/classCore.html#abe273e485c745925c2ec194ef57321b7" title="set _game to next _gamesName (vector containing name of all games lib we use). If actual _game is las..." alt="" coords="371,233,521,260"/>
+<area shape="rect" id="node11" href="$db/d6d/classCore.html#a62f33ee51fdd8d1a0b61857cc3039ef5" title="set _graphic to next _graphName (vector containing name of all graphics lib we use)...." alt="" coords="365,385,527,412"/>
+<area shape="rect" id="node15" href="$db/d6d/classCore.html#a5adad85425061d43c1059c2d101547f0" title="set _game to previous _gamesName (vector containing name of all games lib we use)...." alt="" coords="372,183,520,209"/>
+<area shape="rect" id="node16" href="$db/d6d/classCore.html#a41d05febd199e8faacca04bb07162ba4" title="set _graphic to previous _graphName (vector containing name of all graphics lib we use)...." alt="" coords="367,335,525,361"/>
+<area shape="rect" id="node7" href="$d5/d33/classDLLoader.html#ad2e79eb47057cdaa617a1d234c434b23" title="use dlopen() and dlsym() for create a new Instance of IGame, put new Instance in vector" alt="" coords="575,183,796,209"/>
+<area shape="rect" id="node10" href="$da/d45/classIGraphic.html#a35505f3e08c326c1e66f78f89840a511" title=" " alt="" coords="604,233,767,260"/>
+<area shape="rect" id="node12" href="$d5/d33/classDLLoader.html#af51edbc6d48f3eeda95b796c23335c52" title="use dlopen() and dlsym() for create a new Instance of IGraph, put new Instance in vector" alt="" coords="575,335,796,361"/>
+</map>

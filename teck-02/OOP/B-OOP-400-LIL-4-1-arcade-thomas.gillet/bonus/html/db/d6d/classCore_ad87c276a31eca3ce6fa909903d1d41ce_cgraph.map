@@ -1,0 +1,5 @@
+<map id="Core::lib" name="Core::lib">
+<area shape="rect" id="node1" title="Handle change of lib in menu." alt="" coords="5,31,81,57"/>
+<area shape="rect" id="node2" href="$d5/d33/classDLLoader.html#af51edbc6d48f3eeda95b796c23335c52" title="use dlopen() and dlsym() for create a new Instance of IGraph, put new Instance in vector" alt="" coords="129,5,351,32"/>
+<area shape="rect" id="node3" href="$db/d6d/classCore.html#a503146fe83d43df6bc59dfbd88d84fb0" title="check if given name is in vector _graphName" alt="" coords="156,56,324,83"/>
+</map>

@@ -1,0 +1,51 @@
+/*
+** EPITECH PROJECT, 2021
+** B-CPP-300-LIL-3-1-CPPD13-eliot.martin
+** File description:
+** Toy
+*/
+
+#include "Toy.hpp"
+
+Toy::Toy()
+{
+    _type = Toy::BASIC_TOY;
+    _name = "toy";
+    _pic = new Picture();
+}
+
+Toy::Toy(Toy::ToyType type, std::string name, const std::string &file)
+{
+    _type = type;
+    _name = name;
+    _pic = new Picture(file);
+}
+
+Toy::~Toy()
+{
+}
+
+Toy::ToyType Toy::getType() const
+{
+    return (_type);
+}
+
+std::string Toy::getName() const
+{
+    return (_name);
+}
+
+void Toy::setName(std::string name)
+{
+    _name = name;
+}
+
+bool Toy::setAscii(const std::string &file)
+{
+    return (_pic->getPictureFromFile(file));
+}
+
+std::string Toy::getAscii() const
+{
+    return(_pic->_data);
+}

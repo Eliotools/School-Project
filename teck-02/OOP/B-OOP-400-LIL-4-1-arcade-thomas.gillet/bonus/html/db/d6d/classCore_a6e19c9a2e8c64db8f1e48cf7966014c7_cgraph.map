@@ -1,0 +1,5 @@
+<map id="Core::gamePrint" name="Core::gamePrint">
+<area shape="rect" id="node1" title="Handle change of game in menu." alt="" coords="5,31,132,57"/>
+<area shape="rect" id="node2" href="$d5/d33/classDLLoader.html#ad2e79eb47057cdaa617a1d234c434b23" title="use dlopen() and dlsym() for create a new Instance of IGame, put new Instance in vector" alt="" coords="180,5,401,32"/>
+<area shape="rect" id="node3" href="$db/d6d/classCore.html#af95eb8a8a74716b38c88f80e778c9d7d" title="check if given name is in vector _gamesName" alt="" coords="212,56,369,83"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="get_lib" name="get_lib">
+<area shape="rect" id="node1" title="find in directory new lib" alt="" coords="5,56,72,83"/>
+<area shape="rect" id="node2" href="$d4/d65/libfinder_8cpp.html#af054024e09f47108e85cd2918d8b8b02" title="check if given name is one of graphics games we wanted" alt="" coords="125,5,234,32"/>
+<area shape="rect" id="node3" href="$d4/d65/libfinder_8cpp.html#a33dbd95cb8c6eed0a09ca061f8cda195" title="check if given name is one of graphics libs we wanted" alt="" coords="133,56,226,83"/>
+<area shape="rect" id="node4" href="$d4/d65/libfinder_8cpp.html#aaf97a600d074a08d923667f310900f3a" title="need help to known what function do" alt="" coords="120,107,239,133"/>
+</map>

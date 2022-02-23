@@ -1,0 +1,324 @@
+\hypertarget{classMySDL2}{}\doxysection{My\+S\+D\+L2 Class Reference}
+\label{classMySDL2}\index{MySDL2@{MySDL2}}
+
+
+S\+D\+L2 function for draw game and handle input.  
+
+
+
+
+{\ttfamily \#include $<$My\+S\+D\+L2.\+hpp$>$}
+
+
+
+Inheritance diagram for My\+S\+D\+L2\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=137pt]{d7/dbf/classMySDL2__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for My\+S\+D\+L2\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=137pt]{d4/d0d/classMySDL2__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMySDL2_a61e35735c6282976d6ad9a760bc2712a}{My\+S\+D\+L2}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMySDL2_a761894c3389e9f2f8eb544520cbab165}{$\sim$\+My\+S\+D\+L2}} ()
+\begin{DoxyCompactList}\small\item\em deconstructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMySDL2_a749af6644dbf3d828e3cb67f77ecff11}{init}} ()
+\item 
+void \mbox{\hyperlink{classMySDL2_ad3107cf3db94a09c0015630eb73a867b}{stop}} ()
+\begin{DoxyCompactList}\small\item\em destroy window and quit sdl \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMySDL2_a2a3831923e875fb7bd76d873e4f4d8de}{launch}} ()
+\begin{DoxyCompactList}\small\item\em set window and render for launch window \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMySDL2_a9be1408bcf6656f9768d8bf7e3df80f7}{get\+Input}} ()
+\begin{DoxyCompactList}\small\item\em return \+\_\+input \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMySDL2_a6c376be343d54467cbf14217aa7db85f}{set\+Input}} ()
+\begin{DoxyCompactList}\small\item\em set \+\_\+input to value set by key press \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMySDL2_a525ff0e6a21c1c51d183a75f55603b3b}{setting\+Input}} (int input)
+\begin{DoxyCompactList}\small\item\em set \+\_\+input to given value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMySDL2_a7d212c20c07223bc5b987a9cf4acf224}{draw\+Snake}} (std\+::vector$<$ int $>$ xcoords, std\+::vector$<$ int $>$ ycoords)
+\begin{DoxyCompactList}\small\item\em draw snake at given coord \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMySDL2_a9644630f71d5c986df8c52bd40b1ccb4}{draw\+Apple}} (int, int)
+\begin{DoxyCompactList}\small\item\em draw apple \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMySDL2_abf5595a27a433b5f4311535ef588e75d}{draw\+Bullet}} (int, int)
+\begin{DoxyCompactList}\small\item\em draw bullet \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMySDL2_a7ff0f2b483338e2615fb9fe32e1a3140}{drawobj}} (std\+::vector$<$ int $>$ xcoords, std\+::vector$<$ int $>$ ycoords, int food\+\_\+x, int food\+\_\+y, int bullet\+\_\+x, int bullet\+\_\+y)
+\begin{DoxyCompactList}\small\item\em call all function for draw game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMySDL2_a39c3dd426691e5d1a943a519942876b3}{\+\_\+input}}
+\item 
+S\+D\+L\+\_\+\+Event $\ast$ \mbox{\hyperlink{classMySDL2_a31fda0e2c9348341e627af81ac237974}{\+\_\+event}}
+\item 
+S\+D\+L\+\_\+\+Window $\ast$ \mbox{\hyperlink{classMySDL2_a197a2f5c7b4087b5a910c8b3a0398c90}{\+\_\+screen}}
+\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{classMySDL2_a7541fc97da1b1de4bdafa4499364f447}{\+\_\+render}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+S\+D\+L2 function for draw game and handle input. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMySDL2_a61e35735c6282976d6ad9a760bc2712a}\label{classMySDL2_a61e35735c6282976d6ad9a760bc2712a}} 
+\index{MySDL2@{MySDL2}!MySDL2@{MySDL2}}
+\index{MySDL2@{MySDL2}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{MySDL2()}{MySDL2()}}
+{\footnotesize\ttfamily My\+S\+D\+L2\+::\+My\+S\+D\+L2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+\mbox{\Hypertarget{classMySDL2_a761894c3389e9f2f8eb544520cbab165}\label{classMySDL2_a761894c3389e9f2f8eb544520cbab165}} 
+\index{MySDL2@{MySDL2}!````~MySDL2@{$\sim$MySDL2}}
+\index{````~MySDL2@{$\sim$MySDL2}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{$\sim$MySDL2()}{~MySDL2()}}
+{\footnotesize\ttfamily My\+S\+D\+L2\+::$\sim$\+My\+S\+D\+L2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+deconstructor 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMySDL2_a9644630f71d5c986df8c52bd40b1ccb4}\label{classMySDL2_a9644630f71d5c986df8c52bd40b1ccb4}} 
+\index{MySDL2@{MySDL2}!drawApple@{drawApple}}
+\index{drawApple@{drawApple}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{drawApple()}{drawApple()}}
+{\footnotesize\ttfamily void My\+S\+D\+L2\+::draw\+Apple (\begin{DoxyParamCaption}\item[{int}]{food\+\_\+x,  }\item[{int}]{food\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+draw apple 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em food\+\_\+x} & -\/$>$ coord x of apple \\
+\hline
+\mbox{\texttt{ in}}  & {\em food\+\_\+y} & -\/$>$ coord y of apple \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{d3/d02/classMySDL2_a9644630f71d5c986df8c52bd40b1ccb4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMySDL2_abf5595a27a433b5f4311535ef588e75d}\label{classMySDL2_abf5595a27a433b5f4311535ef588e75d}} 
+\index{MySDL2@{MySDL2}!drawBullet@{drawBullet}}
+\index{drawBullet@{drawBullet}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{drawBullet()}{drawBullet()}}
+{\footnotesize\ttfamily void My\+S\+D\+L2\+::draw\+Bullet (\begin{DoxyParamCaption}\item[{int}]{bullet\+\_\+x,  }\item[{int}]{bullet\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+draw bullet 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em bullet\+\_\+x} & -\/$>$ coord x of bullet \\
+\hline
+\mbox{\texttt{ in}}  & {\em bullet\+\_\+y} & -\/$>$ coord y of bullet \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{d3/d02/classMySDL2_abf5595a27a433b5f4311535ef588e75d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMySDL2_a7ff0f2b483338e2615fb9fe32e1a3140}\label{classMySDL2_a7ff0f2b483338e2615fb9fe32e1a3140}} 
+\index{MySDL2@{MySDL2}!drawobj@{drawobj}}
+\index{drawobj@{drawobj}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{drawobj()}{drawobj()}}
+{\footnotesize\ttfamily void My\+S\+D\+L2\+::drawobj (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{xcoords,  }\item[{std\+::vector$<$ int $>$}]{ycoords,  }\item[{int}]{food\+\_\+x,  }\item[{int}]{food\+\_\+y,  }\item[{int}]{bullet\+\_\+x,  }\item[{int}]{bullet\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+call all function for draw game 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em xcoord} & -\/$>$ vector of x coor d of snake \\
+\hline
+\mbox{\texttt{ in}}  & {\em ycoords} & -\/$>$ vector ycoords for snake \\
+\hline
+\mbox{\texttt{ in}}  & {\em food\+\_\+x} & -\/$>$ coord x of apple \\
+\hline
+\mbox{\texttt{ in}}  & {\em food\+\_\+y} & -\/$>$ coord y of apple \\
+\hline
+\mbox{\texttt{ in}}  & {\em bullet\+\_\+x} & -\/$>$ coord x of bullet \\
+\hline
+\mbox{\texttt{ in}}  & {\em bullet\+\_\+y} & -\/$>$ coord y of bullet \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIGraphic_a5c3c3fcd1b2c10b09cf9507bab1b46e2}{I\+Graphic}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{d3/d02/classMySDL2_a7ff0f2b483338e2615fb9fe32e1a3140_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMySDL2_a7d212c20c07223bc5b987a9cf4acf224}\label{classMySDL2_a7d212c20c07223bc5b987a9cf4acf224}} 
+\index{MySDL2@{MySDL2}!drawSnake@{drawSnake}}
+\index{drawSnake@{drawSnake}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{drawSnake()}{drawSnake()}}
+{\footnotesize\ttfamily void My\+S\+D\+L2\+::draw\+Snake (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{xcoords,  }\item[{std\+::vector$<$ int $>$}]{ycoords }\end{DoxyParamCaption})}
+
+
+
+draw snake at given coord 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em xcoords} & -\/$>$ vector x of coord of snake\mbox{]} \\
+\hline
+\mbox{\texttt{ in}}  & {\em ycoords} & -\/$>$ vector of coord y of snake \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{d3/d02/classMySDL2_a7d212c20c07223bc5b987a9cf4acf224_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMySDL2_a9be1408bcf6656f9768d8bf7e3df80f7}\label{classMySDL2_a9be1408bcf6656f9768d8bf7e3df80f7}} 
+\index{MySDL2@{MySDL2}!getInput@{getInput}}
+\index{getInput@{getInput}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily int My\+S\+D\+L2\+::get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+return \+\_\+input 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+input 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGraphic_a2c7e0525eaf0483d258afafdac0eb862}{I\+Graphic}}.
+
+\mbox{\Hypertarget{classMySDL2_a749af6644dbf3d828e3cb67f77ecff11}\label{classMySDL2_a749af6644dbf3d828e3cb67f77ecff11}} 
+\index{MySDL2@{MySDL2}!init@{init}}
+\index{init@{init}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void My\+S\+D\+L2\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMySDL2_a2a3831923e875fb7bd76d873e4f4d8de}\label{classMySDL2_a2a3831923e875fb7bd76d873e4f4d8de}} 
+\index{MySDL2@{MySDL2}!launch@{launch}}
+\index{launch@{launch}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{launch()}{launch()}}
+{\footnotesize\ttfamily void My\+S\+D\+L2\+::launch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set window and render for launch window 
+
+
+
+Implements \mbox{\hyperlink{classIGraphic_a165d65bd8fc43a4793f5870d010e9e3c}{I\+Graphic}}.
+
+\mbox{\Hypertarget{classMySDL2_a6c376be343d54467cbf14217aa7db85f}\label{classMySDL2_a6c376be343d54467cbf14217aa7db85f}} 
+\index{MySDL2@{MySDL2}!setInput@{setInput}}
+\index{setInput@{setInput}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{setInput()}{setInput()}}
+{\footnotesize\ttfamily void My\+S\+D\+L2\+::set\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set \+\_\+input to value set by key press 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{d3/d02/classMySDL2_a6c376be343d54467cbf14217aa7db85f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMySDL2_a525ff0e6a21c1c51d183a75f55603b3b}\label{classMySDL2_a525ff0e6a21c1c51d183a75f55603b3b}} 
+\index{MySDL2@{MySDL2}!settingInput@{settingInput}}
+\index{settingInput@{settingInput}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{settingInput()}{settingInput()}}
+{\footnotesize\ttfamily void My\+S\+D\+L2\+::setting\+Input (\begin{DoxyParamCaption}\item[{int}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set \+\_\+input to given value 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input-\/$>$} & new value to set \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIGraphic_a35505f3e08c326c1e66f78f89840a511}{I\+Graphic}}.
+
+\mbox{\Hypertarget{classMySDL2_ad3107cf3db94a09c0015630eb73a867b}\label{classMySDL2_ad3107cf3db94a09c0015630eb73a867b}} 
+\index{MySDL2@{MySDL2}!stop@{stop}}
+\index{stop@{stop}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void My\+S\+D\+L2\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+destroy window and quit sdl 
+
+
+
+Implements \mbox{\hyperlink{classIGraphic_a6e666a39fe92b331158b32da5f038b60}{I\+Graphic}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMySDL2_a31fda0e2c9348341e627af81ac237974}\label{classMySDL2_a31fda0e2c9348341e627af81ac237974}} 
+\index{MySDL2@{MySDL2}!\_event@{\_event}}
+\index{\_event@{\_event}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{\_event}{\_event}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Event$\ast$ My\+S\+D\+L2\+::\+\_\+event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMySDL2_a39c3dd426691e5d1a943a519942876b3}\label{classMySDL2_a39c3dd426691e5d1a943a519942876b3}} 
+\index{MySDL2@{MySDL2}!\_input@{\_input}}
+\index{\_input@{\_input}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{\_input}{\_input}}
+{\footnotesize\ttfamily int My\+S\+D\+L2\+::\+\_\+input\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMySDL2_a7541fc97da1b1de4bdafa4499364f447}\label{classMySDL2_a7541fc97da1b1de4bdafa4499364f447}} 
+\index{MySDL2@{MySDL2}!\_render@{\_render}}
+\index{\_render@{\_render}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{\_render}{\_render}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Renderer$\ast$ My\+S\+D\+L2\+::\+\_\+render\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMySDL2_a197a2f5c7b4087b5a910c8b3a0398c90}\label{classMySDL2_a197a2f5c7b4087b5a910c8b3a0398c90}} 
+\index{MySDL2@{MySDL2}!\_screen@{\_screen}}
+\index{\_screen@{\_screen}!MySDL2@{MySDL2}}
+\doxysubsubsection{\texorpdfstring{\_screen}{\_screen}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window$\ast$ My\+S\+D\+L2\+::\+\_\+screen\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+graphic/sdl\+\_\+deux/\mbox{\hyperlink{MySDL2_8hpp}{My\+S\+D\+L2.\+hpp}}\item 
+graphic/sdl\+\_\+deux/\mbox{\hyperlink{MySDL2_8cpp}{My\+S\+D\+L2.\+cpp}}\end{DoxyCompactItemize}

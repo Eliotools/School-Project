@@ -1,0 +1,100 @@
+Documentation for My Teams Project
+
+• /help                                                     : show help
+• /login [“user_name”]                                      : set the user_name used by client
+• /logout                                                   : disconnect the client from the server
+• /users                                                    : get the list of all users that exist on the domain
+• /user [“user_uuid”]                                       : get information about a user
+• /send [“user_uuid”] [“message_body”]                      : send a message to a user
+• /messages [“user_uuid”]                                   : list all messages exchange with an user
+• /subscribe [“team_uuid”]                                  : subscribe to the event of a team and its sub directories (enable reception of all events from a team)
+• /subscribed ?[“team_uuid”]                                : list all subscribed teams or list all users subscribed to a team
+• /unsubscribe [“team_uuid”]                                : unsubscribe from a team
+• /use ?[“team_uuid”] ?[“channel_uuid”] ?[“thread_uuid”]    : use specify a context team/channel/thread
+• /create                                                   : based on what is being used create the sub resource (see below)
+• /list                                                     : based on what is being used list all the sub resources (see below)
+• /info                                                     : based on what is being used list the current (see below)
+
+                                --CREATE--
+When the context is not defined (/use):
+• /create [“team_name”] [“team_description”]        : create a new team
+
+When team_uuid is defined (/use “team_uuid”):
+• /create [“channel_name”] [“channel_description”]  : create a new channel
+
+When team_uuid and channel_uuid are defined (/use “team_uuid” “channel_uuid”):
+• /create [“thread_title”] [“thread_message”]       : create a new thread
+
+When team_uuid, channel_uuid and thread_uuid are defined (/use “team_uuid” “channel_uuid” “thread_uuid”):
+• /create [“comment_body”]                          : create a new reply
+
+
+                                 --LIST--
+When the context is not defined (/use):
+• /list : list all existing teams
+
+When team_uuid is defined (/use “team_uuid”):
+• /list : list all existing channels
+
+When team_uuid and channel_uuid are defined (/use “team_uuid” “channel_uuid”):
+• /list : list all existing threads
+
+When team_uuid, channel_uuid and thread_uuid are defined (/use “team_uuid” “channel_uuid” “thread_uuid”):
+• /list : list all existing replies
+
+
+                                --INFO--
+When the context is not defined (/use):
+• /info : display currently logged user infos
+
+When team_uuid is defined (/use “team_uuid”):
+• /info : display currently selected team infos
+
+When team_uuid and channel_uuid are defined (/use “team_uuid” “channel_uuid”):
+• /info : display currently selected channel infos
+
+When team_uuid, channel_uuid and thread_uuid are defined (/use “team_uuid” “channel_uuid” “thread_uuid”):
+• /info : display currently selected thread infos
+
+
+                                    ---REPLY CODES---
+    331 -> login successfully
+    505 -> Bad use of command
+    500 -> Unknown command
+    202 -> private message sent successfully
+    203 -> Private message received
+    404 -> Error unknown user
+    221 -> User logged out
+    502 -> Unauthorized action
+    219 -> Listing private messages (/messages)
+    100 -> Create team
+    101 -> Create channel
+    102 -> Create thread
+    103 -> Create reply
+    104 -> Event notification of team creation
+    105 -> Event notification of channel creation to those subscribed to team
+    550 -> Create team (already exists)
+    551 -> Create channel (already exists)
+    552 -> Create thread (already exists)
+    553 -> Create reply (already exists)
+    560 -> Use of an unknown team
+    561 -> Use of an unknown channel
+    562 -> Use of an unknown thread
+    563 -> Use of an unknown reply
+    231 -> Infos of requested user (/user "uuid")
+    240 -> Listing all users on domain
+    260 -> Listing teams
+    261 -> Listing channels
+    262 -> Listing threads
+    263 -> Listing replies
+    311 -> Subscribe to a team (team exists)
+    312 -> Subscribe to a team (team doesn't exist)
+    312 -> Subscribe to a team (already subscribed to team)
+    320 -> Print subscribed teams (/subscribed)
+    330 -> Print users subscribed to a team (/subscribed "team_uuid")
+    340 -> Unsubscribe from a team
+    345 -> Unsubscribe from a team but doesn't work
+    280 -> Print info of currently logged user
+    281 -> Print info of team
+    282 -> Print info of channel
+    283 -> Print info of thread

@@ -1,0 +1,8 @@
+<map id="IGraphic::settingInput" name="IGraphic::settingInput">
+<area shape="rect" id="node1" title=" " alt="" coords="645,31,808,57"/>
+<area shape="rect" id="node2" href="$db/d6d/classCore.html#abe273e485c745925c2ec194ef57321b7" title="set _game to next _gamesName (vector containing name of all games lib we use). If actual _game is las..." alt="" coords="447,5,597,32"/>
+<area shape="rect" id="node6" href="$db/d6d/classCore.html#a5adad85425061d43c1059c2d101547f0" title="set _game to previous _gamesName (vector containing name of all games lib we use)...." alt="" coords="448,56,596,83"/>
+<area shape="rect" id="node3" href="$db/d6d/classCore.html#a4c7cc26c7247a4e09cad8b3ed0c613f4" title="Test input for changing lib of game." alt="" coords="284,31,399,57"/>
+<area shape="rect" id="node4" href="$db/d6d/classCore.html#ad4063dabb457e7a8b80515065455132f" title="all function for restart game and do game loop" alt="" coords="108,31,236,57"/>
+<area shape="rect" id="node5" href="$df/d0a/main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title="main" alt="" coords="5,31,60,57"/>
+</map>

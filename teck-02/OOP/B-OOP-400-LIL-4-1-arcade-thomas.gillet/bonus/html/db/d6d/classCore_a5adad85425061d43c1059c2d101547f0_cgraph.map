@@ -1,0 +1,7 @@
+<map id="Core::setPrevGame" name="Core::setPrevGame">
+<area shape="rect" id="node1" title="set _game to previous _gamesName (vector containing name of all games lib we use)...." alt="" coords="5,81,153,108"/>
+<area shape="rect" id="node2" href="$d5/d33/classDLLoader.html#ad2e79eb47057cdaa617a1d234c434b23" title="use dlopen() and dlsym() for create a new Instance of IGame, put new Instance in vector" alt="" coords="201,5,423,32"/>
+<area shape="rect" id="node3" href="$d2/dd1/classIGame.html#ae418636ffdb98bdbe36f1d448944b90b" title=" " alt="" coords="247,56,377,83"/>
+<area shape="rect" id="node4" href="$d2/dd1/classIGame.html#a42bc9c96b3f6233b8cc5f8a79a629eaf" title=" " alt="" coords="251,107,373,133"/>
+<area shape="rect" id="node5" href="$da/d45/classIGraphic.html#a35505f3e08c326c1e66f78f89840a511" title=" " alt="" coords="231,157,393,184"/>
+</map>

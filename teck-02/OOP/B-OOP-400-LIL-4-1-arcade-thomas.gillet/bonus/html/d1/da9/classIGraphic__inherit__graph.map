@@ -1,0 +1,6 @@
+<map id="IGraphic" name="IGraphic">
+<area shape="rect" id="node1" title="Interface for graph class." alt="" coords="124,5,200,32"/>
+<area shape="rect" id="node2" href="$d9/d3b/classMyNcurses.html" title="fucntion for draw game in ncurses use IGraphic interface" alt="" coords="5,80,100,107"/>
+<area shape="rect" id="node3" href="$d3/d02/classMySDL2.html" title="SDL2 function for draw game and handle input." alt="" coords="125,80,199,107"/>
+<area shape="rect" id="node4" href="$d9/dce/classMySfml.html" title="SFML function for draw game use IGraphic interface." alt="" coords="223,80,295,107"/>
+</map>

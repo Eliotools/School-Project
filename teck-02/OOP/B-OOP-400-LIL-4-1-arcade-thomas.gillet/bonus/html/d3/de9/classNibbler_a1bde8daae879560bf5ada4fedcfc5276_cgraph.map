@@ -1,0 +1,10 @@
+<map id="Nibbler::checkInputs" name="Nibbler::checkInputs">
+<area shape="rect" id="node1" title="check inputs" alt="" coords="5,132,160,159"/>
+<area shape="rect" id="node2" href="$d3/de9/classNibbler.html#a9f3a2679eb4931c9a7a897f0a4cb520e" title="change direction of snake" alt="" coords="233,31,376,57"/>
+<area shape="rect" id="node5" href="$d3/de9/classNibbler.html#a3f40f913615198f470a796bc26fbfa0c" title="change coord of apple by rand" alt="" coords="208,81,401,108"/>
+<area shape="rect" id="node6" href="$d3/de9/classNibbler.html#a012491a223716759f1a83173c2b57848" title="check snake and change food coord" alt="" coords="227,132,382,159"/>
+<area shape="rect" id="node7" href="$d3/de9/classNibbler.html#aff04c0304307dcd989098bfc00a5d26f" title="createSnake set all var" alt="" coords="226,183,383,209"/>
+<area shape="rect" id="node8" href="$d3/de9/classNibbler.html#a739de9b1bdd9b8bada9b31b1b27a9569" title=" " alt="" coords="453,208,577,235"/>
+<area shape="rect" id="node3" href="$d3/de9/classNibbler.html#a69e8570137bfcd0f319e45a815435155" title=" " alt="" coords="449,5,580,32"/>
+<area shape="rect" id="node4" href="$d3/de9/classNibbler.html#a8ea94373d447e640f2760ffc9827ddb8" title=" " alt="" coords="450,56,579,83"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Core::startOrExit" name="Core::startOrExit">
+<area shape="rect" id="node1" title="Handle start and exit command of menu." alt="" coords="5,56,136,83"/>
+<area shape="rect" id="node2" href="$d7/d38/Core_8hpp.html#a3414392f4389d745958ce059aa44b161" title="find in directory new lib" alt="" coords="184,56,251,83"/>
+<area shape="rect" id="node3" href="$d4/d65/libfinder_8cpp.html#af054024e09f47108e85cd2918d8b8b02" title="check if given name is one of graphics games we wanted" alt="" coords="303,5,413,32"/>
+<area shape="rect" id="node4" href="$d4/d65/libfinder_8cpp.html#a33dbd95cb8c6eed0a09ca061f8cda195" title="check if given name is one of graphics libs we wanted" alt="" coords="311,56,405,83"/>
+<area shape="rect" id="node5" href="$d4/d65/libfinder_8cpp.html#aaf97a600d074a08d923667f310900f3a" title="need help to known what function do" alt="" coords="299,107,417,133"/>
+</map>

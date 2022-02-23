@@ -1,0 +1,468 @@
+\hypertarget{classNibbler}{}\doxysection{Nibbler Class Reference}
+\label{classNibbler}\index{Nibbler@{Nibbler}}
+
+
+Game use \mbox{\hyperlink{classIGame}{I\+Game}} as Interface.  
+
+
+
+
+{\ttfamily \#include $<$nibbler.\+hpp$>$}
+
+
+
+Inheritance diagram for Nibbler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{dc/d73/classNibbler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Nibbler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=132pt]{d3/dd9/classNibbler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNibbler_a739de9b1bdd9b8bada9b31b1b27a9569}{Nibbler}} (int a, int b)
+\item 
+\mbox{\hyperlink{classNibbler_a03b98f06bc1f845f57aa15f034f0467e}{$\sim$\+Nibbler}} ()
+\item 
+int \mbox{\hyperlink{classNibbler_a69e8570137bfcd0f319e45a815435155}{get\+Xpos}} ()
+\item 
+int \mbox{\hyperlink{classNibbler_a8ea94373d447e640f2760ffc9827ddb8}{get\+Ypos}} ()
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classNibbler_aaf68752c0937304be88c6f97677b5e69}{get\+Snake\+Xpos}} ()
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classNibbler_a59bb2db82db150b99891d8bb91dd32c9}{get\+Snake\+Ypos}} ()
+\item 
+int \mbox{\hyperlink{classNibbler_ad23194ca39046377af10d68023ef4ed5}{get\+FoodY}} ()
+\item 
+int \mbox{\hyperlink{classNibbler_a8d3144a5f64c5f7a452a7ccee4ac6ec6}{get\+FoodX}} ()
+\item 
+int \mbox{\hyperlink{classNibbler_aff194f5f7a09cc37ddfe410ec1e07360}{get\+BulletY}} ()
+\item 
+int \mbox{\hyperlink{classNibbler_aaee4a422a333b326365535a3e341e31a}{get\+BulletX}} ()
+\item 
+std\+::list$<$ \mbox{\hyperlink{classNibbler}{Nibbler}} $>$ \mbox{\hyperlink{classNibbler_a3c8200a9936ded86ed00a9b5de07b5ea}{get\+Snake}} ()
+\item 
+int \mbox{\hyperlink{classNibbler_a1bde8daae879560bf5ada4fedcfc5276}{check\+Inputs}} (int dir)
+\begin{DoxyCompactList}\small\item\em check inputs \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNibbler_ad8573df85cfee1b388a0238cdb134191}{set\+Lock}} ()
+\begin{DoxyCompactList}\small\item\em set lock to false for good restart of game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNibbler_a2eacf89aa5f7e3e5570fd955dbc4d98d}{relaunch}} ()
+\begin{DoxyCompactList}\small\item\em relaunch correctly game \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classNibbler_a9776bb38e2ac0c3ba430d90137b01195}{get\+Score}} ()
+\begin{DoxyCompactList}\small\item\em return score \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classNibbler_aff04c0304307dcd989098bfc00a5d26f}{create\+Snake}} ()
+\begin{DoxyCompactList}\small\item\em create\+Snake set all var \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNibbler_a3f40f913615198f470a796bc26fbfa0c}{change\+Food\+Coord}} (int \mbox{\hyperlink{classNibbler_a07c73a8b808f2c1128b863b318bdcb2c}{x}}, int \mbox{\hyperlink{classNibbler_adba20309214e7c891d1cc88f94348dfc}{y}})
+\begin{DoxyCompactList}\small\item\em change coord of apple by rand \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classNibbler_a9f3a2679eb4931c9a7a897f0a4cb520e}{change\+Dir}} (\mbox{\hyperlink{classNibbler}{Nibbler}} logic, int dir)
+\begin{DoxyCompactList}\small\item\em change direction of snake \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classNibbler_a012491a223716759f1a83173c2b57848}{check\+Snake}} (int dir, int xx)
+\begin{DoxyCompactList}\small\item\em check snake and change food coord \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classNibbler_a07c73a8b808f2c1128b863b318bdcb2c}{x}}
+\item 
+int \mbox{\hyperlink{classNibbler_adba20309214e7c891d1cc88f94348dfc}{y}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{classNibbler}{Nibbler}} $>$ \mbox{\hyperlink{classNibbler_a1c468a59e3a9461bde10eff952f39161}{snakes}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classNibbler_a27043252a6afd6d17042c7d5b5d32c41}{xcoords}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classNibbler_ac40b224b5e82f187b4a18940b5a44c8e}{ycoords}}
+\item 
+int \mbox{\hyperlink{classNibbler_a1baaa77adba5b5d6e1b8884477afcd3a}{food\+\_\+x}}
+\item 
+int \mbox{\hyperlink{classNibbler_aa18350da7ca9516c44a39ce1334f5706}{food\+\_\+y}}
+\item 
+bool \mbox{\hyperlink{classNibbler_ad0d3dc3cf6ef3218f4d83bba66acdeb9}{lock}}
+\item 
+int \mbox{\hyperlink{classNibbler_a4ff5b2add11520c96fcd815e263e2a97}{score}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Game use \mbox{\hyperlink{classIGame}{I\+Game}} as Interface. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNibbler_a739de9b1bdd9b8bada9b31b1b27a9569}\label{classNibbler_a739de9b1bdd9b8bada9b31b1b27a9569}} 
+\index{Nibbler@{Nibbler}!Nibbler@{Nibbler}}
+\index{Nibbler@{Nibbler}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{Nibbler()}{Nibbler()}}
+{\footnotesize\ttfamily Nibbler\+::\+Nibbler (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de9/classNibbler_a739de9b1bdd9b8bada9b31b1b27a9569_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classNibbler_a03b98f06bc1f845f57aa15f034f0467e}\label{classNibbler_a03b98f06bc1f845f57aa15f034f0467e}} 
+\index{Nibbler@{Nibbler}!````~Nibbler@{$\sim$Nibbler}}
+\index{````~Nibbler@{$\sim$Nibbler}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{$\sim$Nibbler()}{~Nibbler()}}
+{\footnotesize\ttfamily Nibbler\+::$\sim$\+Nibbler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNibbler_a9f3a2679eb4931c9a7a897f0a4cb520e}\label{classNibbler_a9f3a2679eb4931c9a7a897f0a4cb520e}} 
+\index{Nibbler@{Nibbler}!changeDir@{changeDir}}
+\index{changeDir@{changeDir}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{changeDir()}{changeDir()}}
+{\footnotesize\ttfamily int Nibbler\+::change\+Dir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNibbler}{Nibbler}}}]{logic,  }\item[{int}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+change direction of snake 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em logic} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em dir} & -\/$>$ direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 or 1 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{d3/de9/classNibbler_a9f3a2679eb4931c9a7a897f0a4cb520e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{d3/de9/classNibbler_a9f3a2679eb4931c9a7a897f0a4cb520e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classNibbler_a3f40f913615198f470a796bc26fbfa0c}\label{classNibbler_a3f40f913615198f470a796bc26fbfa0c}} 
+\index{Nibbler@{Nibbler}!changeFoodCoord@{changeFoodCoord}}
+\index{changeFoodCoord@{changeFoodCoord}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{changeFoodCoord()}{changeFoodCoord()}}
+{\footnotesize\ttfamily void Nibbler\+::change\+Food\+Coord (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+change coord of apple by rand 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de9/classNibbler_a3f40f913615198f470a796bc26fbfa0c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classNibbler_a1bde8daae879560bf5ada4fedcfc5276}\label{classNibbler_a1bde8daae879560bf5ada4fedcfc5276}} 
+\index{Nibbler@{Nibbler}!checkInputs@{checkInputs}}
+\index{checkInputs@{checkInputs}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{checkInputs()}{checkInputs()}}
+{\footnotesize\ttfamily int Nibbler\+::check\+Inputs (\begin{DoxyParamCaption}\item[{int}]{dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+check inputs 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em direction} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 or 2 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGame_a8bf89652ef3639606f5674867aa153fc}{I\+Game}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de9/classNibbler_a1bde8daae879560bf5ada4fedcfc5276_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classNibbler_a012491a223716759f1a83173c2b57848}\label{classNibbler_a012491a223716759f1a83173c2b57848}} 
+\index{Nibbler@{Nibbler}!checkSnake@{checkSnake}}
+\index{checkSnake@{checkSnake}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{checkSnake()}{checkSnake()}}
+{\footnotesize\ttfamily int Nibbler\+::check\+Snake (\begin{DoxyParamCaption}\item[{int}]{dir,  }\item[{int}]{xx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+check snake and change food coord 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dir} & for direction of snake \\
+\hline
+\mbox{\texttt{ in}}  & {\em xx} & ?? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 or 2 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{d3/de9/classNibbler_a012491a223716759f1a83173c2b57848_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classNibbler_aff04c0304307dcd989098bfc00a5d26f}\label{classNibbler_aff04c0304307dcd989098bfc00a5d26f}} 
+\index{Nibbler@{Nibbler}!createSnake@{createSnake}}
+\index{createSnake@{createSnake}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{createSnake()}{createSnake()}}
+{\footnotesize\ttfamily void Nibbler\+::create\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+create\+Snake set all var 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{d3/de9/classNibbler_aff04c0304307dcd989098bfc00a5d26f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de9/classNibbler_aff04c0304307dcd989098bfc00a5d26f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classNibbler_aaee4a422a333b326365535a3e341e31a}\label{classNibbler_aaee4a422a333b326365535a3e341e31a}} 
+\index{Nibbler@{Nibbler}!getBulletX@{getBulletX}}
+\index{getBulletX@{getBulletX}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{getBulletX()}{getBulletX()}}
+{\footnotesize\ttfamily int Nibbler\+::get\+BulletX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_a41ff7592ae8b09ae97c241552a5b278d}{I\+Game}}.
+
+\mbox{\Hypertarget{classNibbler_aff194f5f7a09cc37ddfe410ec1e07360}\label{classNibbler_aff194f5f7a09cc37ddfe410ec1e07360}} 
+\index{Nibbler@{Nibbler}!getBulletY@{getBulletY}}
+\index{getBulletY@{getBulletY}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{getBulletY()}{getBulletY()}}
+{\footnotesize\ttfamily int Nibbler\+::get\+BulletY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_a492c8aca60ea294f79f8a2b6d6edaf2b}{I\+Game}}.
+
+\mbox{\Hypertarget{classNibbler_a8d3144a5f64c5f7a452a7ccee4ac6ec6}\label{classNibbler_a8d3144a5f64c5f7a452a7ccee4ac6ec6}} 
+\index{Nibbler@{Nibbler}!getFoodX@{getFoodX}}
+\index{getFoodX@{getFoodX}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{getFoodX()}{getFoodX()}}
+{\footnotesize\ttfamily int Nibbler\+::get\+FoodX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_afbd255356ae8489d888f8aa68598a9e8}{I\+Game}}.
+
+\mbox{\Hypertarget{classNibbler_ad23194ca39046377af10d68023ef4ed5}\label{classNibbler_ad23194ca39046377af10d68023ef4ed5}} 
+\index{Nibbler@{Nibbler}!getFoodY@{getFoodY}}
+\index{getFoodY@{getFoodY}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{getFoodY()}{getFoodY()}}
+{\footnotesize\ttfamily int Nibbler\+::get\+FoodY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_a3fdcf618754985092292eda097ad2f93}{I\+Game}}.
+
+\mbox{\Hypertarget{classNibbler_a9776bb38e2ac0c3ba430d90137b01195}\label{classNibbler_a9776bb38e2ac0c3ba430d90137b01195}} 
+\index{Nibbler@{Nibbler}!getScore@{getScore}}
+\index{getScore@{getScore}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily int Nibbler\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+return score 
+
+\begin{DoxyReturn}{Returns}
+score 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGame_a519baab82692b12bd9bda1eb1daa9f84}{I\+Game}}.
+
+\mbox{\Hypertarget{classNibbler_a3c8200a9936ded86ed00a9b5de07b5ea}\label{classNibbler_a3c8200a9936ded86ed00a9b5de07b5ea}} 
+\index{Nibbler@{Nibbler}!getSnake@{getSnake}}
+\index{getSnake@{getSnake}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{getSnake()}{getSnake()}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classNibbler}{Nibbler}}$>$ Nibbler\+::get\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classNibbler_aaf68752c0937304be88c6f97677b5e69}\label{classNibbler_aaf68752c0937304be88c6f97677b5e69}} 
+\index{Nibbler@{Nibbler}!getSnakeXpos@{getSnakeXpos}}
+\index{getSnakeXpos@{getSnakeXpos}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{getSnakeXpos()}{getSnakeXpos()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Nibbler\+::get\+Snake\+Xpos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_a2a6274820a8a4237a4fc3bf358a370aa}{I\+Game}}.
+
+\mbox{\Hypertarget{classNibbler_a59bb2db82db150b99891d8bb91dd32c9}\label{classNibbler_a59bb2db82db150b99891d8bb91dd32c9}} 
+\index{Nibbler@{Nibbler}!getSnakeYpos@{getSnakeYpos}}
+\index{getSnakeYpos@{getSnakeYpos}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{getSnakeYpos()}{getSnakeYpos()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Nibbler\+::get\+Snake\+Ypos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_ae691d9328a454b491ddc4204b01961a4}{I\+Game}}.
+
+\mbox{\Hypertarget{classNibbler_a69e8570137bfcd0f319e45a815435155}\label{classNibbler_a69e8570137bfcd0f319e45a815435155}} 
+\index{Nibbler@{Nibbler}!getXpos@{getXpos}}
+\index{getXpos@{getXpos}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{getXpos()}{getXpos()}}
+{\footnotesize\ttfamily int Nibbler\+::get\+Xpos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_ab0e195dae9b2cbe6aaa6c533396af425}{I\+Game}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de9/classNibbler_a69e8570137bfcd0f319e45a815435155_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classNibbler_a8ea94373d447e640f2760ffc9827ddb8}\label{classNibbler_a8ea94373d447e640f2760ffc9827ddb8}} 
+\index{Nibbler@{Nibbler}!getYpos@{getYpos}}
+\index{getYpos@{getYpos}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{getYpos()}{getYpos()}}
+{\footnotesize\ttfamily int Nibbler\+::get\+Ypos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classIGame_a63b030e5a81569cc2c6c2379b93280db}{I\+Game}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de9/classNibbler_a8ea94373d447e640f2760ffc9827ddb8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classNibbler_a2eacf89aa5f7e3e5570fd955dbc4d98d}\label{classNibbler_a2eacf89aa5f7e3e5570fd955dbc4d98d}} 
+\index{Nibbler@{Nibbler}!relaunch@{relaunch}}
+\index{relaunch@{relaunch}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{relaunch()}{relaunch()}}
+{\footnotesize\ttfamily void Nibbler\+::relaunch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+relaunch correctly game 
+
+
+
+Implements \mbox{\hyperlink{classIGame_ae418636ffdb98bdbe36f1d448944b90b}{I\+Game}}.
+
+\mbox{\Hypertarget{classNibbler_ad8573df85cfee1b388a0238cdb134191}\label{classNibbler_ad8573df85cfee1b388a0238cdb134191}} 
+\index{Nibbler@{Nibbler}!setLock@{setLock}}
+\index{setLock@{setLock}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{setLock()}{setLock()}}
+{\footnotesize\ttfamily void Nibbler\+::set\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set lock to false for good restart of game 
+
+
+
+Implements \mbox{\hyperlink{classIGame_a42bc9c96b3f6233b8cc5f8a79a629eaf}{I\+Game}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classNibbler_a1baaa77adba5b5d6e1b8884477afcd3a}\label{classNibbler_a1baaa77adba5b5d6e1b8884477afcd3a}} 
+\index{Nibbler@{Nibbler}!food\_x@{food\_x}}
+\index{food\_x@{food\_x}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{food\_x}{food\_x}}
+{\footnotesize\ttfamily int Nibbler\+::food\+\_\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNibbler_aa18350da7ca9516c44a39ce1334f5706}\label{classNibbler_aa18350da7ca9516c44a39ce1334f5706}} 
+\index{Nibbler@{Nibbler}!food\_y@{food\_y}}
+\index{food\_y@{food\_y}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{food\_y}{food\_y}}
+{\footnotesize\ttfamily int Nibbler\+::food\+\_\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNibbler_ad0d3dc3cf6ef3218f4d83bba66acdeb9}\label{classNibbler_ad0d3dc3cf6ef3218f4d83bba66acdeb9}} 
+\index{Nibbler@{Nibbler}!lock@{lock}}
+\index{lock@{lock}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{lock}{lock}}
+{\footnotesize\ttfamily bool Nibbler\+::lock\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNibbler_a4ff5b2add11520c96fcd815e263e2a97}\label{classNibbler_a4ff5b2add11520c96fcd815e263e2a97}} 
+\index{Nibbler@{Nibbler}!score@{score}}
+\index{score@{score}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Nibbler\+::score\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNibbler_a1c468a59e3a9461bde10eff952f39161}\label{classNibbler_a1c468a59e3a9461bde10eff952f39161}} 
+\index{Nibbler@{Nibbler}!snakes@{snakes}}
+\index{snakes@{snakes}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{snakes}{snakes}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classNibbler}{Nibbler}}$>$ Nibbler\+::snakes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNibbler_a07c73a8b808f2c1128b863b318bdcb2c}\label{classNibbler_a07c73a8b808f2c1128b863b318bdcb2c}} 
+\index{Nibbler@{Nibbler}!x@{x}}
+\index{x@{x}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Nibbler\+::x\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNibbler_a27043252a6afd6d17042c7d5b5d32c41}\label{classNibbler_a27043252a6afd6d17042c7d5b5d32c41}} 
+\index{Nibbler@{Nibbler}!xcoords@{xcoords}}
+\index{xcoords@{xcoords}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{xcoords}{xcoords}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Nibbler\+::xcoords\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNibbler_adba20309214e7c891d1cc88f94348dfc}\label{classNibbler_adba20309214e7c891d1cc88f94348dfc}} 
+\index{Nibbler@{Nibbler}!y@{y}}
+\index{y@{y}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Nibbler\+::y\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNibbler_ac40b224b5e82f187b4a18940b5a44c8e}\label{classNibbler_ac40b224b5e82f187b4a18940b5a44c8e}} 
+\index{Nibbler@{Nibbler}!ycoords@{ycoords}}
+\index{ycoords@{ycoords}!Nibbler@{Nibbler}}
+\doxysubsubsection{\texorpdfstring{ycoords}{ycoords}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Nibbler\+::ycoords\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game/nibbler/\mbox{\hyperlink{nibbler_8hpp}{nibbler.\+hpp}}\item 
+game/nibbler/\mbox{\hyperlink{nibbler_8cpp}{nibbler.\+cpp}}\end{DoxyCompactItemize}

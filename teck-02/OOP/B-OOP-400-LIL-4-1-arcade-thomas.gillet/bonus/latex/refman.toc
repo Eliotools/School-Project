@@ -1,0 +1,321 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Arcade}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Games}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Graphics Libs}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Commands and keys}{1}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Game -\/$>$ Play}{1}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Game -\/$>$ Other actions}{2}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Menu -\/$>$ Commands}{2}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}Interface Sharing}{2}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Groups}{2}{subsection.1.5.1}%
+\contentsline {section}{\numberline {1.6}Technical Documentation}{2}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Class Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Bullet Class Reference}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Constructor \& Destructor Documentation}{9}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}Bullet()}{9}{subsubsection.5.1.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.2}$\sim $Bullet()}{9}{subsubsection.5.1.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Member Data Documentation}{10}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}\_x}{10}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}\_y}{10}{subsubsection.5.1.2.2}%
+\contentsline {section}{\numberline {5.2}Centipede Class Reference}{10}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{11}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Constructor \& Destructor Documentation}{12}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}Centipede()}{12}{subsubsection.5.2.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}$\sim $Centipede()}{12}{subsubsection.5.2.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Member Function Documentation}{12}{subsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}changeDir()}{12}{subsubsection.5.2.3.1}%
+\contentsline {subsubsection}{\numberline {5.2.3.2}checkCollision()}{13}{subsubsection.5.2.3.2}%
+\contentsline {subsubsection}{\numberline {5.2.3.3}checkInputs()}{14}{subsubsection.5.2.3.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.4}createCentipede()}{14}{subsubsection.5.2.3.4}%
+\contentsline {subsubsection}{\numberline {5.2.3.5}getBulletX()}{15}{subsubsection.5.2.3.5}%
+\contentsline {subsubsection}{\numberline {5.2.3.6}getBulletY()}{15}{subsubsection.5.2.3.6}%
+\contentsline {subsubsection}{\numberline {5.2.3.7}getFoodX()}{15}{subsubsection.5.2.3.7}%
+\contentsline {subsubsection}{\numberline {5.2.3.8}getFoodY()}{15}{subsubsection.5.2.3.8}%
+\contentsline {subsubsection}{\numberline {5.2.3.9}getScore()}{16}{subsubsection.5.2.3.9}%
+\contentsline {subsubsection}{\numberline {5.2.3.10}getSnake()}{16}{subsubsection.5.2.3.10}%
+\contentsline {subsubsection}{\numberline {5.2.3.11}getSnakeXpos()}{16}{subsubsection.5.2.3.11}%
+\contentsline {subsubsection}{\numberline {5.2.3.12}getSnakeYpos()}{16}{subsubsection.5.2.3.12}%
+\contentsline {subsubsection}{\numberline {5.2.3.13}getXpos()}{16}{subsubsection.5.2.3.13}%
+\contentsline {subsubsection}{\numberline {5.2.3.14}getYpos()}{17}{subsubsection.5.2.3.14}%
+\contentsline {subsubsection}{\numberline {5.2.3.15}hitWall()}{17}{subsubsection.5.2.3.15}%
+\contentsline {subsubsection}{\numberline {5.2.3.16}relaunch()}{17}{subsubsection.5.2.3.16}%
+\contentsline {subsubsection}{\numberline {5.2.3.17}setLock()}{18}{subsubsection.5.2.3.17}%
+\contentsline {subsection}{\numberline {5.2.4}Member Data Documentation}{18}{subsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.4.1}bullet\_x}{18}{subsubsection.5.2.4.1}%
+\contentsline {subsubsection}{\numberline {5.2.4.2}bullet\_y}{18}{subsubsection.5.2.4.2}%
+\contentsline {subsubsection}{\numberline {5.2.4.3}food\_x}{18}{subsubsection.5.2.4.3}%
+\contentsline {subsubsection}{\numberline {5.2.4.4}food\_y}{18}{subsubsection.5.2.4.4}%
+\contentsline {subsubsection}{\numberline {5.2.4.5}hit\_counter}{18}{subsubsection.5.2.4.5}%
+\contentsline {subsubsection}{\numberline {5.2.4.6}lock}{18}{subsubsection.5.2.4.6}%
+\contentsline {subsubsection}{\numberline {5.2.4.7}snakes}{19}{subsubsection.5.2.4.7}%
+\contentsline {subsubsection}{\numberline {5.2.4.8}wall}{19}{subsubsection.5.2.4.8}%
+\contentsline {subsubsection}{\numberline {5.2.4.9}x}{19}{subsubsection.5.2.4.9}%
+\contentsline {subsubsection}{\numberline {5.2.4.10}xcoords}{19}{subsubsection.5.2.4.10}%
+\contentsline {subsubsection}{\numberline {5.2.4.11}y}{19}{subsubsection.5.2.4.11}%
+\contentsline {subsubsection}{\numberline {5.2.4.12}ycoords}{19}{subsubsection.5.2.4.12}%
+\contentsline {section}{\numberline {5.3}Core Class Reference}{20}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{22}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Constructor \& Destructor Documentation}{22}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}Core()}{22}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}$\sim $Core()}{22}{subsubsection.5.3.2.2}%
+\contentsline {subsection}{\numberline {5.3.3}Member Function Documentation}{22}{subsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.3.1}addPlayerName()}{23}{subsubsection.5.3.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.3.2}gameLoop()}{23}{subsubsection.5.3.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3.3}gamePrint()}{24}{subsubsection.5.3.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.3.4}getGame()}{25}{subsubsection.5.3.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.3.5}getGameName()}{26}{subsubsection.5.3.3.5}%
+\contentsline {subsubsection}{\numberline {5.3.3.6}getGraphic()}{26}{subsubsection.5.3.3.6}%
+\contentsline {subsubsection}{\numberline {5.3.3.7}getGraphName()}{26}{subsubsection.5.3.3.7}%
+\contentsline {subsubsection}{\numberline {5.3.3.8}getInput()}{27}{subsubsection.5.3.3.8}%
+\contentsline {subsubsection}{\numberline {5.3.3.9}getPlay()}{28}{subsubsection.5.3.3.9}%
+\contentsline {subsubsection}{\numberline {5.3.3.10}inGamesName()}{28}{subsubsection.5.3.3.10}%
+\contentsline {subsubsection}{\numberline {5.3.3.11}inGraphicsName()}{29}{subsubsection.5.3.3.11}%
+\contentsline {subsubsection}{\numberline {5.3.3.12}lib()}{29}{subsubsection.5.3.3.12}%
+\contentsline {subsubsection}{\numberline {5.3.3.13}menu()}{30}{subsubsection.5.3.3.13}%
+\contentsline {subsubsection}{\numberline {5.3.3.14}pActual()}{31}{subsubsection.5.3.3.14}%
+\contentsline {subsubsection}{\numberline {5.3.3.15}pCommand()}{32}{subsubsection.5.3.3.15}%
+\contentsline {subsubsection}{\numberline {5.3.3.16}pNotHandle()}{32}{subsubsection.5.3.3.16}%
+\contentsline {subsubsection}{\numberline {5.3.3.17}printLib()}{33}{subsubsection.5.3.3.17}%
+\contentsline {subsubsection}{\numberline {5.3.3.18}setFirstGame()}{33}{subsubsection.5.3.3.18}%
+\contentsline {subsubsection}{\numberline {5.3.3.19}setFirstGraph()}{34}{subsubsection.5.3.3.19}%
+\contentsline {subsubsection}{\numberline {5.3.3.20}setGame()}{35}{subsubsection.5.3.3.20}%
+\contentsline {subsubsection}{\numberline {5.3.3.21}setGraphic()}{36}{subsubsection.5.3.3.21}%
+\contentsline {subsubsection}{\numberline {5.3.3.22}setNextGame()}{36}{subsubsection.5.3.3.22}%
+\contentsline {subsubsection}{\numberline {5.3.3.23}setNextGraphic()}{37}{subsubsection.5.3.3.23}%
+\contentsline {subsubsection}{\numberline {5.3.3.24}setPosGame()}{37}{subsubsection.5.3.3.24}%
+\contentsline {subsubsection}{\numberline {5.3.3.25}setPosGraph()}{38}{subsubsection.5.3.3.25}%
+\contentsline {subsubsection}{\numberline {5.3.3.26}setPrevGame()}{38}{subsubsection.5.3.3.26}%
+\contentsline {subsubsection}{\numberline {5.3.3.27}setPrevGraphic()}{39}{subsubsection.5.3.3.27}%
+\contentsline {subsubsection}{\numberline {5.3.3.28}startOrExit()}{40}{subsubsection.5.3.3.28}%
+\contentsline {subsection}{\numberline {5.3.4}Member Data Documentation}{41}{subsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.4.1}\_actualGame}{41}{subsubsection.5.3.4.1}%
+\contentsline {subsubsection}{\numberline {5.3.4.2}\_actualLib}{41}{subsubsection.5.3.4.2}%
+\contentsline {subsubsection}{\numberline {5.3.4.3}\_command}{41}{subsubsection.5.3.4.3}%
+\contentsline {subsubsection}{\numberline {5.3.4.4}\_game}{41}{subsubsection.5.3.4.4}%
+\contentsline {subsubsection}{\numberline {5.3.4.5}\_gamesName}{41}{subsubsection.5.3.4.5}%
+\contentsline {subsubsection}{\numberline {5.3.4.6}\_graphic}{42}{subsubsection.5.3.4.6}%
+\contentsline {subsubsection}{\numberline {5.3.4.7}\_graphName}{42}{subsubsection.5.3.4.7}%
+\contentsline {subsubsection}{\numberline {5.3.4.8}\_maxGame}{42}{subsubsection.5.3.4.8}%
+\contentsline {subsubsection}{\numberline {5.3.4.9}\_maxGraph}{42}{subsubsection.5.3.4.9}%
+\contentsline {subsubsection}{\numberline {5.3.4.10}\_play}{42}{subsubsection.5.3.4.10}%
+\contentsline {subsubsection}{\numberline {5.3.4.11}\_playerName}{42}{subsubsection.5.3.4.11}%
+\contentsline {subsubsection}{\numberline {5.3.4.12}\_posGame}{42}{subsubsection.5.3.4.12}%
+\contentsline {subsubsection}{\numberline {5.3.4.13}\_posGraph}{43}{subsubsection.5.3.4.13}%
+\contentsline {section}{\numberline {5.4}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Loader Class Reference}{43}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{44}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Constructor \& Destructor Documentation}{44}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}DLLoader()}{44}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {5.4.2.2}$\sim $DLLoader()}{44}{subsubsection.5.4.2.2}%
+\contentsline {subsection}{\numberline {5.4.3}Member Function Documentation}{44}{subsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.3.1}closeAllHandles()}{44}{subsubsection.5.4.3.1}%
+\contentsline {subsubsection}{\numberline {5.4.3.2}getGameInstance()}{44}{subsubsection.5.4.3.2}%
+\contentsline {subsubsection}{\numberline {5.4.3.3}getGameInstanceName()}{45}{subsubsection.5.4.3.3}%
+\contentsline {subsubsection}{\numberline {5.4.3.4}getGamesNb()}{45}{subsubsection.5.4.3.4}%
+\contentsline {subsubsection}{\numberline {5.4.3.5}getGraphicsNb()}{46}{subsubsection.5.4.3.5}%
+\contentsline {subsubsection}{\numberline {5.4.3.6}getGraphInstance()}{46}{subsubsection.5.4.3.6}%
+\contentsline {subsubsection}{\numberline {5.4.3.7}getGraphInstanceName()}{46}{subsubsection.5.4.3.7}%
+\contentsline {subsubsection}{\numberline {5.4.3.8}getInstanceOfGame()}{46}{subsubsection.5.4.3.8}%
+\contentsline {subsubsection}{\numberline {5.4.3.9}getInstanceOfGraph()}{47}{subsubsection.5.4.3.9}%
+\contentsline {subsubsection}{\numberline {5.4.3.10}insideOfGames()}{48}{subsubsection.5.4.3.10}%
+\contentsline {subsection}{\numberline {5.4.4}Member Data Documentation}{48}{subsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.4.1}\_games}{48}{subsubsection.5.4.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.4.2}\_gamesName}{48}{subsubsection.5.4.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.4.3}\_gamesNb}{48}{subsubsection.5.4.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.4.4}\_graphics}{48}{subsubsection.5.4.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.4.5}\_graphicsName}{49}{subsubsection.5.4.4.5}%
+\contentsline {subsubsection}{\numberline {5.4.4.6}\_graphicsNb}{49}{subsubsection.5.4.4.6}%
+\contentsline {subsubsection}{\numberline {5.4.4.7}\_handles}{49}{subsubsection.5.4.4.7}%
+\contentsline {section}{\numberline {5.5}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game Class Reference}{49}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{50}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Constructor \& Destructor Documentation}{50}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}$\sim $IGame()}{50}{subsubsection.5.5.2.1}%
+\contentsline {subsection}{\numberline {5.5.3}Member Function Documentation}{50}{subsection.5.5.3}%
+\contentsline {subsubsection}{\numberline {5.5.3.1}checkInputs()}{50}{subsubsection.5.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.5.3.2}getBulletX()}{51}{subsubsection.5.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.5.3.3}getBulletY()}{51}{subsubsection.5.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.5.3.4}getFoodX()}{51}{subsubsection.5.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.5.3.5}getFoodY()}{51}{subsubsection.5.5.3.5}%
+\contentsline {subsubsection}{\numberline {5.5.3.6}getScore()}{51}{subsubsection.5.5.3.6}%
+\contentsline {subsubsection}{\numberline {5.5.3.7}getSnakeXpos()}{52}{subsubsection.5.5.3.7}%
+\contentsline {subsubsection}{\numberline {5.5.3.8}getSnakeYpos()}{52}{subsubsection.5.5.3.8}%
+\contentsline {subsubsection}{\numberline {5.5.3.9}getXpos()}{52}{subsubsection.5.5.3.9}%
+\contentsline {subsubsection}{\numberline {5.5.3.10}getYpos()}{52}{subsubsection.5.5.3.10}%
+\contentsline {subsubsection}{\numberline {5.5.3.11}relaunch()}{52}{subsubsection.5.5.3.11}%
+\contentsline {subsubsection}{\numberline {5.5.3.12}setLock()}{53}{subsubsection.5.5.3.12}%
+\contentsline {section}{\numberline {5.6}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Graphic Class Reference}{53}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{54}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Constructor \& Destructor Documentation}{54}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.1}$\sim $IGraphic()}{54}{subsubsection.5.6.2.1}%
+\contentsline {subsection}{\numberline {5.6.3}Member Function Documentation}{54}{subsection.5.6.3}%
+\contentsline {subsubsection}{\numberline {5.6.3.1}drawobj()}{54}{subsubsection.5.6.3.1}%
+\contentsline {subsubsection}{\numberline {5.6.3.2}getInput()}{54}{subsubsection.5.6.3.2}%
+\contentsline {subsubsection}{\numberline {5.6.3.3}launch()}{55}{subsubsection.5.6.3.3}%
+\contentsline {subsubsection}{\numberline {5.6.3.4}settingInput()}{55}{subsubsection.5.6.3.4}%
+\contentsline {subsubsection}{\numberline {5.6.3.5}stop()}{55}{subsubsection.5.6.3.5}%
+\contentsline {section}{\numberline {5.7}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ncurses Class Reference}{56}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{57}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Constructor \& Destructor Documentation}{57}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}MyNcurses()}{57}{subsubsection.5.7.2.1}%
+\contentsline {subsubsection}{\numberline {5.7.2.2}$\sim $MyNcurses()}{57}{subsubsection.5.7.2.2}%
+\contentsline {subsection}{\numberline {5.7.3}Member Function Documentation}{57}{subsection.5.7.3}%
+\contentsline {subsubsection}{\numberline {5.7.3.1}drawobj()}{57}{subsubsection.5.7.3.1}%
+\contentsline {subsubsection}{\numberline {5.7.3.2}getInput()}{58}{subsubsection.5.7.3.2}%
+\contentsline {subsubsection}{\numberline {5.7.3.3}init()}{58}{subsubsection.5.7.3.3}%
+\contentsline {subsubsection}{\numberline {5.7.3.4}launch()}{59}{subsubsection.5.7.3.4}%
+\contentsline {subsubsection}{\numberline {5.7.3.5}print\_map()}{59}{subsubsection.5.7.3.5}%
+\contentsline {subsubsection}{\numberline {5.7.3.6}settingInput()}{59}{subsubsection.5.7.3.6}%
+\contentsline {subsubsection}{\numberline {5.7.3.7}stop()}{59}{subsubsection.5.7.3.7}%
+\contentsline {subsection}{\numberline {5.7.4}Member Data Documentation}{60}{subsection.5.7.4}%
+\contentsline {subsubsection}{\numberline {5.7.4.1}\_input}{60}{subsubsection.5.7.4.1}%
+\contentsline {subsubsection}{\numberline {5.7.4.2}\_screen}{60}{subsubsection.5.7.4.2}%
+\contentsline {subsubsection}{\numberline {5.7.4.3}apple}{60}{subsubsection.5.7.4.3}%
+\contentsline {subsubsection}{\numberline {5.7.4.4}bullet}{60}{subsubsection.5.7.4.4}%
+\contentsline {subsubsection}{\numberline {5.7.4.5}rectangle}{60}{subsubsection.5.7.4.5}%
+\contentsline {section}{\numberline {5.8}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L2 Class Reference}{61}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Detailed Description}{62}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Constructor \& Destructor Documentation}{62}{subsection.5.8.2}%
+\contentsline {subsubsection}{\numberline {5.8.2.1}MySDL2()}{62}{subsubsection.5.8.2.1}%
+\contentsline {subsubsection}{\numberline {5.8.2.2}$\sim $MySDL2()}{62}{subsubsection.5.8.2.2}%
+\contentsline {subsection}{\numberline {5.8.3}Member Function Documentation}{62}{subsection.5.8.3}%
+\contentsline {subsubsection}{\numberline {5.8.3.1}drawApple()}{62}{subsubsection.5.8.3.1}%
+\contentsline {subsubsection}{\numberline {5.8.3.2}drawBullet()}{63}{subsubsection.5.8.3.2}%
+\contentsline {subsubsection}{\numberline {5.8.3.3}drawobj()}{64}{subsubsection.5.8.3.3}%
+\contentsline {subsubsection}{\numberline {5.8.3.4}drawSnake()}{64}{subsubsection.5.8.3.4}%
+\contentsline {subsubsection}{\numberline {5.8.3.5}getInput()}{65}{subsubsection.5.8.3.5}%
+\contentsline {subsubsection}{\numberline {5.8.3.6}init()}{65}{subsubsection.5.8.3.6}%
+\contentsline {subsubsection}{\numberline {5.8.3.7}launch()}{65}{subsubsection.5.8.3.7}%
+\contentsline {subsubsection}{\numberline {5.8.3.8}setInput()}{66}{subsubsection.5.8.3.8}%
+\contentsline {subsubsection}{\numberline {5.8.3.9}settingInput()}{66}{subsubsection.5.8.3.9}%
+\contentsline {subsubsection}{\numberline {5.8.3.10}stop()}{66}{subsubsection.5.8.3.10}%
+\contentsline {subsection}{\numberline {5.8.4}Member Data Documentation}{66}{subsection.5.8.4}%
+\contentsline {subsubsection}{\numberline {5.8.4.1}\_event}{67}{subsubsection.5.8.4.1}%
+\contentsline {subsubsection}{\numberline {5.8.4.2}\_input}{67}{subsubsection.5.8.4.2}%
+\contentsline {subsubsection}{\numberline {5.8.4.3}\_render}{67}{subsubsection.5.8.4.3}%
+\contentsline {subsubsection}{\numberline {5.8.4.4}\_screen}{67}{subsubsection.5.8.4.4}%
+\contentsline {section}{\numberline {5.9}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sfml Class Reference}{67}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{68}{subsection.5.9.1}%
+\contentsline {subsection}{\numberline {5.9.2}Constructor \& Destructor Documentation}{69}{subsection.5.9.2}%
+\contentsline {subsubsection}{\numberline {5.9.2.1}MySfml()}{69}{subsubsection.5.9.2.1}%
+\contentsline {subsubsection}{\numberline {5.9.2.2}$\sim $MySfml()}{69}{subsubsection.5.9.2.2}%
+\contentsline {subsection}{\numberline {5.9.3}Member Function Documentation}{69}{subsection.5.9.3}%
+\contentsline {subsubsection}{\numberline {5.9.3.1}drawobj()}{69}{subsubsection.5.9.3.1}%
+\contentsline {subsubsection}{\numberline {5.9.3.2}getInput()}{70}{subsubsection.5.9.3.2}%
+\contentsline {subsubsection}{\numberline {5.9.3.3}init()}{70}{subsubsection.5.9.3.3}%
+\contentsline {subsubsection}{\numberline {5.9.3.4}launch()}{70}{subsubsection.5.9.3.4}%
+\contentsline {subsubsection}{\numberline {5.9.3.5}setInput()}{70}{subsubsection.5.9.3.5}%
+\contentsline {subsubsection}{\numberline {5.9.3.6}settingInput()}{71}{subsubsection.5.9.3.6}%
+\contentsline {subsubsection}{\numberline {5.9.3.7}stop()}{71}{subsubsection.5.9.3.7}%
+\contentsline {subsection}{\numberline {5.9.4}Member Data Documentation}{71}{subsection.5.9.4}%
+\contentsline {subsubsection}{\numberline {5.9.4.1}\_input}{71}{subsubsection.5.9.4.1}%
+\contentsline {subsubsection}{\numberline {5.9.4.2}apple}{72}{subsubsection.5.9.4.2}%
+\contentsline {subsubsection}{\numberline {5.9.4.3}bullet}{72}{subsubsection.5.9.4.3}%
+\contentsline {subsubsection}{\numberline {5.9.4.4}rectangle}{72}{subsubsection.5.9.4.4}%
+\contentsline {subsubsection}{\numberline {5.9.4.5}screen}{72}{subsubsection.5.9.4.5}%
+\contentsline {section}{\numberline {5.10}Nibbler Class Reference}{72}{section.5.10}%
+\contentsline {subsection}{\numberline {5.10.1}Detailed Description}{74}{subsection.5.10.1}%
+\contentsline {subsection}{\numberline {5.10.2}Constructor \& Destructor Documentation}{74}{subsection.5.10.2}%
+\contentsline {subsubsection}{\numberline {5.10.2.1}Nibbler()}{74}{subsubsection.5.10.2.1}%
+\contentsline {subsubsection}{\numberline {5.10.2.2}$\sim $Nibbler()}{74}{subsubsection.5.10.2.2}%
+\contentsline {subsection}{\numberline {5.10.3}Member Function Documentation}{74}{subsection.5.10.3}%
+\contentsline {subsubsection}{\numberline {5.10.3.1}changeDir()}{74}{subsubsection.5.10.3.1}%
+\contentsline {subsubsection}{\numberline {5.10.3.2}changeFoodCoord()}{75}{subsubsection.5.10.3.2}%
+\contentsline {subsubsection}{\numberline {5.10.3.3}checkInputs()}{76}{subsubsection.5.10.3.3}%
+\contentsline {subsubsection}{\numberline {5.10.3.4}checkSnake()}{77}{subsubsection.5.10.3.4}%
+\contentsline {subsubsection}{\numberline {5.10.3.5}createSnake()}{77}{subsubsection.5.10.3.5}%
+\contentsline {subsubsection}{\numberline {5.10.3.6}getBulletX()}{78}{subsubsection.5.10.3.6}%
+\contentsline {subsubsection}{\numberline {5.10.3.7}getBulletY()}{78}{subsubsection.5.10.3.7}%
+\contentsline {subsubsection}{\numberline {5.10.3.8}getFoodX()}{78}{subsubsection.5.10.3.8}%
+\contentsline {subsubsection}{\numberline {5.10.3.9}getFoodY()}{78}{subsubsection.5.10.3.9}%
+\contentsline {subsubsection}{\numberline {5.10.3.10}getScore()}{79}{subsubsection.5.10.3.10}%
+\contentsline {subsubsection}{\numberline {5.10.3.11}getSnake()}{79}{subsubsection.5.10.3.11}%
+\contentsline {subsubsection}{\numberline {5.10.3.12}getSnakeXpos()}{79}{subsubsection.5.10.3.12}%
+\contentsline {subsubsection}{\numberline {5.10.3.13}getSnakeYpos()}{79}{subsubsection.5.10.3.13}%
+\contentsline {subsubsection}{\numberline {5.10.3.14}getXpos()}{79}{subsubsection.5.10.3.14}%
+\contentsline {subsubsection}{\numberline {5.10.3.15}getYpos()}{80}{subsubsection.5.10.3.15}%
+\contentsline {subsubsection}{\numberline {5.10.3.16}relaunch()}{80}{subsubsection.5.10.3.16}%
+\contentsline {subsubsection}{\numberline {5.10.3.17}setLock()}{80}{subsubsection.5.10.3.17}%
+\contentsline {subsection}{\numberline {5.10.4}Member Data Documentation}{80}{subsection.5.10.4}%
+\contentsline {subsubsection}{\numberline {5.10.4.1}food\_x}{80}{subsubsection.5.10.4.1}%
+\contentsline {subsubsection}{\numberline {5.10.4.2}food\_y}{81}{subsubsection.5.10.4.2}%
+\contentsline {subsubsection}{\numberline {5.10.4.3}lock}{81}{subsubsection.5.10.4.3}%
+\contentsline {subsubsection}{\numberline {5.10.4.4}score}{81}{subsubsection.5.10.4.4}%
+\contentsline {subsubsection}{\numberline {5.10.4.5}snakes}{81}{subsubsection.5.10.4.5}%
+\contentsline {subsubsection}{\numberline {5.10.4.6}x}{81}{subsubsection.5.10.4.6}%
+\contentsline {subsubsection}{\numberline {5.10.4.7}xcoords}{81}{subsubsection.5.10.4.7}%
+\contentsline {subsubsection}{\numberline {5.10.4.8}y}{81}{subsubsection.5.10.4.8}%
+\contentsline {subsubsection}{\numberline {5.10.4.9}ycoords}{81}{subsubsection.5.10.4.9}%
+\contentsline {chapter}{\numberline {6}File Documentation}{83}{chapter.6}%
+\contentsline {section}{\numberline {6.1}core\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}f/core.cpp File Reference}{83}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{83}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}core\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}f/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Core.hpp File Reference}{84}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Function Documentation}{85}{subsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.1}gameLoop()}{85}{subsubsection.6.2.1.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.2}get\_lib()}{85}{subsubsection.6.2.1.2}%
+\contentsline {section}{\numberline {6.3}core\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}f/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Loader.cpp File Reference}{86}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{86}{subsection.6.3.1}%
+\contentsline {section}{\numberline {6.4}core\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}f/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Loader.hpp File Reference}{87}{section.6.4}%
+\contentsline {section}{\numberline {6.5}core\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}f/libfinder.cpp File Reference}{88}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{88}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Function Documentation}{88}{subsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}find\_in\_game()}{88}{subsubsection.6.5.2.1}%
+\contentsline {subsubsection}{\numberline {6.5.2.2}find\_in\_gra()}{89}{subsubsection.6.5.2.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.3}get\_lib()}{89}{subsubsection.6.5.2.3}%
+\contentsline {subsubsection}{\numberline {6.5.2.4}niddleyearsold()}{90}{subsubsection.6.5.2.4}%
+\contentsline {section}{\numberline {6.6}core\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}f/main.cpp File Reference}{91}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Function Documentation}{91}{subsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.1.1}main()}{92}{subsubsection.6.6.1.1}%
+\contentsline {section}{\numberline {6.7}game/centipede/centipede.cpp File Reference}{92}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{93}{subsection.6.7.1}%
+\contentsline {subsection}{\numberline {6.7.2}Function Documentation}{93}{subsection.6.7.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.1}\_\_attribute\_\_()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{93}{subsubsection.6.7.2.1}%
+\contentsline {subsubsection}{\numberline {6.7.2.2}\_\_attribute\_\_()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{94}{subsubsection.6.7.2.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.3}calledFirst()}{94}{subsubsection.6.7.2.3}%
+\contentsline {subsubsection}{\numberline {6.7.2.4}calledLast()}{94}{subsubsection.6.7.2.4}%
+\contentsline {subsubsection}{\numberline {6.7.2.5}entryPoint()}{94}{subsubsection.6.7.2.5}%
+\contentsline {section}{\numberline {6.8}game/centipede/centipede.hpp File Reference}{94}{section.6.8}%
+\contentsline {section}{\numberline {6.9}game/igame.hpp File Reference}{95}{section.6.9}%
+\contentsline {section}{\numberline {6.10}game/nibbler/nibbler.cpp File Reference}{96}{section.6.10}%
+\contentsline {subsection}{\numberline {6.10.1}Detailed Description}{97}{subsection.6.10.1}%
+\contentsline {subsection}{\numberline {6.10.2}Function Documentation}{97}{subsection.6.10.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.1}\_\_attribute\_\_()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{97}{subsubsection.6.10.2.1}%
+\contentsline {subsubsection}{\numberline {6.10.2.2}\_\_attribute\_\_()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{98}{subsubsection.6.10.2.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.3}calledFirst()}{98}{subsubsection.6.10.2.3}%
+\contentsline {subsubsection}{\numberline {6.10.2.4}calledLast()}{98}{subsubsection.6.10.2.4}%
+\contentsline {subsubsection}{\numberline {6.10.2.5}entryPoint()}{98}{subsubsection.6.10.2.5}%
+\contentsline {section}{\numberline {6.11}game/nibbler/nibbler.hpp File Reference}{98}{section.6.11}%
+\contentsline {section}{\numberline {6.12}graphic/igraphic.hpp File Reference}{99}{section.6.12}%
+\contentsline {section}{\numberline {6.13}graphic/ncurses/ncurses.cpp File Reference}{100}{section.6.13}%
+\contentsline {subsection}{\numberline {6.13.1}Detailed Description}{101}{subsection.6.13.1}%
+\contentsline {subsection}{\numberline {6.13.2}Function Documentation}{101}{subsection.6.13.2}%
+\contentsline {subsubsection}{\numberline {6.13.2.1}\_\_attribute\_\_()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{101}{subsubsection.6.13.2.1}%
+\contentsline {subsubsection}{\numberline {6.13.2.2}\_\_attribute\_\_()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{101}{subsubsection.6.13.2.2}%
+\contentsline {subsubsection}{\numberline {6.13.2.3}calledFirst()}{101}{subsubsection.6.13.2.3}%
+\contentsline {subsubsection}{\numberline {6.13.2.4}calledLast()}{101}{subsubsection.6.13.2.4}%
+\contentsline {subsubsection}{\numberline {6.13.2.5}entryPoint()}{102}{subsubsection.6.13.2.5}%
+\contentsline {section}{\numberline {6.14}graphic/ncurses/ncurses.hpp File Reference}{102}{section.6.14}%
+\contentsline {section}{\numberline {6.15}graphic/sdl\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}deux/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L2.cpp File Reference}{103}{section.6.15}%
+\contentsline {subsection}{\numberline {6.15.1}Detailed Description}{103}{subsection.6.15.1}%
+\contentsline {subsection}{\numberline {6.15.2}Function Documentation}{103}{subsection.6.15.2}%
+\contentsline {subsubsection}{\numberline {6.15.2.1}\_\_attribute\_\_()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{104}{subsubsection.6.15.2.1}%
+\contentsline {subsubsection}{\numberline {6.15.2.2}\_\_attribute\_\_()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{104}{subsubsection.6.15.2.2}%
+\contentsline {subsubsection}{\numberline {6.15.2.3}calledFirst()}{104}{subsubsection.6.15.2.3}%
+\contentsline {subsubsection}{\numberline {6.15.2.4}calledLast()}{104}{subsubsection.6.15.2.4}%
+\contentsline {subsubsection}{\numberline {6.15.2.5}entryPoint()}{104}{subsubsection.6.15.2.5}%
+\contentsline {section}{\numberline {6.16}graphic/sdl\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}deux/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L2.hpp File Reference}{105}{section.6.16}%
+\contentsline {section}{\numberline {6.17}graphic/sfml/sfmldraw.cpp File Reference}{105}{section.6.17}%
+\contentsline {subsection}{\numberline {6.17.1}Detailed Description}{106}{subsection.6.17.1}%
+\contentsline {subsection}{\numberline {6.17.2}Function Documentation}{106}{subsection.6.17.2}%
+\contentsline {subsubsection}{\numberline {6.17.2.1}\_\_attribute\_\_()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{107}{subsubsection.6.17.2.1}%
+\contentsline {subsubsection}{\numberline {6.17.2.2}\_\_attribute\_\_()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{107}{subsubsection.6.17.2.2}%
+\contentsline {subsubsection}{\numberline {6.17.2.3}calledFirst()}{107}{subsubsection.6.17.2.3}%
+\contentsline {subsubsection}{\numberline {6.17.2.4}calledLastgra()}{107}{subsubsection.6.17.2.4}%
+\contentsline {subsubsection}{\numberline {6.17.2.5}entryPoint()}{107}{subsubsection.6.17.2.5}%
+\contentsline {section}{\numberline {6.18}graphic/sfml/sfmldraw.hpp File Reference}{108}{section.6.18}%
+\contentsline {chapter}{Index}{109}{section*.165}%

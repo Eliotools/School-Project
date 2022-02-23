@@ -1,0 +1,28 @@
+#!/usr/bin/python3
+
+
+def Binomfdp (n, k):
+    if (facto(k)*(facto(n-k)) == 0):
+        exit (84)
+    res = (facto(n)/(facto(k)*(facto(n-k))))
+    return res
+
+def facto (x):
+    res = 1
+
+    if (x < 0):
+        return 0
+    if (x == 0):
+        return 1
+
+    while (x != 1) :
+        res = res * x
+        x-=1
+
+    return res
+
+def main():
+    print (facto(4))
+    print (int(Binomfdp(50,6)))
+
+main()

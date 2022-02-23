@@ -1,0 +1,11 @@
+<map id="DLLoader::getInstanceOfGame" name="DLLoader::getInstanceOfGame">
+<area shape="rect" id="node1" title="use dlopen() and dlsym() for create a new Instance of IGame, put new Instance in vector" alt="" coords="664,81,885,108"/>
+<area shape="rect" id="node2" href="$db/d6d/classCore.html#a6e19c9a2e8c64db8f1e48cf7966014c7" title="Handle change of game in menu." alt="" coords="477,5,604,32"/>
+<area shape="rect" id="node5" href="$db/d6d/classCore.html#a9f185bd3679fe28a95dc11c5109a3e1e" title="set _game to first game found in /lib dir" alt="" coords="108,56,255,83"/>
+<area shape="rect" id="node6" href="$db/d6d/classCore.html#abe273e485c745925c2ec194ef57321b7" title="set _game to next _gamesName (vector containing name of all games lib we use). If actual _game is las..." alt="" coords="465,107,616,133"/>
+<area shape="rect" id="node9" href="$db/d6d/classCore.html#a5adad85425061d43c1059c2d101547f0" title="set _game to previous _gamesName (vector containing name of all games lib we use)...." alt="" coords="467,157,615,184"/>
+<area shape="rect" id="node3" href="$db/d6d/classCore.html#a27d8c3cbdccb0de5bd4548e19c59d8de" title="menu loop" alt="" coords="311,5,409,32"/>
+<area shape="rect" id="node4" href="$df/d0a/main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title="main" alt="" coords="5,56,60,83"/>
+<area shape="rect" id="node7" href="$db/d6d/classCore.html#a4c7cc26c7247a4e09cad8b3ed0c613f4" title="Test input for changing lib of game." alt="" coords="303,107,417,133"/>
+<area shape="rect" id="node8" href="$db/d6d/classCore.html#ad4063dabb457e7a8b80515065455132f" title="all function for restart game and do game loop" alt="" coords="117,107,245,133"/>
+</map>

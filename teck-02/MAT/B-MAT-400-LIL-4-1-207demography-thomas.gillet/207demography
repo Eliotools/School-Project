@@ -1,0 +1,167 @@
+#!/usr/bin/env python3
+from sys import *
+from math import *
+
+def getN(data):
+    nb = 0
+    for chifffrre in data :
+        try :
+            chifffrre = int(chifffrre)
+            nb += 1
+        except :
+            continue
+    return (nb)
+
+def mean(data):
+    som = 0
+    nb = 0
+    for chifffrre in data :
+        try :
+            chifffrre = int(chifffrre)
+            som += chifffrre
+            nb += 1
+        except :
+            continue
+    som = som/nb
+    return (som)
+        
+def dual_sum(x,y):
+    som = 0
+    for i in range (len(x)) :
+        som += int(x[i])*int(y[i])
+    return(som)
+
+def som(data) :
+    som = 0
+    for chifffrre in data :
+        try :
+            chifffrre = int(chifffrre)
+            som += chifffrre
+        except :
+            continue
+    return (som)
+
+def pow_som(data) :
+    som = 0
+    for chifffrre in data :
+        try :
+            chifffrre = int(chifffrre)
+            som += pow(chifffrre,2)
+        except :
+            continue
+    return (som)
+
+def cov(y, x):
+    first = dual_sum(x,y)/getN(x)
+    first -= mean(y)*mean(x)
+    return(first)
+
+
+
+# cov variance = cov(x,y) = som((xi - x_)(yi - y_))/n  = (xi*yi)/n
+# var = covar(x,x) = som(xi)²/n) - x_²
+# ax = cov(x,y)/var(x) 
+# bx = y_ - ax*x_
+# y = ax*x + bx
+# r = sqrt(1- (s²y*x) / f²y)
+
+def getName(country, file) :
+    for lines in file :
+        try :
+            if (lines[1] == country) :
+                break
+        except :
+            continue
+    try :
+        return lines[0]
+    except :
+        exit(84)
+
+def getNb(country, file) :
+    nb = []
+    for lines in file :
+        try :
+            if (lines[1] == country) :
+                nb = lines[2:]
+                break
+        except :
+            continue
+    return nb
+
+def calc_a(y, x):
+    first = cov(x, y)
+    first = first / var(x)
+    return (first)
+
+def calc_b(y, x):
+    first = mean(y)
+    first -= (calc_a(y, x) * mean(x))
+    return (first)
+
+def var(x) :
+    first = cov(x,x)
+    return (first)
+
+def getfile() :
+    f = open("207demography_data.csv", "r")
+    f = f.read()
+    f = f.split('\n')
+    line = []
+    for lines in f :
+        line.append(lines.split(';'))
+    return line
+
+def func(years, a, b) :
+    return( a*years + b)
+
+def root_mean(data, years, a, b) :
+    first  = 0
+    for nb in range (len(data)):
+        first += pow(int(data[nb]) - func(int(years[nb]), a, b),2)
+    first = first / getN(data)
+    first = sqrt(first)/1000000
+    return(first)
+
+def cumul(country, file):
+    first = getNb(country[0], file)
+    for nb in range (len(first)) :
+        first[nb] = int(0)
+    for land in country :
+        tmp = getNb(land, file)
+        for nb in range (len(first)) :
+            first[nb] += int(tmp[nb])
+    return(first)
+
+def print_country(country, file) :
+    print (getName(country[0], file), end="")
+    for land in range (1,len(country)) :
+        print(",", end=' ')
+        print(getName(country[land], file), end='')
+    print()
+
+def main() :
+    country = []
+    file = getfile()
+    years = getNb("Country Code", file)
+    if (len(argv) == 1) :
+        exit (84)
+    else :
+        for land in argv :
+            country.append(land)
+        country.remove(country[0])
+    country.sort()
+    tmp = cumul(country, file)
+    print("Country: ", end='')
+    print_country(country, file)
+    print("Fit1")
+    print("\tY = %.2f X "%(calc_a(tmp, years)/1000000), end='')
+    print("%.2f"%(calc_b(tmp, years)/1000000))
+    print("\tRoot-mean-square deviation: %.2f"%root_mean(tmp, years, calc_a(tmp, years), calc_b(tmp, years)))
+    print("\tPopulation in 2050: %.2f"%(func(calc_a(tmp,years), 2050, calc_b(tmp,years))/1000000))
+    print("Fit2")
+    print("\tY = %.2f X "%(calc_a(years, tmp)*1000000), end='')
+    print("%.2f"%(calc_b(years, tmp)))
+    print("\tRoot-mean-square deviation: %.2f"%root_mean(years, tmp, calc_a(years, tmp)*1000000, calc_b(years, tmp)))
+    print("\tPopulation in 2050: %.2f"%(func(calc_a(years,tmp)*1000000, 2050, calc_b(years,tmp))))
+
+main()

@@ -1,0 +1,254 @@
+\hypertarget{classMyNcurses}{}\doxysection{My\+Ncurses Class Reference}
+\label{classMyNcurses}\index{MyNcurses@{MyNcurses}}
+
+
+fucntion for draw game in ncurses use \mbox{\hyperlink{classIGraphic}{I\+Graphic}} interface  
+
+
+
+
+{\ttfamily \#include $<$ncurses.\+hpp$>$}
+
+
+
+Inheritance diagram for My\+Ncurses\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{d5/dd2/classMyNcurses__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for My\+Ncurses\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{d2/dc3/classMyNcurses__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMyNcurses_a3574bd7ed152a521c23aeeaff6ef760d}{My\+Ncurses}} ()
+\begin{DoxyCompactList}\small\item\em constructor of \mbox{\hyperlink{classMyNcurses}{My\+Ncurses}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMyNcurses_a0ed2a20d1620f0e3035b5fe215855ff9}{$\sim$\+My\+Ncurses}} ()
+\begin{DoxyCompactList}\small\item\em deconstructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyNcurses_aa8c75bcb581f1c0533dbb34bbd66755a}{init}} ()
+\item 
+void \mbox{\hyperlink{classMyNcurses_a4dfeae5a8b938c8dc8a327c27d949b0a}{stop}} ()
+\begin{DoxyCompactList}\small\item\em strop sceen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyNcurses_a099b41a06bb07b85034e4fcbbbd275ad}{launch}} ()
+\begin{DoxyCompactList}\small\item\em Set symbol for print and init screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMyNcurses_aa870d829ccda8ea1ab76e6b41f582441}{get\+Input}} ()
+\begin{DoxyCompactList}\small\item\em get input and set \+\_\+input \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyNcurses_a1fecbda0057aa88af11cb0af72108137}{print\+\_\+map}} ()
+\begin{DoxyCompactList}\small\item\em print ext map \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyNcurses_ad094d08b6fec057a069ec429ff8b8f7a}{setting\+Input}} (int input)
+\begin{DoxyCompactList}\small\item\em set \+\_\+input to given input \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyNcurses_aa250b0a36102336441b55f77cd9852bc}{drawobj}} (std\+::vector$<$ int $>$ xcoords, std\+::vector$<$ int $>$ ycoords, int food\+\_\+x, int food\+\_\+y, int bullet\+\_\+x, int bullet\+\_\+y)
+\begin{DoxyCompactList}\small\item\em draw snake, apple, bullet \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classMyNcurses_ada5971dca08a32f6436ac64549b91df0}{\+\_\+input}}
+\item 
+char \mbox{\hyperlink{classMyNcurses_a8ad7b84efc50f4429d22b06f8afc13af}{rectangle}}
+\item 
+char \mbox{\hyperlink{classMyNcurses_abe7c7828f92f014c040d5436286f302e}{apple}}
+\item 
+char \mbox{\hyperlink{classMyNcurses_aee95321d2199342246d748cac7de60e6}{bullet}}
+\item 
+W\+I\+N\+D\+OW $\ast$ \mbox{\hyperlink{classMyNcurses_ad04add666d5d2659cba46eae622c6851}{\+\_\+screen}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+fucntion for draw game in ncurses use \mbox{\hyperlink{classIGraphic}{I\+Graphic}} interface 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMyNcurses_a3574bd7ed152a521c23aeeaff6ef760d}\label{classMyNcurses_a3574bd7ed152a521c23aeeaff6ef760d}} 
+\index{MyNcurses@{MyNcurses}!MyNcurses@{MyNcurses}}
+\index{MyNcurses@{MyNcurses}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{MyNcurses()}{MyNcurses()}}
+{\footnotesize\ttfamily My\+Ncurses\+::\+My\+Ncurses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructor of \mbox{\hyperlink{classMyNcurses}{My\+Ncurses}} 
+
+\mbox{\Hypertarget{classMyNcurses_a0ed2a20d1620f0e3035b5fe215855ff9}\label{classMyNcurses_a0ed2a20d1620f0e3035b5fe215855ff9}} 
+\index{MyNcurses@{MyNcurses}!````~MyNcurses@{$\sim$MyNcurses}}
+\index{````~MyNcurses@{$\sim$MyNcurses}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{$\sim$MyNcurses()}{~MyNcurses()}}
+{\footnotesize\ttfamily My\+Ncurses\+::$\sim$\+My\+Ncurses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+deconstructor 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMyNcurses_aa250b0a36102336441b55f77cd9852bc}\label{classMyNcurses_aa250b0a36102336441b55f77cd9852bc}} 
+\index{MyNcurses@{MyNcurses}!drawobj@{drawobj}}
+\index{drawobj@{drawobj}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{drawobj()}{drawobj()}}
+{\footnotesize\ttfamily void My\+Ncurses\+::drawobj (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{xcoords,  }\item[{std\+::vector$<$ int $>$}]{ycoords,  }\item[{int}]{food\+\_\+x,  }\item[{int}]{food\+\_\+y,  }\item[{int}]{bullet\+\_\+x,  }\item[{int}]{bullet\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw snake, apple, bullet 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em xcoord} & -\/$>$ vector of x coor d of snake \\
+\hline
+\mbox{\texttt{ in}}  & {\em ycoords} & -\/$>$ vector ycoords for snake \\
+\hline
+\mbox{\texttt{ in}}  & {\em food\+\_\+x} & -\/$>$ coord x of apple \\
+\hline
+\mbox{\texttt{ in}}  & {\em food\+\_\+y} & -\/$>$ coord y of apple \\
+\hline
+\mbox{\texttt{ in}}  & {\em bullet\+\_\+x} & -\/$>$ coord x of bullet \\
+\hline
+\mbox{\texttt{ in}}  & {\em bullet\+\_\+y} & -\/$>$ coord y of bullet \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIGraphic_a5c3c3fcd1b2c10b09cf9507bab1b46e2}{I\+Graphic}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d3b/classMyNcurses_aa250b0a36102336441b55f77cd9852bc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMyNcurses_aa870d829ccda8ea1ab76e6b41f582441}\label{classMyNcurses_aa870d829ccda8ea1ab76e6b41f582441}} 
+\index{MyNcurses@{MyNcurses}!getInput@{getInput}}
+\index{getInput@{getInput}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily int My\+Ncurses\+::get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get input and set \+\_\+input 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+input 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGraphic_a2c7e0525eaf0483d258afafdac0eb862}{I\+Graphic}}.
+
+\mbox{\Hypertarget{classMyNcurses_aa8c75bcb581f1c0533dbb34bbd66755a}\label{classMyNcurses_aa8c75bcb581f1c0533dbb34bbd66755a}} 
+\index{MyNcurses@{MyNcurses}!init@{init}}
+\index{init@{init}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void My\+Ncurses\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMyNcurses_a099b41a06bb07b85034e4fcbbbd275ad}\label{classMyNcurses_a099b41a06bb07b85034e4fcbbbd275ad}} 
+\index{MyNcurses@{MyNcurses}!launch@{launch}}
+\index{launch@{launch}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{launch()}{launch()}}
+{\footnotesize\ttfamily void My\+Ncurses\+::launch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set symbol for print and init screen. 
+
+
+
+Implements \mbox{\hyperlink{classIGraphic_a165d65bd8fc43a4793f5870d010e9e3c}{I\+Graphic}}.
+
+\mbox{\Hypertarget{classMyNcurses_a1fecbda0057aa88af11cb0af72108137}\label{classMyNcurses_a1fecbda0057aa88af11cb0af72108137}} 
+\index{MyNcurses@{MyNcurses}!print\_map@{print\_map}}
+\index{print\_map@{print\_map}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{print\_map()}{print\_map()}}
+{\footnotesize\ttfamily void My\+Ncurses\+::print\+\_\+map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+print ext map 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/d3b/classMyNcurses_a1fecbda0057aa88af11cb0af72108137_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMyNcurses_ad094d08b6fec057a069ec429ff8b8f7a}\label{classMyNcurses_ad094d08b6fec057a069ec429ff8b8f7a}} 
+\index{MyNcurses@{MyNcurses}!settingInput@{settingInput}}
+\index{settingInput@{settingInput}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{settingInput()}{settingInput()}}
+{\footnotesize\ttfamily void My\+Ncurses\+::setting\+Input (\begin{DoxyParamCaption}\item[{int}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set \+\_\+input to given input 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em input} & -\/$>$ new input \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classIGraphic_a35505f3e08c326c1e66f78f89840a511}{I\+Graphic}}.
+
+\mbox{\Hypertarget{classMyNcurses_a4dfeae5a8b938c8dc8a327c27d949b0a}\label{classMyNcurses_a4dfeae5a8b938c8dc8a327c27d949b0a}} 
+\index{MyNcurses@{MyNcurses}!stop@{stop}}
+\index{stop@{stop}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void My\+Ncurses\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+strop sceen 
+
+
+
+Implements \mbox{\hyperlink{classIGraphic_a6e666a39fe92b331158b32da5f038b60}{I\+Graphic}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMyNcurses_ada5971dca08a32f6436ac64549b91df0}\label{classMyNcurses_ada5971dca08a32f6436ac64549b91df0}} 
+\index{MyNcurses@{MyNcurses}!\_input@{\_input}}
+\index{\_input@{\_input}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{\_input}{\_input}}
+{\footnotesize\ttfamily int My\+Ncurses\+::\+\_\+input\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyNcurses_ad04add666d5d2659cba46eae622c6851}\label{classMyNcurses_ad04add666d5d2659cba46eae622c6851}} 
+\index{MyNcurses@{MyNcurses}!\_screen@{\_screen}}
+\index{\_screen@{\_screen}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{\_screen}{\_screen}}
+{\footnotesize\ttfamily W\+I\+N\+D\+OW$\ast$ My\+Ncurses\+::\+\_\+screen\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyNcurses_abe7c7828f92f014c040d5436286f302e}\label{classMyNcurses_abe7c7828f92f014c040d5436286f302e}} 
+\index{MyNcurses@{MyNcurses}!apple@{apple}}
+\index{apple@{apple}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{apple}{apple}}
+{\footnotesize\ttfamily char My\+Ncurses\+::apple\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyNcurses_aee95321d2199342246d748cac7de60e6}\label{classMyNcurses_aee95321d2199342246d748cac7de60e6}} 
+\index{MyNcurses@{MyNcurses}!bullet@{bullet}}
+\index{bullet@{bullet}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{bullet}{bullet}}
+{\footnotesize\ttfamily char My\+Ncurses\+::bullet\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classMyNcurses_a8ad7b84efc50f4429d22b06f8afc13af}\label{classMyNcurses_a8ad7b84efc50f4429d22b06f8afc13af}} 
+\index{MyNcurses@{MyNcurses}!rectangle@{rectangle}}
+\index{rectangle@{rectangle}!MyNcurses@{MyNcurses}}
+\doxysubsubsection{\texorpdfstring{rectangle}{rectangle}}
+{\footnotesize\ttfamily char My\+Ncurses\+::rectangle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+graphic/ncurses/\mbox{\hyperlink{ncurses_8hpp}{ncurses.\+hpp}}\item 
+graphic/ncurses/\mbox{\hyperlink{ncurses_8cpp}{ncurses.\+cpp}}\end{DoxyCompactItemize}
